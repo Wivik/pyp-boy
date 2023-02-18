@@ -2,6 +2,8 @@
 
 I've always dreamed about the Fallout pip-boy. This is a dirty try to make an application using Python and Flask to render it. Made for Pinephone.
 
+![pypboy](screenshot.png)
+
 ## How to use
 
 Install requirements :
