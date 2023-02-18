@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% include 'map_submenu.html' %}
+
+<form action="/map/search" method="POST">
+    <input type="text" class="input_text" name="map_search_item" size="10" {%if request.form['map_search_item']%}value="{{request.form['map_search_item']}}"{%endif%} /> <button class="input_button">Search</button>
+</form>
+
+{% if search_results %}
+<div id="search_results">
+    {% for search_result in search_results %}
+    <a href="{{ url_for('map', latitude=search_result.latitude, longitude=search_result.longitude) }}">{{ search_result }}</a>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}

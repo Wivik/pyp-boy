@@ -1,0 +1,311 @@
+/* global variables */
+
+:root {
+    --sans-font: "fira_sansregular", Arial, Helvetica, sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    /* colors */
+    --bg: #000;
+    --main-text-color: #8aff00;
+    --main-link-color: #8aff00;
+    --sub-link-active-color: #8aff00;
+    --main-menu-link-border-bottom: #8aff00;
+    --main-menu-link-border-active: #8aff00;
+    --main-menu-link-border-inactive: #000;
+    --main-link-color-hover: #000;
+    --main-link-color-hover-bg: #8aff00;
+    --main-menu-buttons-bg-color: #0b6e13;
+    --sub-link-color: #0b6e13;
+    --footer-span-bg-color: #0b6e13;
+    --form-input-text-gb-color: #000;
+    --form-input-text-border-color: #8aff00;
+}
+
+@keyframes pip-boy-switch {
+    0% {
+        transform: skew(20deg) rotate(-30deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: skew(10deg) rotate(20deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: skew(0deg) rotate(0deg);
+        opacity: 0;
+    }
+  }
+
+html {
+    font-family: var(--sans-font);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--main-text-color);
+    height:100%;
+    width: 100%;
+    font-size: 1rem;
+    animation: pip-boy-switch 0.1s linear 1;
+}
+
+/* main menu */
+
+header > nav {
+    border-bottom: 1px solid var(--main-menu-link-border-bottom);
+    /* margin-bottom: 1rem; */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > nav ul {
+    align-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 2/3;
+}
+
+header > nav a,
+header > nav a:visited {
+    display: inline-block;
+    color: var(--main-link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1.5rem 0 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header > nav a.active {
+    border-left: 1px solid var(--main-menu-link-border-active);
+    border-right: 1px solid var(--main-menu-link-border-active);
+    outline: 6px solid black;
+
+}
+
+header > nav a:hover {
+    background-color: var(--main-link-color-hover-bg);
+    color: var(--main-link-color-hover);
+}
+
+header > nav > span {
+    display: block;
+    width: 100%;
+}
+
+header > nav > span > button {
+    background-color: var(--main-menu-buttons-bg-color);
+    border: none;
+    height: 30px;
+    width: 35px;
+    margin: 0;
+}
+
+header > nav > span.side-button-left {
+    text-align: left;
+}
+
+header > nav > span.side-button-right {
+    text-align: right;
+}
+
+
+/* submenu */
+
+
+section > nav {
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--main-menu-link-border-bottom);
+}
+
+section > nav ul {
+    align-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section > nav a,
+section > nav a:visited {
+    display: inline-block;
+    color: var(--sub-link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1.5rem 0rem 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+section > nav a.active {
+    color: var(--sub-link-active-color);
+}
+
+section > nav a:hover {
+    background-color: var(--main-link-color-hover-bg);
+    color: var(--main-link-color-hover);
+}
+
+/* section */
+section {
+    /* min-height: 610px; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* search forms */
+section > form > input,
+section > form > button {
+    background-color: var(--form-input-text-bg-color);
+    border: 1px solid var(--form-input-text-border-color);
+    color: var(--main-text-color);
+    height: 40px;
+    padding: 0.5rem;
+    font-family: var(--mono-font);
+    font-size: 1.15rem;
+}
+
+section > form > input.input_text {
+    height: 40px;
+    min-width: 80%;
+}
+
+section > form > button.input_button {
+    height: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#search_results {
+    margin: 1rem;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+#search_results a, a:visited {
+    display: block;
+    color: var(--main-link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+}
+
+#search_results a:hover {
+    background-color: var(--main-link-color-hover-bg);
+    color: var(--main-link-color-hover);
+}
+
+/*osm map */
+
+#container_map {
+    display: flex;
+    justify-content: space-between;
+}
+
+#map {
+    height: 75%;
+    width: 60%;
+    min-height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container_location {
+    width: 25%;
+    padding-left: 1rem;
+}
+
+#location {
+
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 0.5rem; */
+    /* justify-content: center; */
+}
+
+#location div {
+    border-bottom: 1px solid var(--main-menu-link-border-bottom);
+    border-left: 1px solid var(--main-menu-link-border-bottom);
+    border-right: 1px solid var(--main-menu-link-border-bottom);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.leaflet-tile {
+    filter: grayscale(100%) hue-rotate(130deg) brightness(140%);
+}
+
+.leaflet-tile-pane {
+    filter: invert(100%);
+}
+
+.leaflet-control-attribution {
+    color: #8aff00;
+}
+
+/* footer */
+
+footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 2em;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+footer > div {
+    display: inline-block;
+    background-color: var(--footer-span-bg-color);
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    color: var(--main-text-color);
+    width: 31%;
+    display: flex;
+    align-items: center;
+}
+
+footer > svg {
+    stroke: var(--main-text-color);
+}
+
+footer > img {
+    margin:0;
+}

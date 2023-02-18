@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li><a href="/map"{% if request.path == '/map' or request.path == '/map/' %} class="active"{% endif %}>Local</a></li>
+        <li><a href="/map/search"{% if request.path == '/map/search' %} class="active"{% endif %}>Search</a></li>
+    </ul>
+
+</nav>
