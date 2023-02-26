@@ -1,11 +1,14 @@
 from flask import Flask
 from flask import render_template, request
-import psutil
+from flask_wtf.csrf import CSRFProtect
 from geopy.geocoders import Nominatim
+import psutil
 import requests
 
 
 app = Flask(__name__)
+csrf = CSRFProtect()
+csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
 
 ## def general vars for footer
@@ -31,7 +34,7 @@ def inventory():
 @app.route("/map", methods=['GET'])
 @app.route("/map/", methods=['GET'])
 def map():
-    url = 'http://ipinfo.io/json'
+    url = 'https://ipinfo.io/json'
     response = requests.get(url)
     get_latitude = request.args.get('latitude', '0')
     get_longitude = request.args.get('longitude', '0')
