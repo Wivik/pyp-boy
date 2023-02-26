@@ -1,17 +1,15 @@
 from flask import Flask
 from flask import render_template, request
-import psutil
+from flask_wtf.csrf import CSRFProtect
 from geopy.geocoders import Nominatim
+import psutil
 import requests
 
 
 app = Flask(__name__)
+csrf = CSRFProtect()
+csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
-# url = 'http://ipinfo.io/json'
-# response = requests.get(url)
-# print(response.json())
-# print(response.json()['ip'])
-
 
 ## def general vars for footer
 def footer_vars():
@@ -36,10 +34,8 @@ def inventory():
 @app.route("/map", methods=['GET'])
 @app.route("/map/", methods=['GET'])
 def map():
-    url = 'http://ipinfo.io/json'
+    url = 'https://ipinfo.io/json'
     response = requests.get(url)
-    # print(response.json())
-    # print(response.json()['ip'])
     get_latitude = request.args.get('latitude', '0')
     get_longitude = request.args.get('longitude', '0')
 
@@ -58,8 +54,6 @@ def map_search():
         map_search_item = request.form['map_search_item']
         search_location = geolocator.geocode(map_search_item, exactly_one=False, limit=10)
         print(search_location)
-        # print(search_location.latitude)
-        # print(search_location.longitude)
         return render_template('map_search.html', footer_vars=footer_vars, search_results=search_location)
 
     else:

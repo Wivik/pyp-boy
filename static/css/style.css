@@ -293,7 +293,6 @@ footer {
 }
 
 footer > div {
-    display: inline-block;
     background-color: var(--footer-span-bg-color);
     padding: 0.5rem 1rem 0.5rem 0.5rem;
     color: var(--main-text-color);
