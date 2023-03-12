@@ -1,35 +1,113 @@
 from flask import Flask
-from flask import render_template, request
+from flask import render_template, request, redirect, url_for, flash, session
 from flask_wtf.csrf import CSRFProtect
 from geopy.geocoders import Nominatim
 import psutil
 import requests
+import pathlib
+from utils.db import *
+from utils.vars import *
+from utils.functions import *
+import os
+import logging
 
+## set variables
 
+current_path = pathlib.Path(__file__).parent.absolute()
+data_path = os.path.join(current_path, 'data')
+log_path = os.path.join(current_path, 'logs')
+save_file = os.path.join(data_path, 'save.db')
+game_file = os.path.join(data_path, 'game.db')
+log_file = os.path.join(log_path, 'app.log')
+try:
+    if os.environ['PYP_BOY_LOG_LEVEL'] == 'DEBUG':
+        log_level = 'DEBUG'
+    else:
+        log_level = 'INFO'
+except:
+    log_level = 'INFO'
+
+## Create dir
+if not os.path.isdir(log_path):
+    try:
+        os.mkdir(log_path)
+    except:
+        print('Fatal error : could not create log dir ?', (log_path,))
+        raise
+
+if not os.path.isdir(data_path):
+    try:
+        os.mkdir(data_path)
+    except:
+        print('Fatal error : could not create data dir ?', (data_path,))
+        raise
+
+## Start logger
+log = logging.getLogger(global_vars['app_name'])
+log_handler = logging.FileHandler(log_file)
+log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+log_handler.setFormatter(log_format)
+log.addHandler(log_handler)
+if log_level == 'DEBUG':
+    log.setLevel(logging.DEBUG)
+else:
+    log.setLevel(logging.INFO)
+
+## Start flask
 app = Flask(__name__)
+app.config['SECRET_KEY'] = load_secret_key(data_path)
 csrf = CSRFProtect()
 csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
 
-## def general vars for footer
-def footer_vars():
-    cpu_percent = psutil.cpu_percent(interval=0.1)
-    footer_vars = {
-        'cpu_percent': cpu_percent,
-    }
-
-    return footer_vars
-
-footer_vars = footer_vars()
-
 @app.route("/")
+@app.route("/sys")
+@app.route("/sys/load/<int:save_id>")
+def sys(save_id=0):
+    try_test_save_file = test_save_file(save_file)
+    log.debug(test_save_file)
+    save_data = None
+    read_save = None
+    if test_save_file:
+        save_data = list_save_data(save_file)
+    if save_id != 0:
+        read_save = get_save_data(save_file, save_id)
+    return render_template('sys/sys.html', footer_vars=footer_vars, global_vars=global_vars, try_test_save_file=try_test_save_file, save_data=save_data, read_save=read_save)
+
+@app.route("/sys/load/save/<int:save_id>")
+def sys_load_save(save_id):
+    save_data = get_save_data(save_file, save_id)
+
+    session = register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'])
+
+    return redirect(url_for('data'))
+
+@app.route("/sys/create")
+def sys_create():
+    create_save_database(save_file)
+    return redirect(url_for('sys'))
+
+@app.route("/sys/new", methods=('GET', 'POST'))
+def sys_new():
+    if request.method == 'POST':
+        ret = create_character(save_file, character_name=request.form['sys_new_character'])
+        if ret is None:
+            return redirect(url_for('sys'))
+        else:
+            error_number = gen_random_hex_number()
+            flash(error_number + ' CREATE_CHARACTER '+str(ret))
+            return redirect(url_for('sys'))
+    else:
+        return render_template('sys/new.html', global_vars=global_vars)
+
 @app.route("/stat")
 def stat():
-    return render_template('stat.html', footer_vars=footer_vars)
+    test_save_file = test_save_file(save_file)
+    return render_template('stat/stat.html', global_vars=global_vars, test_save_file=test_save_file)
 
 @app.route("/inv")
 def inventory():
-    return render_template('inv.html', footer_vars=footer_vars)
+    return render_template('inv/inv.html', global_vars=global_vars)
 
 @app.route("/map", methods=['GET'])
 @app.route("/map/", methods=['GET'])
@@ -46,7 +124,7 @@ def map():
 
     print(geoloc_request)
     location = geolocator.geocode(geoloc_request)
-    return render_template('map.html', footer_vars=footer_vars, location=location)
+    return render_template('map/map.html', location=location, global_vars=global_vars)
 
 @app.route("/map/search", methods=('GET', 'POST'))
 def map_search():
@@ -54,9 +132,29 @@ def map_search():
         map_search_item = request.form['map_search_item']
         search_location = geolocator.geocode(map_search_item, exactly_one=False, limit=10)
         print(search_location)
-        return render_template('map_search.html', footer_vars=footer_vars, search_results=search_location)
+        return render_template('map/map_search.html', search_results=search_location, global_vars=global_vars)
 
     else:
-        return render_template('map_search.html', footer_vars=footer_vars)
+        return render_template('map/map_search.html', global_vars=global_vars)
 
 
+@app.route("/data")
+def data():
+    save_data = get_save_data(save_file, session['save_id'])
+    chapter_and_step = get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
+
+    return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
+
+@app.route("/data/chapter/<int:chapter_id>/step/<int:step_id>/choice/<int:choice_id>/exp/<int:exp>")
+def data_choice(chapter_id, step_id, choice_id, exp):
+
+    global session
+
+    exp_char = exp_character(session['save_id'], session['current_xp'], session['level'], exp)
+    session = exp_char
+
+    chapter_and_step = get_chapter_step(game_file, chapter_id, choice_id)
+
+    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=chapter_and_step['step'], level=session['level'], current_xp=session['current_xp'])
+
+    return redirect(url_for('data'))

@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{% include 'map_submenu.html' %}
+{% include 'map/map_submenu.html' %}
 
 <form action="/map/search" method="POST">
     <input type="text" class="input_text" name="map_search_item" size="10" {%if request.form['map_search_item']%}value="{{request.form['map_search_item']}}"{%endif%} /> <button class="input_button">Search</button>

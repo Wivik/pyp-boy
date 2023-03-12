@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'data/submenu.html' %}
+
+<div id="container">
+    <div id="container_left">
+        <p>
+            {{ chapter_and_step.text | replace('\n', '<br />')|safe | replace('{{CharName}}', session['character_name'])}}</p>
+        <p>
+            {% if chapter_and_step.choice_1 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_1, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_1_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_2 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_2, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_2_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_3 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_3, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_3_desc }}</a>{% endif %}
+        </p>
+    </div>
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/'+ chapter_and_step['img']) }});" class="pixel-art">
+        &nbsp;
+    </div>
+</div>
+
+{% endblock %}

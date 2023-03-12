@@ -11,14 +11,17 @@
     --sub-link-active-color: #8aff00;
     --main-menu-link-border-bottom: #8aff00;
     --main-menu-link-border-active: #8aff00;
-    --main-menu-link-border-inactive: #000;
+    --main-menu-link-border-inactive: #020202;
     --main-link-color-hover: #000;
     --main-link-color-hover-bg: #8aff00;
     --main-menu-buttons-bg-color: #0b6e13;
     --sub-link-color: #0b6e13;
+    --container-active-link-bg: #8aff00;
     --footer-span-bg-color: #0b6e13;
+    --div-flash-bg: #0b6e13;
     --form-input-text-gb-color: #000;
     --form-input-text-border-color: #8aff00;
+    --bg-span-container-right: #172b00;
 }
 
 @keyframes pip-boy-switch {
@@ -47,7 +50,7 @@ body {
     color: var(--main-text-color);
     height:100%;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.15rem;
     animation: pip-boy-switch 0.1s linear 1;
 }
 
@@ -171,6 +174,15 @@ section > nav a:hover {
     color: var(--main-link-color-hover);
 }
 
+/* flashed messages */
+
+div.flash {
+    background-color: var(--div-flash-bg);
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
 /* section */
 section {
     /* min-height: 610px; */
@@ -204,8 +216,8 @@ section > form > button.input_button {
 
 #search_results {
     margin: 1rem;
-    max-height: 200px;
-    overflow: scroll;
+    /* max-height: 200px; */
+    /* overflow: scroll; */
 }
 
 #search_results a, a:visited {
@@ -222,6 +234,57 @@ section > form > button.input_button {
     background-color: var(--main-link-color-hover-bg);
     color: var(--main-link-color-hover);
 }
+
+/* split view */
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+#container_left {
+    /* height: 45%; */
+    width: 60%;
+    /* min-height: 180px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container_right {
+    width: 45%;
+    padding-left: 1rem;
+
+}
+
+#container_right span {
+    background-color: var(--bg-span-container-right);
+    display: block;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem;
+    text-transform: uppercase;
+}
+
+#container a, a:visited {
+    display: block;
+    color: var(--main-link-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+}
+
+#container a:hover {
+    background-color: var(--main-link-color-hover-bg);
+    color: var(--main-link-color-hover);
+}
+
+#container a.active {
+    background-color: var(--container-active-link-bg);
+    color: var(--main-link-color-hover);
+}
+
 
 /*osm map */
 
@@ -289,6 +352,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    text-transform: uppercase;
 
 }
 
@@ -307,4 +371,13 @@ footer > svg {
 
 footer > img {
     margin:0;
+}
+
+
+.pixel-art {
+    background-image: url('image.png');
+    background-size: cover;
+    filter: grayscale(100%) contrast(200%) brightness(50%) sepia(100%) hue-rotate(60deg);
+    min-height: 480px;
+    background-position: center;
 }

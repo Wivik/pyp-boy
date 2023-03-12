@@ -1,0 +1,11 @@
+{% if get_flashed_messages() %}
+<div class="flash">
+    0x0042 - Disk Read Error<br />
+    0x5555 - Bus Error <br />
+    {% for message in get_flashed_messages() %}
+    {{ message }}
+    {% endfor %}
+    <br />Subroutine interrupted
+    <br />Press any key to continue...
+</div>
+{% endif %}

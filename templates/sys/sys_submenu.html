@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li><a href="/sys"{% if request.path == '/' or request.path == '/sys' or request.path == '/sys/' or request.path.startswith("/sys/load") %} class="active"{% endif %}>Open</a></li>
+        <li><a href="/sys/new"{% if request.path == '/sys/new' %} class="active"{% endif %}>New</a></li>
+        <li><a href="/sys/manage"{% if request.path == '/sys/manage' %} class="active"{% endif %}>Manage</a></li>
+    </ul>
+
+</nav>
+
+{% include 'flashed_messages.html' %}

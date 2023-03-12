@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'sys/sys_submenu.html' %}
+
+{%if not try_test_save_file and not save_data %}
+<div id="container">
+    <div id="container_left">
+        No database found.
+        <br />Select OK to create a new one.
+        <a href="{{ url_for('sys_create') }}">Ok</a>
+    </div>
+    <div id="container_right">
+        &nbsp;
+    </div>
+</div>
+{%else%}
+<div id="container">
+    <div id="container_left">
+    {% if save_data | length > 0 %}
+    {% for save in save_data %}
+        <a href="{{ url_for('sys', save_id=save.id) }}" {%if request.path == '/sys/load/'+ save.id | string %}class="active"{%endif%}>{{ save.name }}</a>
+    {% endfor %}
+    {% else %}
+    No save data found.
+    <br />Select OK to create a new one.
+    <a href="{{ url_for('sys_new') }}">Ok</a>
+    {% endif %}
+    </div>
+    <div id="container_right">
+        {% if save_data | length > 0 and read_save %}
+        <span>Character : {{ read_save.name }}</span>
+        <span>Level : {{ read_save.level }}</span>
+        <span>Chapter : {{ read_save.current_chapter }}</span>
+        <span>Creation date : {{ read_save.date_create }}</span>
+        <span>Update date : {{ read_save.date_update }}</span>
+        <a href="{{ url_for('sys_load_save', save_id=read_save.id) }}">Load</a>
+        {% else %}
+        &nbsp;
+        {% endif %}
+    </div>
+</div>
+{%endif%}
+
+{% endblock %}

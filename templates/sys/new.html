@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'sys/sys_submenu.html' %}
+
+<form action="/sys/new" method="POST">
+    <input type="text" class="input_text" name="sys_new_character" size="10" placeholder="Enter character name" /> <button class="input_button">Search</button>
+</form>
+
+{% endblock %}

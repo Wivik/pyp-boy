@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+        <li><a href="/data"{% if request.path.startswith("/data") %} class="active"{% endif %}>Quests</a></li>
+        <li><a href="/data"{% if request.path.startswith("/data/aa") %} class="active"{% endif %}>Something</a></li>
+        <li><a href="/data"{% if request.path.startswith("/data/bb") %} class="active"{% endif %}>else</a></li>
+    </ul>
+
+</nav>
+
+{% include 'flashed_messages.html' %}
