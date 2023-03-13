@@ -1,3 +1,13 @@
+## [0.2.1](https://github.com/Wivik/pyp-boy/compare/v0.2.0...v0.2.1) (2023-03-13)
+
+
+### Bug Fixes
+
+* :construction_worker: wrong order in ci ([d4ed2a5](https://github.com/Wivik/pyp-boy/commit/d4ed2a5db3fab2352e75fd54fbe2f19d25705bc1))
+* :construction_worker: wrong order in ci ([a881ac8](https://github.com/Wivik/pyp-boy/commit/a881ac85d303a047608bba586e603e262160bb4b))
+
+
+
 # [0.2.0](https://github.com/Wivik/pyp-boy/compare/v0.1.0...v0.2.0) (2023-03-13)
 
 
