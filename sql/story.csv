@@ -67,3 +67,42 @@ Il brandit de nouveau sa barre à mine et s'apprêta à vous assener un violent 
 Vous entendez à l'étage des cris de panique, des ordres hurlés, des gens qui courrent dans tous les sens comme se préparant à une attaque. Ce sont surement les acolytes de votre ravisseur. 
 
 Vous profitez de la panique soudaine et, surtout, que l'attention sur vous ait été détournée, pour formenter un plan de fuite. Vous pensez au couteau qui se trouve sur la table en face pour couper vos liens et vous enfuir.",8,,,basement.jpg,0,Suite,,,100
+8,1,8,"Tel un éclair, un flash lumineux rougeâtre illumina spontanément la cave où vous vous trouvez avec votre ravisseur. Des hurlements se faisaient entendre à l'étage supérieur. Non pas des cris désorganisés de soldats qui se préparent à un assaut, mais des hurlements de terreur. 
+
+""BORDEL !!"", hurla votre ravisseur. Le gorille n'eût plus trop envie de s'entretenir avec vous ni même de transformer votre tête en oeufs brouillés. Pris de panique, il quitta en précipitation la pièce dans laquelle vous vous trouvez vous laissant seul abandonné à votre sort dans un vacarme ahurissant de vrombissements, de hurlements et d'éclairs rouges.
+
+Vous profitez de cette situation pour vous lever et aller chercher le couteau qui se trouve sur la table en face de vous. Vous parvenez tant bien que mal à couper la ficelles qui vous nouait les poignets, vous êtes enfin libre de vos mouvements. Reprenant peu à peu vos esprits, un éclair de lucidité vous frappe alors : ""... mon arme !!"".
+
+Vous regardez partout dans la pièce, vous ne trouvez pas votre pistolet ni vos munitions. Vos ravisseurs ont dû les voler ou les laisser là où ils vous ont enlevé. Les seules choses qui pourraient faire office d'armes que vous trouvez dans la précipitation sont le couteau qui a servi à vous libérer, et la barre à mine qui, pas plus tard que quelques minutes auparavant, menaçait de ne faire qu'un avec votre tête.
+
+Vous embarquez ces objets avec vous et tenter de vous enfuir.",9,12,,basement.jpg,0,Vous sortez par la porte,Vous sortez par la fenêtre,,100
+9,1,9,"Armé de votre barre à mine, vous ouvrez la porte et tombez soudain nez à nez avec votre ravisseur.
+
+""Toi !!""
+
+Votre sang ne fait qu'un tour, il s'apprête à vous attaquer.",10,11,,basement.jpg,0,Vous l'attaquez,Vous esquivez,,100
+10,1,10,"Ce n'est pas sans une certaine ironie que vous brandissez la barre à mine et fracassez le crâne de votre ravisseur. Le gorille tombe et demeure gisant au sol, ce qu'il reste de sa tête couverte de sang.
+
+Vous ne pouvez vous empêcher de ressentir une certaine satisfaction à l'idée de voir les rôles s'inverser, mais nous ne pouvez savourer cette malsaine victoire trop longtemps.
+
+En haut de l'escalier menant à la cave où vous vous situez, vous entendez les voix des acolytes de votre ravisseur.
+
+""Boss ! Boss ! T'es où ! Ils sont là faut qu'on se tire !!""
+
+Ne vous sentant pas d'attaque à vous confronter à une toute une bande de sbires, vous optez pour la fuite par la fenêtre finalement.",12,,,basement.jpg,0,Suite,,,100
+11,1,11,"Malgré votre état, vous parvenez à bondir en arrière tel un chevreuil et vous esquivez le crochet que votre ravisseur s'apprêtait à vous adresser. 
+
+Fou de rage, il se lance vers vous et vous brandissez la barre à mine en espérant le mettre à terre. Soudain, le gorille est stoppé net dans sa course, frappé par un faisceau rouge identique à ceux qui flashent dehors. Avec un trou fumant situé à la place de ce qui était son abdomen, l'homme s'effondre au sol.
+
+""Oh ça craint"" vous dites vous subitement. La porte n'était pas vraiment une bonne idée, vous vous tournez vers la fenêtre.",12,,,basement.jpg,0,Suite,,,100
+12,1,12,"Vous déplacez un meuble qui semble assez resistant pour soutenir votre poids et parvenez à vous hisser pour sortir par l'étroite fenêtre. 
+
+Alors que vous vous démenez à sortir par cette fenêtre avec une grâce assez relative, vous entendez depuis la cave une des sbires de votre ravisseur hurler. 
+
+""BOSS ! BOSS ! Ils ont eu le boss !""
+
+Vous regardez brièvement par la fenêtre si le type vous a vu en espérant qu'il ne vous suivra pas, mais il est lui subitement calciné par une éclair rouge foudroyant. Vous faites un sursaut en arrière après avoir assisté à cette scène. Vous parvenez à vous cacher derrière un buisson et vous entendez les bruits et hurlements confus. 
+
+Des robots, ce sont des robots qui attaquent le repère de vos ravisseurs. Qui les contrôle ? Vous l'ignorez. Est-ce qu'ils seraient amicaux avec vous ? Mieux vaut éviter de chercher à le savoir dans l'immédiat.
+
+Vous profitez de la confusion ambiante pour vous enfuir et retourner à Rusty Springs pour les prévenir de la menace.",,,,destroyed-houses.jpg,0,,,,100

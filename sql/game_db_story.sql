@@ -1,5 +1,3 @@
--- CREATE TABLE sqlite_sequence(name,seq)
-
 CREATE TABLE "story" (
 	"id"	INTEGER,
 	"chapter"	INTEGER NOT NULL,
@@ -15,4 +13,4 @@ CREATE TABLE "story" (
 	"choice_3_desc"	TEXT,
 	"exp"	INTEGER DEFAULT 100,
 	PRIMARY KEY("id" AUTOINCREMENT)
-)
+);
