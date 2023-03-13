@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>&nbsp;</p>
+<div id="container">
+    <div id="container_left">
+        {% if new %}
+        <p>
+            ...<br />
+            A new holotape was found, do you wish to play it ?<br />
+            <a href="{{ url_for('root_new')}}">Yes</a>
+            <a href="{{ url_for('sys')}}">No</a>
+        </p>
+        {% else %}
+        <p>
+            Error - No holotape loaded. <br />
+            ...<br />
+            Checking<br />...
+            {% if get_release %}
+            <br />Holotape successfully loaded !
+            <a href="{{ url_for('root_new')}}">Proceed</a>
+            {% else %}
+            <br />Error while loading holotape.
+            {% endif %}
+        <p>
+        {% endif %}
+    </div>
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/holotape.jpg') }});" class="pixel-art">
+        &nbsp;
+    </div>
+</div>
+
+{% endblock %}

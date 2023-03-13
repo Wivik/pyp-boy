@@ -10,6 +10,8 @@ from utils.vars import *
 from utils.functions import *
 import os
 import logging
+import requests
+import json
 
 ## set variables
 
@@ -19,6 +21,8 @@ log_path = os.path.join(current_path, 'logs')
 save_file = os.path.join(data_path, 'save.db')
 game_file = os.path.join(data_path, 'game.db')
 log_file = os.path.join(log_path, 'app.log')
+repository_owner = 'Wivik'
+repository_name = 'pyp-boy'
 try:
     if os.environ['PYP_BOY_LOG_LEVEL'] == 'DEBUG':
         log_level = 'DEBUG'
@@ -61,6 +65,29 @@ csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
 
 @app.route("/")
+def root():
+    # check if story db is present
+    if not os.path.exists(game_file):
+        # get the latest release
+        get_release = get_latest_release(repository_owner, repository_name, game_file)
+        return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, get_release=get_release, new=False)
+    else:
+        ## check new version
+        db_version = get_game_db_version(game_file)
+        # print(db_version['version'])
+        check_version = check_new_version(db_version, repository_owner, repository_name)
+        if check_version:
+            return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, new=True)
+        else:
+            return redirect(url_for('sys'))
+
+@app.route("/newfile")
+def root_new():
+    # delete current game db and download it
+    os.remove(game_file)
+    get_latest_release(repository_owner, repository_name, game_file)
+    return redirect(url_for('sys'))
+
 @app.route("/sys")
 @app.route("/sys/load/<int:save_id>")
 def sys(save_id=0):

@@ -97,3 +97,10 @@ def save_progress(save_file, save_id, **kwargs):
     else:
         return ret
 
+def get_game_db_version(game_file):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM db_version', '')
+    if ret is None:
+        return
+    else:
+        return ret
+

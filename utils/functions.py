@@ -3,6 +3,8 @@
 import os
 import random
 from flask import session
+import requests
+import json
 
 def load_secret_key(data_dir):
     if not os.path.exists(os.path.join(data_dir, 'secret.key')):
@@ -67,3 +69,41 @@ def exp_character(save_id, current_xp, level, earned_xp):
         session['current_xp'] = current_xp
         session['required_xp'] = required_xp
     return session
+
+def check_new_version(current_version, owner, repo):
+    release_api=f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+    response = requests.get(release_api)
+    if response.ok:
+        release = json.loads(response.content)
+        release_version = release["tag_name"]
+        current_version = str.join('v', release_version)
+        # print(release_version)
+        if release_version != current_version:
+            print('new version')
+            return True
+        else:
+            return False
+    else:
+        print('error while checking version')
+        return False
+
+def get_latest_release(owner, repo, game_file):
+    release_api=f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+    response = requests.get(release_api)
+    if response.ok:
+        release = json.loads(response.content)
+        asset_url = release["assets"][0]["browser_download_url"]
+        asset_filename = asset_url.split("/")[-1]
+        response = requests.get(asset_url)
+        if response.ok:
+            with open(game_file, 'wb') as db:
+                db.write(response.content)
+                print("db downloaded")
+                return True
+        else:
+            print("failed to download db")
+            return False
+    else:
+        print('failed to download db')
+        return False
+

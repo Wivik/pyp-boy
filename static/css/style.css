@@ -377,8 +377,8 @@ footer > img {
 
 .pixel-art {
     background-image: url('image.png');
-    background-size: cover;
+    background-repeat: no-repeat;
     filter: grayscale(100%) contrast(200%) brightness(50%) sepia(100%) hue-rotate(60deg);
     min-height: 480px;
-    background-position: center;
+    background-position: top center;
 }
