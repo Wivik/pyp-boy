@@ -1,4 +1,18 @@
-# 0.1.0 (2023-03-13)
+# [0.2.0](https://github.com/Wivik/pyp-boy/compare/v0.1.0...v0.2.0) (2023-03-13)
+
+
+### Bug Fixes
+
+* :sparkles: better db generation ([3bbe604](https://github.com/Wivik/pyp-boy/commit/3bbe60442a1be7c815b65a1ba9c736967b587ed8))
+
+
+### Features
+
+* :sparkles: database is downloadable ([03e6b0b](https://github.com/Wivik/pyp-boy/commit/03e6b0b1ff8391b52e7184748b9103349b8ca8f3))
+
+
+
+# [0.1.0](https://github.com/Wivik/pyp-boy/compare/b2142dfc3edaa47deb3ccbb40e5c870e48c856b7...v0.1.0) (2023-03-13)
 
 
 ### Bug Fixes
