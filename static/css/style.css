@@ -247,6 +247,7 @@ section > form > button.input_button {
     /* height: 45%; */
     width: 60%;
     /* min-height: 180px; */
+    padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
 }

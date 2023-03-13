@@ -1,0 +1,69 @@
+1,1,1,"Vous vous réveillez en sursaut après avoir reçu le contenu d'un seau d'eau glacée en pleine figure. ""Où suis-je ? Qu'est-ce qu'il se passe ?"". Les questions tournent en boucle dans votre tête confuse par ce réveil brutal. Commençant à retrouver une certaine lucidité, vous constatez alors avec stupeur que vous êtes assis au sol, les mains ligotées dans le dos. En levant votre regard, vous apercevez celui qui vient de vous balancer ce seau d'eau.
+
+""Où est ton campement ?"", demanda l'homme devant vous en hurlant comme s'il vous croyait sourd. 
+
+""Campement, campement, campement..."" ce mot résonne dans votre tête encore en panique et alerte. La vive douleur à la base de votre crâne vous laisse comprendre qu'on ne vous a pas tiré de votre sommeil mais emmené de force après vous avoir violemment assommé. Ce type veut savoir où se trouve le campement dans lequel vous avez récemment trouvé refuge et avez été accueilli alors que vous êtiez en mauvais point.",5,3,2,basement.jpg,0,Vous donnez à l'interrogateur ce qu'il veut,Vous tentez de tenir tête à l'interrogatoire et refusez de donner des informations,Vous ne dites rien et observez l'endroit à la recherche d'une échappatoire,100
+2,1,2,"Vous observez l'endroit dans lequel vous êtes. Il semblerait que ce soit une sorte de cave dans le sous-sol d'une maison en ruines. Il y a des petites fenêtres en haut des murs dont la plupart sont brisées qui pourraient permettre de s'échapper en passant à travers. Il y a pas mal d'outils également qui traînent au sol ou sur une table qui semble servir d'établi de fortune. Vous faites un rapide inventaire de ce que votre regard confus parvient à identifer : marteaux, tournevis, des cordes, des chaînes, et ... Un corps gisant sur une couche au fond de la pièce.
+
+Visiblement, vos ravisseurs ne sont pas des plaisantins et soit le gars au fond a eu moins de chance, soit il était déjà bien amoché car même une goule a meilleure mine que ce qui semblerait être les vestiges de son visage.
+
+""T'es sourd ou quoi ? Je t'ai demandé où se trouve ton campement !""
+
+Votre interrogateur se fait de plus en plus pressé, comme s'il était sous pression pour obtenir des résultats au plus vite. Il s'emparre alors d'une sorte de barre à mine et la brandit avec l'air menaçant. Vous n'avez pas vraiment envie de finir comme celui qui semblerait avoir été votre prédécesseur.",5,3,,basement.jpg,0,Vous tentez de mentir sur l'emplacement du campement,Vous refusez de répondre,,100
+3,1,3,"""Quel campement ?"" répondez-vous à votre agresseur. Vous refusez de lui dire quoi que ce soit à propos du dernier endroit où vous avez trouvé refuge. Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi dans des circonstances dont vous ne vous souvenez plus.
+
+""Te fous pas de ma gueule !"" hurla l'interrogateur en postillonant. L'espace d'un instant, vous avez un doute entre savoir laquelle de ces choses entre être assis sur le plancher de cette cave, entendre ce type hurler, sentir son odeur putride, ou ses postillons, est la plus désagréable.
+
+Mais l'heure n'était pas à ce genre de question futile, surtout quand le gorille en face se saisie d'une sorte de barre à mine et la brandi devant vous avec l'air menaçant.
+
+Il s'approche une nouvelle fois et vous assène un violent coup de pied dans les jambes.
+
+""Je te le demande une dernière fois gentillement. Où est ton campement ?""
+
+Vous devez réfléchir vite, car la prochaine sommation risque d'être avec cette tige de métal.",5,4,,basement.jpg,0, Vous mentez à propos du campement,Vous vous obstinez à refuser de répondre,,0
+4,1,4,"Le gorille gueulard recule et commence à faire les 400 pas dans la petite cave où vous vous situez. Il fait des aller et venues devant vous en faisant râcler au sol la barre à mines.
+
+""OK je vois, tu as donc l'intention de nous être d'aucune utilité. Il te suffit de nous dire de quel campement tu viens. On sait qu'il y en a un dans le coin avec assez de ressources pour passer l'hiver qui approche.""
+
+Il se retourne une dernière fois devant vous et vous regarde de haut. Votre tête hurle de douleur et ressent toujours le coup qui vous a amené ici, et vos jambes ont rejoint le concert. L'espace d'un instant, vous ressentez comme une sensation de soulagement juste avant de recevoir un violent coup en pleine tête avec la barre de métal.
+
+Vous vous effondrez au sol, votre vue se teint de rouge, et vous fermez les yeux en pensant ""monde de merde"". Encore légèrement conscient, vous entendez ce qui semble être soudainement un immense fracas et des cris de panique, ou alors est-ce votre traumatisme crânien qui vous fait imaginer tout ceci ? 
+
+Vos dernières questions resteront sans réponses alors que vous perdez conscience.
+
+Vous êtes mort.",,,,basement.jpg,1,,,,0
+5,1,5,"Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi par des assaillants. Vous ne vous souvenez pas vraiment de tous les détails, mais l'accueil chaleureux de ce campement à une époque où c'est chacun pour soit vous a quand même marqué.
+
+Vous hésitez donc à trahir ceux qui vous ont aidé alors que vous êtiez dans le besoin.
+
+Toujours agard et totalement ignorant de l'endroit où vous vous situez actuellement, vous marmonnez quelque chose à propos d'un campement nommé Blightwoods au sud-est d'une station Red Rocket.
+
+""Blightwoods ? Ca m'dis rien ... Tu pipeauterais pas un peu ?""
+
+Peu convaincu par votre réponse, il s'emparre d'une sorte de barre à mine et commence à vous menacer avec.
+
+""Maintenant fini de rigoler, tu vas me dire où est ton campement, à moins que tu n'aies envie de finir comme lui"".
+
+L'assaillant pointe du doigt un corps gisant qui semble avoir été tellement tabassé qu'il ne reste plus grand chose d'identifiable. L'insistance de votre agresseur se fait de plus en plus pressante, comme s'il était lui-même sous pression.",7,6,,basement.jpg,0,Vous maintenez votre histoire,Vous regardez autour de vous à la recherche d'une échappatoire,,100
+6,1,6,"La vue d'un cadavre gisant qui semble correspondre à votre avenir proche vous oblige à trouver une idée, et vite. Ignorant la douleur et maintenu en alerte par l'adrénaline qui se répand dans votre corps, vous balayez du regard la pièce dans laquelle vous vous situez.
+
+Il semblerait que vous vous trouviez dans une sorte de cave au sous-sol d’une maison en ruines. Il y a des petites fenêtres en haut des murs dont la plupart sont brisées qui pourraient permettre de s’échapper en passant à travers. Il y a pas mal d’outils également qui traînent au sol ou sur une table qui semble servir d’établi de fortune. Vous faites un rapide inventaire de ce que votre regard confus parvient à identifer : marteaux, tournevis, des cordes, des chaînes, etc.
+
+""Alors tu vas me répon... BORDEL !""
+
+Votre agresseur est interrompu dans sa tirade menaçante par une immense boucant qui retenti depuis l'extérieur. Des cris de panique se font entendre à l'étage et les acolytiques de votre ravisseur semblent courir dans tous les sens comme s'ils se préparaient à une attaque.
+
+Vous concernant, avec vos mains ligotées dans votre dos, vous vous sentez quelque peu impuissant. Mais votre interrogateur ayant relâché son attention sur vous l'espace d'un instant, vous notez alors la présence d'un couteau sur la table en face de vous.",8,,,basement.jpg,0,Suite,,,100
+7,1,7,"Vous maintenez votre histoire sur Blightwood, un petit campement situé au sud-est d'une station Red Rocket. Il serait construit sur les ruines de ce qui semble avoir été un petit quartier résidentielle d'une ancienne bourgade, depuis ravagée par les frappes nucléaires qui ont conduit le monde dans l'état qu'on lui connaît.
+
+Toujours pas convaincu, l'agresseur perd patience et vous presse de plus en plus.
+
+""Ton histoire tiens pas la route, tu te fous de moi. Tu vas me dire où se trouve réellement ton campement sinon cette barre sera dans ta gueule !""
+
+Il brandit de nouveau sa barre à mine et s'apprêta à vous assener un violent coup dans les jambes quand soudainement un immense boucan retenti depuis l'extérieur avec des vrombissements à faire s'effondrer un mur et des explosions.
+
+""Bordel ils sont là !!"", s'exclama le gorille.
+
+Vous entendez à l'étage des cris de panique, des ordres hurlés, des gens qui courrent dans tous les sens comme se préparant à une attaque. Ce sont surement les acolytes de votre ravisseur. 
+
+Vous profitez de la panique soudaine et, surtout, que l'attention sur vous ait été détournée, pour formenter un plan de fuite. Vous pensez au couteau qui se trouve sur la table en face pour couper vos liens et vous enfuir.",8,,,basement.jpg,0,Suite,,,100
