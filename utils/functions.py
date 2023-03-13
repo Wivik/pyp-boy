@@ -76,8 +76,9 @@ def check_new_version(current_version, owner, repo):
     if response.ok:
         release = json.loads(response.content)
         release_version = release["tag_name"]
-        current_version = str.join('v', release_version)
-        # print(release_version)
+        current_version = 'v' + current_version['version']
+        print(release_version)
+        print(current_version)
         if release_version != current_version:
             print('new version')
             return True
@@ -93,6 +94,7 @@ def get_latest_release(owner, repo, game_file):
     if response.ok:
         release = json.loads(response.content)
         asset_url = release["assets"][0]["browser_download_url"]
+        print(asset_url)
         asset_filename = asset_url.split("/")[-1]
         response = requests.get(asset_url)
         if response.ok:

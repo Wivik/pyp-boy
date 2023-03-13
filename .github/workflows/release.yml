@@ -14,16 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Create story database
-        run: python create-db.py
-        working-directory: ./scripts
-
       - name: Produce release note
         uses: TriPSs/conventional-changelog-action@v3
         id: changelog
         with:
           github-token: ${{ secrets.github_token }}
           version-file: './version_file.json'
+
+      - name: Create story database
+        run: python create-db.py
+        working-directory: ./scripts
 
       - name: Publish release
         uses: softprops/action-gh-release@v1
