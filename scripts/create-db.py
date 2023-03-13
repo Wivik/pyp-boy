@@ -1,10 +1,10 @@
 import sqlite3
 import csv
 
-conn = sqlite3.connect('story.db')
+conn = sqlite3.connect('game.db')
 c = conn.cursor()
 
-with open('../sql/game.sql', 'r') as file:
+with open('../sql/story.sql', 'r') as file:
     sql = file.read()
 
     c.execute(sql)
