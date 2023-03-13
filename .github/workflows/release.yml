@@ -16,8 +16,7 @@ jobs:
 
       - name: Create story database
         run: ./create-db.py
-        with:
-          working-directory: ./scripts
+        working-directory: ./scripts
 
       - name: Produce release note
         uses: TriPSs/conventional-changelog-action@v3
