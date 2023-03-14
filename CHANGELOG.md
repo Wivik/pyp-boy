@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/Wivik/pyp-boy/compare/v0.2.2...v0.3.0) (2023-03-14)
+
+
+### Features
+
+* :sparkles: save database is automatically generated ([18b9c55](https://github.com/Wivik/pyp-boy/commit/18b9c55f815a011551afcf8c8a8d4bf6aec78370))
+
+
+
 ## [0.2.2](https://github.com/Wivik/pyp-boy/compare/v0.2.1...v0.2.2) (2023-03-13)
 
 
