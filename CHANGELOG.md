@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/Wivik/pyp-boy/compare/v0.2.1...v0.2.2) (2023-03-13)
+
+
+### Bug Fixes
+
+* changelog empty ([b51f43e](https://github.com/Wivik/pyp-boy/commit/b51f43e355d90608d00ff14bfaeae6b816b87ce2))
+
+
+
 ## [0.2.1](https://github.com/Wivik/pyp-boy/compare/v0.2.0...v0.2.1) (2023-03-13)
 
 
