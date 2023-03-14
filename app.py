@@ -23,6 +23,7 @@ game_file = os.path.join(data_path, 'game.db')
 log_file = os.path.join(log_path, 'app.log')
 repository_owner = 'Wivik'
 repository_name = 'pyp-boy'
+
 try:
     if os.environ['PYP_BOY_LOG_LEVEL'] == 'DEBUG':
         log_level = 'DEBUG'
@@ -66,6 +67,8 @@ geolocator = Nominatim(user_agent="pyp-boy")
 
 @app.route("/")
 def root():
+    # create save file if missing
+    create_save_database(save_file)
     # check if story db is present
     if not os.path.exists(game_file):
         # get the latest release
@@ -74,6 +77,7 @@ def root():
     else:
         ## check new version
         db_version = get_game_db_version(game_file)
+        global_vars['app_version'] = db_version['version']
         # print(db_version['version'])
         check_version = check_new_version(db_version, repository_owner, repository_name)
         if check_version:
@@ -86,6 +90,8 @@ def root_new():
     # delete current game db and download it
     os.remove(game_file)
     get_latest_release(repository_owner, repository_name, game_file)
+    db_version = get_game_db_version(game_file)
+    global_vars['app_version'] = db_version['version']
     return redirect(url_for('sys'))
 
 @app.route("/sys")
@@ -117,7 +123,7 @@ def sys_create():
 @app.route("/sys/new", methods=('GET', 'POST'))
 def sys_new():
     if request.method == 'POST':
-        ret = create_character(save_file, character_name=request.form['sys_new_character'])
+        ret = create_character(save_file, character_name=request.form['sys_new_character'], gender=request.form['sys_new_gender'])
         if ret is None:
             return redirect(url_for('sys'))
         else:
@@ -182,6 +188,6 @@ def data_choice(chapter_id, step_id, choice_id, exp):
 
     chapter_and_step = get_chapter_step(game_file, chapter_id, choice_id)
 
-    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=chapter_and_step['step'], level=session['level'], current_xp=session['current_xp'])
+    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=chapter_and_step['step'], level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
 
     return redirect(url_for('data'))

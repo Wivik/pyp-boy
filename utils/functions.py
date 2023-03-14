@@ -109,3 +109,10 @@ def get_latest_release(owner, repo, game_file):
         print('failed to download db')
         return False
 
+def get_app_version(version_file):
+    file = open(version_file, 'r')
+    version = json.load(file)
+    # print(version['version'])
+    version = str(version['version'])
+    return version
+

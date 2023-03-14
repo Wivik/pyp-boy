@@ -11,6 +11,8 @@ def get_db_connection(db_file):
 def run_db_change_query(db_file, query, values):
         conn = get_db_connection(db_file)
         try:
+            print(query)
+            print(values)
             conn.execute(query, values)
             conn.commit()
             conn.close()
@@ -43,8 +45,19 @@ def create_save_database(save_file):
         c = conn.cursor()
         # Create the saves table
         c.execute('''
-            CREATE TABLE IF NOT EXISTS saves
-            (id INTEGER PRIMARY KEY, name TEXT UNIQUE, date_create TEXT, date_update TEXT)
+            CREATE TABLE "saves" (
+            "id"	INTEGER,
+            "name"	TEXT NOT NULL UNIQUE,
+            "date_create"	TEXT,
+            "date_update"	TEXT,
+            "level"	TEXT NOT NULL DEFAULT 1,
+            "current_xp"	NUMERIC NOT NULL DEFAULT 0,
+            "current_chapter"	INTEGER NOT NULL DEFAULT 1,
+            "current_step"	INTEGER NOT NULL DEFAULT 1,
+            "failed"	INTEGER NOT NULL DEFAULT 0,
+            "gender"	TEXT,
+            PRIMARY KEY("id")
+        )
         ''')
         conn.commit()
     except Error as e:
@@ -52,19 +65,19 @@ def create_save_database(save_file):
     finally:
         conn.close()
 
-def create_character(save_file, character_name):
+def create_character(save_file, character_name, gender):
     now = datetime.utcnow()
     iso8601 = now.isoformat()
     date_create = iso8601
     date_update = iso8601
-    ret = run_db_change_query(save_file, 'INSERT INTO saves (name, date_create, date_update) VALUES(?, ?, ?)', (character_name, date_create, date_update))
+    ret = run_db_change_query(save_file, 'INSERT INTO saves (name, gender, date_create, date_update) VALUES(?, ?, ?, ?)', (character_name, gender, date_create, date_update))
     if ret is None:
         return
     else:
         return ret
 
 def list_save_data(save_file):
-    ret = run_db_select_all_query(save_file, 'SELECT id, name FROM saves ORDER BY date_update DESC', '')
+    ret = run_db_select_all_query(save_file, 'SELECT id, name, failed FROM saves ORDER BY date_update DESC', '')
     if ret is None:
         return
     else:
@@ -89,9 +102,10 @@ def save_progress(save_file, save_id, **kwargs):
     step_id = kwargs.get('step')
     current_xp = kwargs.get('current_xp')
     level = kwargs.get('level')
+    end = kwargs.get('end', 0)
     now = datetime.utcnow()
     iso8601 = now.isoformat()
-    ret = run_db_change_query(save_file, 'UPDATE saves set current_chapter = ?, current_step = ?, current_xp = ?, level= ?, date_update = ? WHERE id = ?', (chapter_id, step_id, current_xp, level, iso8601, save_id))
+    ret = run_db_change_query(save_file, 'UPDATE saves set current_chapter = ?, current_step = ?, current_xp = ?, level= ?, date_update = ?, failed = ? WHERE id = ?', (chapter_id, step_id, current_xp, level, iso8601, end, save_id))
     if ret is None:
         return
     else:

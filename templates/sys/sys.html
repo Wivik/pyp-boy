@@ -20,7 +20,7 @@
     <div id="container_left">
     {% if save_data | length > 0 %}
     {% for save in save_data %}
-        <a href="{{ url_for('sys', save_id=save.id) }}" {%if request.path == '/sys/load/'+ save.id | string %}class="active"{%endif%}>{{ save.name }}</a>
+        <a href="{{ url_for('sys', save_id=save.id) }}" {%if request.path == '/sys/load/'+ save.id | string %}class="active"{%endif%}>{% if save.failed == 1 %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2c5.523 0 10 4.477 10 10v3.764a2 2 0 0 1-1.106 1.789L18 19v1a3 3 0 0 1-2.824 2.995L14.95 23a2.5 2.5 0 0 0 .044-.33L15 22.5V22a2 2 0 0 0-1.85-1.995L13 20h-2a2 2 0 0 0-1.995 1.85L9 22v.5c0 .171.017.339.05.5H9a3 3 0 0 1-3-3v-1l-2.894-1.447A2 2 0 0 1 2 15.763V12C2 6.477 6.477 2 12 2zm-4 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="rgba(138,255,0,1)"/></svg>{% else %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-5-9a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="rgba(138,255,0,1)"/></svg>{% endif %} {{ save.name }}</a>
     {% endfor %}
     {% else %}
     No save data found.
@@ -32,10 +32,13 @@
         {% if save_data | length > 0 and read_save %}
         <span>Character : {{ read_save.name }}</span>
         <span>Level : {{ read_save.level }}</span>
+        <span>Status : {% if read_save.failed == 1 %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2c5.523 0 10 4.477 10 10v3.764a2 2 0 0 1-1.106 1.789L18 19v1a3 3 0 0 1-2.824 2.995L14.95 23a2.5 2.5 0 0 0 .044-.33L15 22.5V22a2 2 0 0 0-1.85-1.995L13 20h-2a2 2 0 0 0-1.995 1.85L9 22v.5c0 .171.017.339.05.5H9a3 3 0 0 1-3-3v-1l-2.894-1.447A2 2 0 0 1 2 15.763V12C2 6.477 6.477 2 12 2zm-4 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="rgba(138,255,0,1)"/></svg>{% else %}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-5-9a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="rgba(138,255,0,1)"/></svg>{% endif %}</span>
         <span>Chapter : {{ read_save.current_chapter }}</span>
         <span>Creation date : {{ read_save.date_create }}</span>
         <span>Update date : {{ read_save.date_update }}</span>
+        {% if read_save.failed != 1 %}
         <a href="{{ url_for('sys_load_save', save_id=read_save.id) }}">Load</a>
+        {% endif %}
         {% else %}
         &nbsp;
         {% endif %}

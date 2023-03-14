@@ -5,7 +5,22 @@
 {% include 'sys/sys_submenu.html' %}
 
 <form action="/sys/new" method="POST">
-    <input type="text" class="input_text" name="sys_new_character" size="10" placeholder="Enter character name" /> <button class="input_button">Search</button>
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+    <input type="text" class="input_text" name="sys_new_character" size="10" placeholder="Enter character name" />
+    <button class="input_button">Create</button>
+
+    <br />
+
+
+
+    <select name="sys_new_gender" size="5">
+        <option disabled>Gender</option>
+        <option value="f">Female</option>
+        <option value="m">Male</option>
+        <option value="u">Unknown</option>
+    </select>
+
 </form>
 
 {% endblock %}
