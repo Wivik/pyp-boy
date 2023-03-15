@@ -4,12 +4,24 @@ on:
   workflow_dispatch:
   workflow_call:
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
     steps:
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout code
         uses: actions/checkout@v3
@@ -24,6 +36,14 @@ jobs:
       - name: Create story database
         run: python create-db.py
         working-directory: ./scripts
+
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.changelog.outputs.tag }}"
+          file: Containerfile
+          context: .
 
       - name: Publish release
         uses: softprops/action-gh-release@v1
