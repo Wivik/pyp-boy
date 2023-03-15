@@ -165,3 +165,4 @@ log/*
 story/*
 scripts/*.db
 
+*.md.backup
