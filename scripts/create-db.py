@@ -32,7 +32,7 @@ with open('../sql/story.csv', 'r') as story_file:
         # print(row)
         row = [None if value.strip() == '' else value.strip() for value in row]
 
-        c.execute('INSERT INTO story VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', row)
+        c.execute('INSERT INTO story VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', row)
 
     conn.commit()
 
