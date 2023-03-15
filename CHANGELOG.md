@@ -1,8 +1,9 @@
-## [0.4.1](https://github.com/Wivik/pyp-boy/compare/v0.4.0...v0.4.1) (2023-03-15)
+## [0.4.2](https://github.com/Wivik/pyp-boy/compare/v0.4.0...v0.4.2) (2023-03-15)
 
 
 ### Bug Fixes
 
+* db creation script ([0d7ee70](https://github.com/Wivik/pyp-boy/commit/0d7ee70c5a0de924f563583f7f642f635c47cede))
 * db creation script ([5dabf00](https://github.com/Wivik/pyp-boy/commit/5dabf00e9b3ac5f96b5b6947dcab51fafa64004e))
 * db creation script ([e0ff43c](https://github.com/Wivik/pyp-boy/commit/e0ff43cb8f9ad5c1cac9df63478574ef2448703c))
 
