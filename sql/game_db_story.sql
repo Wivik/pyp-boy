@@ -3,6 +3,7 @@ CREATE TABLE "story" (
 	"chapter"	INTEGER NOT NULL,
 	"step"	INTEGER NOT NULL,
 	"text"	TEXT,
+	"next_chapter"	INTEGER,
 	"choice_1"	INTEGER,
 	"choice_2"	INTEGER,
 	"choice_3"	INTEGER,
@@ -13,4 +14,4 @@ CREATE TABLE "story" (
 	"choice_3_desc"	TEXT,
 	"exp"	INTEGER DEFAULT 100,
 	PRIMARY KEY("id" AUTOINCREMENT)
-);
+)

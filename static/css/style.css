@@ -308,9 +308,7 @@ section > form > button.input_button {
 }
 
 #map {
-    height: 75%;
-    width: 60%;
-    min-height: 180px;
+    height: 580px;
     margin-left: auto;
     margin-right: auto;
 }

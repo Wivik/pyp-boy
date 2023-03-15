@@ -9,14 +9,70 @@
         <p>
             {{ chapter_and_step.text | replace('\n', '<br />')|safe | replace('{{CharName}}', session['character_name'])}}</p>
         <p>
-            {% if chapter_and_step.choice_1 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_1, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_1_desc }}</a>{% endif %}
-            {% if chapter_and_step.choice_2 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_2, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_2_desc }}</a>{% endif %}
-            {% if chapter_and_step.choice_3 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, choice_id=chapter_and_step.choice_3, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_3_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_1 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_1, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_1_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_2 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_2, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_2_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_3 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_3, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_3_desc }}</a>{% endif %}
         </p>
     </div>
-    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/'+ chapter_and_step['img']) }});" class="pixel-art">
+    {% set illustration_type = chapter_and_step['img'].split(':')[0] %}
+    {% set illustration_value = chapter_and_step['img'].split(':')[1] %}
+    {% if illustration_type == 'img' %}
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/'+ illustration_value) }});" class="pixel-art">
         &nbsp;
     </div>
+    {% elif illustration_type == 'osm' %}
+    <div id="container_right">
+        <div id="map"></div>
+        {% set latitude = illustration_value.split('/')[0] %}
+        {% set longitude = illustration_value.split('/')[1] %}
+        <script>
+            var map = L.map('map').setView(['{{ latitude }}', '{{ longitude }}'], 16);
+            L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png', {
+                attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors using Stamen Toner map design'
+            }).addTo(map);
+            var circle = L.circle(['{{ latitude }}', '{{ longitude }}'], {
+                color: '#8aff00',
+                fillColor: '#0b6e13',
+                fillOpacity: .50,
+                radius: 50
+            }).addTo(map);
+            L.control.locate({
+                position: 'topleft',
+                drawCircle: true,
+                follow: true,
+                setView: true,
+                keepCurrentZoomLevel: true,
+                stopFollowingOnDrag: false,
+                remainActive: true,
+                markerClass: L.marker,
+                circleStyle: {},
+                markerStyle: {},
+                followCircleStyle: {},
+                followMarkerStyle: {},
+                icon: 'fa fa-location-arrow',
+                iconLoading: 'fa fa-spinner fa-spin',
+                iconElementTag: 'span',
+                circlePadding: [0, 0],
+                metric: true,
+                onLocationError: function(err) {
+                    alert(err.message);
+                },
+                onLocationOutsideMapBounds: function(context) {
+                    alert("You are outside the boundaries of the map.");
+                },
+                setZoom: 16,
+                strings: {
+                    title: "Show me where I am",
+                    metersUnit: "meters",
+                    feetUnit: "feet",
+                    popup: "You are within {distance} {unit} from this point",
+                    outsideMapBoundsMsg: "You seem located outside the boundaries of the map"
+                }
+            }).addTo(map);
+        
+        </script>
+    </div>
+    {% endif %}
 </div>
 
 {% endblock %}

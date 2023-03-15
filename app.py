@@ -178,16 +178,23 @@ def data():
 
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
 
-@app.route("/data/chapter/<int:chapter_id>/step/<int:step_id>/choice/<int:choice_id>/exp/<int:exp>")
-def data_choice(chapter_id, step_id, choice_id, exp):
+@app.route("/data/chapter/<int:chapter_id>/step/<int:step_id>/next-chapter/<int:next_chapter>/choice/<int:choice_id>/exp/<int:exp>")
+def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     global session
 
     exp_char = exp_character(session['save_id'], session['current_xp'], session['level'], exp)
     session = exp_char
 
-    chapter_and_step = get_chapter_step(game_file, chapter_id, choice_id)
+    if chapter_id != next_chapter:
+        chapter = next_chapter
+        step = choice_id
+    else:
+        chapter = chapter_id
+        step = choice_id
 
-    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=chapter_and_step['step'], level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
+    chapter_and_step = get_chapter_step(game_file, chapter, step)
+
+    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
 
     return redirect(url_for('data'))

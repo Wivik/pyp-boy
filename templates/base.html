@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 
 
-        {% if request.path == '/map' or request.path == '/map/' %}
+        {% if request.path == '/map' or request.path == '/map/' or request.path == '/data' %}
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
         crossorigin=""/>
