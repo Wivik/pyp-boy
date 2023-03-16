@@ -166,3 +166,5 @@ story/*
 scripts/*.db
 
 *.md.backup
+
+.vscode/
