@@ -5,9 +5,9 @@ from geopy.geocoders import Nominatim
 import psutil
 import requests
 import pathlib
-from utils.db import *
-from utils.vars import *
-from utils.functions import *
+import utils.db as db
+from utils.vars import global_vars, footer_vars, session
+import utils.functions as f
 import os
 import logging
 import requests
@@ -59,7 +59,7 @@ else:
 
 ## Start flask
 app = Flask(__name__)
-app.config['SECRET_KEY'] = load_secret_key(data_path)
+app.config['SECRET_KEY'] = f.load_secret_key(data_path)
 csrf = CSRFProtect()
 csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
@@ -67,18 +67,18 @@ geolocator = Nominatim(user_agent="pyp-boy")
 @app.route("/")
 def root():
     # create save file if missing
-    create_save_database(save_file)
+    db.create_save_database(save_file)
     # check if story db is present
     if not os.path.exists(game_file):
         # get the latest release
-        get_release = get_latest_release(repository_owner, repository_name, game_file)
-        return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, get_release=get_release, new=False)
+        get_release = f.get_latest_release(repository_owner, repository_name, game_file)
+        return render_template('db.html', footer_vars=footer_vars, global_vars=v.global_vars, get_release=get_release, new=False)
     else:
         ## check new version
-        db_version = get_game_db_version(game_file)
+        db_version = db.get_game_db_version(game_file)
         global_vars['app_version'] = db_version['version']
         # print(db_version['version'])
-        check_version = check_new_version(db_version, repository_owner, repository_name)
+        check_version = f.check_new_version(db_version, repository_owner, repository_name)
         if check_version:
             return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, new=True)
         else:
@@ -88,47 +88,47 @@ def root():
 def root_new():
     # delete current game db and download it
     os.remove(game_file)
-    get_latest_release(repository_owner, repository_name, game_file)
-    db_version = get_game_db_version(game_file)
+    f.get_latest_release(repository_owner, repository_name, game_file)
+    db.db_version = get_game_db_version(game_file)
     global_vars['app_version'] = db_version['version']
     return redirect(url_for('sys'))
 
 @app.route("/sys")
 @app.route("/sys/load/<int:save_id>")
 def sys(save_id=0):
-    try_test_save_file = test_save_file(save_file)
-    log.debug(test_save_file)
+    try_test_save_file = f.test_save_file(save_file)
+    log.debug(try_test_save_file)
     save_data = None
     read_save = None
-    if test_save_file:
-        save_data = list_save_data(save_file)
+    if try_test_save_file:
+        save_data = db.list_save_data(save_file)
     if save_id != 0:
-        read_save = get_save_data(save_file, save_id)
+        read_save = db.get_save_data(save_file, save_id)
     return render_template('sys/sys.html', footer_vars=footer_vars, global_vars=global_vars, try_test_save_file=try_test_save_file, save_data=save_data, read_save=read_save)
 
 @app.route("/sys/load/save/<int:save_id>")
 def sys_load_save(save_id):
-    save_data = get_save_data(save_file, save_id)
+    save_data = db.get_save_data(save_file, save_id)
 
     global session
 
-    session = register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'])
+    session = f.register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'])
 
     return redirect(url_for('data'))
 
 @app.route("/sys/create")
 def sys_create():
-    create_save_database(save_file)
+    db.create_save_database(save_file)
     return redirect(url_for('sys'))
 
 @app.route("/sys/new", methods=('GET', 'POST'))
 def sys_new():
     if request.method == 'POST':
-        ret = create_character(save_file, character_name=request.form['sys_new_character'], gender=request.form['sys_new_gender'])
+        ret = db.create_character(save_file, character_name=request.form['sys_new_character'], gender=request.form['sys_new_gender'])
         if ret is None:
             return redirect(url_for('sys'))
         else:
-            error_number = gen_random_hex_number()
+            error_number = f.gen_random_hex_number()
             flash(error_number + ' CREATE_CHARACTER '+str(ret))
             return redirect(url_for('sys'))
     else:
@@ -136,7 +136,7 @@ def sys_new():
 
 @app.route("/stat")
 def stat():
-    test_save_file = test_save_file(save_file)
+    test_save_file = f.test_save_file(save_file)
     return render_template('stat/stat.html', global_vars=global_vars, test_save_file=test_save_file)
 
 @app.route("/inv")
@@ -174,8 +174,8 @@ def map_search():
 
 @app.route("/data")
 def data():
-    save_data = get_save_data(save_file, session['save_id'])
-    chapter_and_step = get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
+    save_data = db.get_save_data(save_file, session['save_id'])
+    chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
 
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
 
@@ -184,7 +184,7 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     global session
 
-    exp_char = exp_character(session['current_xp'], session['level'], exp)
+    exp_char = f.exp_character(session['current_xp'], session['level'], exp)
     session = exp_char
 
     if chapter_id != next_chapter:
@@ -194,8 +194,8 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
         chapter = chapter_id
         step = choice_id
 
-    chapter_and_step = get_chapter_step(game_file, chapter, step)
+    chapter_and_step = db.get_chapter_step(game_file, chapter, step)
 
-    save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
+    db.save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
 
     return redirect(url_for('data'))
