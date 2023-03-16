@@ -24,12 +24,11 @@ log_file = os.path.join(log_path, 'app.log')
 repository_owner = 'Wivik'
 repository_name = 'pyp-boy'
 
-try:
-    if os.environ['PYP_BOY_LOG_LEVEL'] == 'DEBUG':
-        log_level = 'DEBUG'
-    else:
-        log_level = 'INFO'
-except:
+PYP_BOY_LOG_LEVEL = os.environ.get('PYP_BOY_LOG_LEVEL')
+
+if PYP_BOY_LOG_LEVEL is not None and PYP_BOY_LOG_LEVEL == 'DEBUG':
+    log_level = 'DEBUG'
+else:
     log_level = 'INFO'
 
 ## Create dir
