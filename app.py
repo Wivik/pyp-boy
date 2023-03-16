@@ -111,6 +111,8 @@ def sys(save_id=0):
 def sys_load_save(save_id):
     save_data = get_save_data(save_file, save_id)
 
+    global session
+
     session = register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'])
 
     return redirect(url_for('data'))
