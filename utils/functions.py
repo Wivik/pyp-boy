@@ -47,14 +47,9 @@ def register_session(save_id, **kwargs):
 def exp_character(save_id, current_xp, level, earned_xp):
     level = int(level)
     required_xp = 1000
-    # print(required_xp)
-    # print(current_xp)
-    # print(earned_xp)
     current_xp += earned_xp
-    # print(current_xp)
     if current_xp >= required_xp:
         # level up !
-        # print('level up')
         level += 1
         session['level'] = level
         # get back the over xp
@@ -65,7 +60,6 @@ def exp_character(save_id, current_xp, level, earned_xp):
             session['current_xp'] = 0
     # calculate new required xp
     else:
-        # print('not level up')
         session['current_xp'] = current_xp
         session['required_xp'] = required_xp
     return session
@@ -94,8 +88,6 @@ def get_latest_release(owner, repo, game_file):
     if response.ok:
         release = json.loads(response.content)
         asset_url = release["assets"][0]["browser_download_url"]
-        print(asset_url)
-        asset_filename = asset_url.split("/")[-1]
         response = requests.get(asset_url)
         if response.ok:
             with open(game_file, 'wb') as db:
@@ -110,8 +102,8 @@ def get_latest_release(owner, repo, game_file):
         return False
 
 def get_app_version(version_file):
-    file = open(version_file, 'r')
-    version = json.load(file)
+    ver_file = open(version_file, 'r')
+    version = json.load(ver_file)
     # print(version['version'])
     version = str(version['version'])
     return version
