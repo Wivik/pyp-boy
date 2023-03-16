@@ -44,7 +44,7 @@ def register_session(save_id, **kwargs):
 
     return session
 
-def exp_character(save_id, current_xp, level, earned_xp):
+def exp_character(current_xp, level, earned_xp):
     level = int(level)
     required_xp = 1000
     current_xp += earned_xp

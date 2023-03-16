@@ -183,7 +183,7 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     global session
 
-    exp_char = exp_character(session['save_id'], session['current_xp'], session['level'], exp)
+    exp_char = exp_character(session['current_xp'], session['level'], exp)
     session = exp_char
 
     if chapter_id != next_chapter:
