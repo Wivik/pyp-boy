@@ -7,14 +7,15 @@ import requests
 import json
 
 def load_secret_key(data_dir):
-    if not os.path.exists(os.path.join(data_dir, 'secret.key')):
+    secret_key_file = os.path.join(data_dir, 'secret.key')
+    if not os.path.exists(secret_key_file):
         secret_key = os.urandom(32)
-        with open(os.path.join(data_dir, 'secret.key'), 'wb') as file:
+        with open(secret_key_file, 'wb') as file:
             file.write(secret_key)
             file.close()
         return secret_key
     else:
-        with open(os.path.join(data_dir, 'secret.key'), 'rb') as file:
+        with open(secret_key_file, 'rb') as file:
             secret_key = file.read()
             file.close()
         return secret_key
