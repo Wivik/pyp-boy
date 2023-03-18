@@ -149,40 +149,28 @@ def stat():
     return render_template('stat/stat.html', global_vars=global_vars, test_save_file=test_save_file)
 
 @app.route("/inv")
-@app.route("/inv/weapons")
-@app.route("/inv/weapons/<int:weapon_id>")
+@app.route("/inv/<inv_category>")
+@app.route("/inv/<inv_category>/<int:item_id>")
 @check_session
-def inv_weapons(weapon_id=None):
-    if weapon_id is not None:
-        weapon = db.get_item(game_file, 'weapons', weapon_id)
-        selected_item = weapon
-        selected_item_type = 'weapon'
+def inv(item_id=None, inv_category=None):
+
+    if inv_category is None:
+        return redirect(url_for('inv', inv_category='weapon'))
+
+    if item_id is not None:
+        inv_item = db.get_item(game_file, inv_category, item_id)
+        selected_item = inv_item
+        selected_item_type = inv_category
     else:
         selected_item = None
         selected_item_type = None
-    inventory = db.get_inventory(save_file, session['save_id'], filter='weapon')
+    inventory = db.get_inventory(save_file, session['save_id'], filter=inv_category)
     items = []
     for item in inventory:
         items.append(item['item_id'])
-    weapons = db.get_weapons(game_file, items)
+    inv_items = db.get_inv_items(game_file, items, inv_category)
 
-    return render_template('inv/inv.html', global_vars=global_vars, inventory=weapons, selected_item=selected_item, selected_item_type=selected_item_type)
-
-@app.route("/inv/apparel")
-@check_session
-def inv_apparel():
-    return render_template('inv/inv.html', global_vars=global_vars)
-
-@app.route("/inv/aid")
-@check_session
-def inv_aid():
-    return render_template('inv/inv.html', global_vars=global_vars)
-
-@app.route("/inv/misc")
-@check_session
-def inv_misc():
-    return render_template('inv/inv.html', global_vars=global_vars)
-
+    return render_template('inv/inv.html', global_vars=global_vars, inv_category=inv_category, inventory=inv_items, selected_item=selected_item, selected_item_type=selected_item_type)
 
 @app.route("/map", methods=['GET'])
 @app.route("/map/", methods=['GET'])
@@ -231,9 +219,10 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
     session = exp_char
 
     url_params = request.args
+    print('url args')
     print(url_params['loot'])
     loot = url_params['loot']
-    if loot is not None:
+    if loot != 'None':
         db.loot(save_file, session['save_id'], loot)
 
     if chapter_id != next_chapter:

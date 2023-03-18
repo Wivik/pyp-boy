@@ -9,16 +9,15 @@
         <p>
             {{ chapter_and_step.text | replace('\n', '<br />')|safe | replace('{{CharName}}', session['character_name'])}}</p>
         <p>
-            {{ chapter_and_step.loot|default('nope') }}
             {% if chapter_and_step.choice_1 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_1, exp=chapter_and_step.exp, loot=chapter_and_step.loot|default('nope')|urlize) }}">{{ chapter_and_step.choice_1_desc }}</a>{% endif %}
-            {% if chapter_and_step.choice_2 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_2, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_2_desc }}</a>{% endif %}
-            {% if chapter_and_step.choice_3 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_3, exp=chapter_and_step.exp) }}">{{ chapter_and_step.choice_3_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_2 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_2, exp=chapter_and_step.exp, loot=chapter_and_step.loot|default('nope')|urlize) }}">{{ chapter_and_step.choice_2_desc }}</a>{% endif %}
+            {% if chapter_and_step.choice_3 is not none %}<a href="{{ url_for('data_choice', chapter_id=chapter_and_step.chapter, step_id=chapter_and_step.step, next_chapter=chapter_and_step.next_chapter, choice_id=chapter_and_step.choice_3, exp=chapter_and_step.exp, loot=chapter_and_step.loot|default('nope')|urlize) }}">{{ chapter_and_step.choice_3_desc }}</a>{% endif %}
         </p>
     </div>
     {% set illustration_type = chapter_and_step['img'].split(':')[0] %}
     {% set illustration_value = chapter_and_step['img'].split(':')[1] %}
     {% if illustration_type == 'img' %}
-    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/'+ illustration_value) }});" class="pixel-art">
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/back/'+ illustration_value) }});" class="pixel-art">
         &nbsp;
     </div>
     {% elif illustration_type == 'osm' %}

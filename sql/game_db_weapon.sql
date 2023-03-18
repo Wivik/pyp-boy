@@ -1,4 +1,4 @@
-CREATE TABLE "weapons" (
+CREATE TABLE "weapon" (
 	"id"	INTEGER,
 	"name"	TEXT NOT NULL,
 	"type"	TEXT NOT NULL,

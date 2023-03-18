@@ -129,9 +129,9 @@ def get_inventory(save_file, save_id, filter=''):
     else:
         return ret
 
-def get_weapons(game_file, items):
+def get_inv_items(game_file, items, item_type):
     list_items = str(tuple(items))
-    query = f'SELECT * FROM weapons WHERE id IN {list_items} ORDER BY name ASC'
+    query = f'SELECT * FROM {item_type} WHERE id IN {list_items} ORDER BY name ASC'
     ret = run_db_select_all_query(game_file, query, '')
     if ret is None:
         return
