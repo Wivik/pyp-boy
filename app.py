@@ -163,7 +163,7 @@ def inv_weapons(weapon_id=None):
     inventory = db.get_inventory(save_file, session['save_id'], filter='weapon')
     items = []
     for item in inventory:
-        items.append(item['id'])
+        items.append(item['item_id'])
     weapons = db.get_weapons(game_file, items)
 
     return render_template('inv/inv.html', global_vars=global_vars, inventory=weapons, selected_item=selected_item, selected_item_type=selected_item_type)
@@ -222,12 +222,19 @@ def data():
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
 
 @app.route("/data/chapter/<int:chapter_id>/step/<int:step_id>/next-chapter/<int:next_chapter>/choice/<int:choice_id>/exp/<int:exp>")
+@check_session
 def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     global session
 
     exp_char = f.exp_character(session['current_xp'], session['level'], exp)
     session = exp_char
+
+    url_params = request.args
+    print(url_params['loot'])
+    loot = url_params['loot']
+    if loot is not None:
+        db.loot(save_file, session['save_id'], loot)
 
     if chapter_id != next_chapter:
         chapter = next_chapter

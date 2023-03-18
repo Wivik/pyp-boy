@@ -13,5 +13,6 @@ CREATE TABLE "story" (
 	"choice_2_desc"	TEXT,
 	"choice_3_desc"	TEXT,
 	"exp"	INTEGER DEFAULT 100,
+	"loot"	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT)
 )

@@ -145,3 +145,22 @@ def get_item(game_file, db, item_id):
     else:
         return ret
 
+def add_item(save_file, save_id, item_id, item_type):
+    ret = run_db_change_query(save_file, 'INSERT INTO inventories (save_id, item_id, type) VALUES(?, ?, ?)', (save_id, item_id, item_type))
+    if ret is None:
+        return
+    else:
+        return ret
+
+def loot(save_file, save_id, items):
+    print('items')
+    print(items)
+    for loot in items.split(';'):
+        print('loot')
+        print(loot)
+        item_type, item_id = loot.split(':')
+        print(item_type)
+        print(item_id)
+        add_item(save_file, save_id, int(item_id), item_type)
+
+
