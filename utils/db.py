@@ -27,12 +27,16 @@ def run_db_change_query(db_file, query, values):
 
 def run_db_select_one_query(db_file, query, values):
     conn = get_db_connection(db_file)
+    print(query)
+    print(values)
     results = conn.execute(query, values).fetchone()
     conn.close()
     return results
 
 def run_db_select_all_query(db_file, query, values):
     conn = get_db_connection(db_file)
+    print(query)
+    print(values)
     results = conn.execute(query, values).fetchall()
     conn.close()
     return results
@@ -113,6 +117,29 @@ def save_progress(save_file, save_id, **kwargs):
 
 def get_game_db_version(game_file):
     ret = run_db_select_one_query(game_file, 'SELECT * FROM db_version', '')
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_inventory(save_file, save_id, filter=''):
+    ret = run_db_select_all_query(save_file, 'SELECT * FROM inventories WHERE save_id = ? AND type = ?', (save_id, filter))
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_weapons(game_file, items):
+    list_items = str(tuple(items))
+    query = f'SELECT * FROM weapons WHERE id IN {list_items} ORDER BY name ASC'
+    ret = run_db_select_all_query(game_file, query, '')
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_item(game_file, db, item_id):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM '+ db +' WHERE id = ?', (item_id,))
     if ret is None:
         return
     else:

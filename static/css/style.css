@@ -279,6 +279,10 @@ section > form > button.input_button {
     text-transform: uppercase;
 }
 
+#container_right span.descr {
+    text-transform: none;
+}
+
 #container a, a:visited {
     display: block;
     color: var(--main-link-color);
@@ -391,5 +395,5 @@ footer > img {
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(200%) brightness(50%) sepia(100%) hue-rotate(60deg);
     min-height: 480px;
-    background-position: top center;
+    background-position: center;
 }

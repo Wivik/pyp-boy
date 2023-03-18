@@ -3,7 +3,7 @@
     <ul>
         <li><a href="/data"{% if request.path.startswith('/data') %} class="active"{% endif %}>Data</a></li>
         <li><a href="/stat"{% if request.path.startswith('/stat') %} class="active"{% endif %}>Stat</a></li>
-        <li><a href="/inv"{% if request.path.startswith('/inv') %} class="active"{% endif %}>Inv</a></li>
+        <li><a href="{{ url_for('inv_weapons') }}"{% if request.path.startswith('/inv') %} class="active"{% endif %}>Inv</a></li>
         <li><a href="/map"{% if request.path.startswith('/map') %} class="active"{% endif %}>Map</a></li>
         <li><a href="/sys"{% if request.path.startswith('/sys') or request.path == '/' %} class="active"{% endif %}>Sys</a></li>
     </ul>

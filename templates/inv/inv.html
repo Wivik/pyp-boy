@@ -1,1 +1,32 @@
 {% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'inv/submenu.html' %}
+
+
+<div id="container">
+    <div id="container_left">
+        {% if inventory | length > 0 %}
+        {% for inv_item in inventory %}
+        <a href="{{ url_for('inv_weapons', weapon_id=inv_item.id) }}"{% if request.path.endswith(inv_item.id|string) %} class="active"{% endif %}>{{ inv_item.name }}</a>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <div id="container_right">
+        {% if selected_item  and selected_item | length > 0 %}
+        <div style="background-image: url('{{ url_for('static', filename='/img/'+selected_item_type+'/'+selected_item.img )}}');" class="pixel-art">
+            &nbsp;
+        </div>
+        <span>{{ selected_item.name }}</span>
+        <span>Type : {{ selected_item.type }}</span>
+        <span class="descr">{{ selected_item.descr }}</span>
+        {% else %}
+        &nbsp;
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

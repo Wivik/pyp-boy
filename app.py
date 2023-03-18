@@ -1,17 +1,18 @@
 from flask import Flask
 from flask import render_template, request, redirect, url_for, flash, session
 from flask_wtf.csrf import CSRFProtect
+from functools import wraps
 from geopy.geocoders import Nominatim
+from utils.vars import global_vars, footer_vars, session
+import json
+import logging
+import os
+import pathlib
 import psutil
 import requests
-import pathlib
-import utils.db as db
-from utils.vars import global_vars, footer_vars, session
-import utils.functions as f
-import os
-import logging
 import requests
-import json
+import utils.db as db
+import utils.functions as f
 
 ## set variables
 
@@ -63,6 +64,14 @@ app.config['SECRET_KEY'] = f.load_secret_key(data_path)
 csrf = CSRFProtect()
 csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")
+
+def check_session(f):
+    @wraps(f)
+    def decorated_check_session(*args, **kwargs):
+        if 'save_id' not in session:
+            return redirect(url_for('sys'))
+        return f(*args, **kwargs)
+    return decorated_check_session
 
 @app.route("/")
 def root():
@@ -140,8 +149,40 @@ def stat():
     return render_template('stat/stat.html', global_vars=global_vars, test_save_file=test_save_file)
 
 @app.route("/inv")
-def inventory():
+@app.route("/inv/weapons")
+@app.route("/inv/weapons/<int:weapon_id>")
+@check_session
+def inv_weapons(weapon_id=None):
+    if weapon_id is not None:
+        weapon = db.get_item(game_file, 'weapons', weapon_id)
+        selected_item = weapon
+        selected_item_type = 'weapon'
+    else:
+        selected_item = None
+        selected_item_type = None
+    inventory = db.get_inventory(save_file, session['save_id'], filter='weapon')
+    items = []
+    for item in inventory:
+        items.append(item['id'])
+    weapons = db.get_weapons(game_file, items)
+
+    return render_template('inv/inv.html', global_vars=global_vars, inventory=weapons, selected_item=selected_item, selected_item_type=selected_item_type)
+
+@app.route("/inv/apparel")
+@check_session
+def inv_apparel():
     return render_template('inv/inv.html', global_vars=global_vars)
+
+@app.route("/inv/aid")
+@check_session
+def inv_aid():
+    return render_template('inv/inv.html', global_vars=global_vars)
+
+@app.route("/inv/misc")
+@check_session
+def inv_misc():
+    return render_template('inv/inv.html', global_vars=global_vars)
+
 
 @app.route("/map", methods=['GET'])
 @app.route("/map/", methods=['GET'])
@@ -173,6 +214,7 @@ def map_search():
 
 
 @app.route("/data")
+@check_session
 def data():
     save_data = db.get_save_data(save_file, session['save_id'])
     chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])

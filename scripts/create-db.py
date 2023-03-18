@@ -22,6 +22,12 @@ with open('../sql/game_db_version.sql', 'r') as file:
     c.execute(sql)
     conn.commit()
 
+with open('../sql/game_db_weapons.sql', 'r') as file:
+    sql = file.read()
+    c.execute(sql)
+    conn.commit()
+
+
 c.execute('INSERT INTO db_version values(?)', (version,))
 conn.commit()
 

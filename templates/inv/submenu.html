@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li><a href="{{ url_for('inv_weapons')}}"{% if request.path.startswith('/inv/weapons') %} class="active"{% endif %}>Weapons</a></li>
+        <li><a href="{{ url_for('inv_apparel') }}"{% if request.path == '/inv/apparel' %} class="active"{% endif %}>Apparel</a></li>
+        <li><a href="{{ url_for('inv_aid') }}"{% if request.path == '/inv/aid' %} class="active"{% endif %}>Aid</a></li>
+        <li><a href="{{ url_for('inv_misc') }}"{% if request.path == '/inv/misc' %} class="active"{% endif %}>Misc</a></li>
+    </ul>
+
+</nav>

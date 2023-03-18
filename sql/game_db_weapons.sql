@@ -1,0 +1,8 @@
+CREATE TABLE "weapons" (
+	"id"	INTEGER,
+	"name"	TEXT NOT NULL,
+	"type"	TEXT NOT NULL,
+	"descr"	TEXT NOT NULL,
+	"img"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
