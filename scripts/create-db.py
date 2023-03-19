@@ -16,6 +16,7 @@ game_db_files = [
     '../sql/game_db_story.sql',
     '../sql/game_db_weapon.sql',
     '../sql/game_db_apparel.sql',
+    '../sql/game_db_misc.sql',
     '../sql/game_db_version.sql',
 ]
 
@@ -46,6 +47,7 @@ with open('../sql/story.csv', 'r') as story_file:
 inventory_files = [
     {'name': 'apparel', 'file': '../sql/apparel.csv'},
     {'name': 'weapon', 'file': '../sql/weapon.csv'},
+    {'name': 'misc', 'file': '../sql/misc.csv'},
 ]
 
 
