@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/Wivik/pyp-boy/compare/v0.5.0...v0.5.1) (2023-03-19)
+
+
+### Bug Fixes
+
+* :ambulance: missing function ([f643398](https://github.com/Wivik/pyp-boy/commit/f643398904cf3587547ef57bab543f66e9bcd4f3))
+
+
+
 # [0.5.0](https://github.com/Wivik/pyp-boy/compare/v0.4.2...v0.5.0) (2023-03-19)
 
 
@@ -40,15 +49,6 @@
 ### Features
 
 * :sparkles: save database is automatically generated ([18b9c55](https://github.com/Wivik/pyp-boy/commit/18b9c55f815a011551afcf8c8a8d4bf6aec78370))
-
-
-
-## [0.2.2](https://github.com/Wivik/pyp-boy/compare/v0.2.1...v0.2.2) (2023-03-13)
-
-
-### Bug Fixes
-
-* changelog empty ([b51f43e](https://github.com/Wivik/pyp-boy/commit/b51f43e355d90608d00ff14bfaeae6b816b87ce2))
 
 
 
