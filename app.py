@@ -98,7 +98,7 @@ def root_new():
     # delete current game db and download it
     os.remove(game_file)
     f.get_latest_release(repository_owner, repository_name, game_file)
-    db.db_version = get_game_db_version(game_file)
+    db_version = db.get_game_db_version(game_file)
     global_vars['app_version'] = db_version['version']
     return redirect(url_for('sys'))
 
