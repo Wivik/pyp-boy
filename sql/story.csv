@@ -106,4 +106,44 @@ Vous regardez brièvement par la fenêtre si le type vous a vu en espérant qu'i
 Des robots, ce sont des robots qui attaquent le repère de vos ravisseurs. Qui les contrôle ? Vous l'ignorez. Est-ce qu'ils seraient amicaux avec vous ? Mieux vaut éviter de chercher à le savoir dans l'immédiat.
 
 Vous profitez de la confusion ambiante pour vous enfuir et retourner à Rusty Springs pour les prévenir de la menace.",2,1,,,img:destroyed-houses.jpg,0,Suite,,,100,
-13,2,1,hey,2,,,,osm:47.51760/2.15498,0,,,,100,
+13,2,1,"Vous avez réussi à vous extraire du chaos ambiant et trouvé une cachette pour pouvoir enfin savoir où vous vous trouvez. Vous allumez votre fidèle Pip-boy.
+
+...
+
+Quincy Square
+
+...
+
+Par chance, et à votre grande surprise, Rusty Springs n'est qu'à seulement 5 kilomètres au nord-est de votre emplacement. Comment vos ravisseurs ont pu manquer son emplacement ? Ils n'ont pas du chercher beaucoup ou alors ils n'ont appris son existence que récemment. Bien que vous ayez passé assez peu de temps là bas, vous avez vite remarqué que Rusty Springs est un campement qui sait se montrer d'une grand discrétion.
+
+Vous entendez encore au loin le fracas de l'armée de robots qui a pris d'assaut le repère de vos ravisseurs. Vous décidez donc de poursuivre votre chemin vers Rusty Springs.",2,2,,,osm:47.51760/2.15498,0,Suite,,,100,
+14,2,2,"Arrivé à mi-chemin, votre corps vous rappelle avoir subit quelques violentes attaques récemment et vos jambes et votre dos deviennent de plus en plus douloureux. Continuer dans ces conditions devient de plus en plus difficile. Vous apercevez un bosquet qui pourra faire une cachette idéale le temps de vous reposer.",2,3,8,,osm:47.51760/2.15498,0,Vous décidez d'aller y faire une pause,"Rusty Springs est peut-être en danger, il ne faut pas s'arrête",,100,
+15,2,3,"Vous vous dirigez vers le bosquet qui est composé d'arbres morts mais aussi d'autres qui ont survécu à l'apocalypse nucléaire. Leurs formes biscornues et leur densité parviennent à faire une barrière visuelle idéale pour vous reposer quelques minutes à l'abri d'éventuels attaquants, et sa position en légère hauteur offre un bon angle de vue. 
+
+Après avoir gravi le talus, aidé par la barre à mine qui vous sert de canne, vous inspectez rapidement l'endroit et en concluez que vous êtes pour l'heure en sécurité.
+
+Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde désolé. ",2,4,,,osm:47.51760/2.15498,0,Suite,,,100,
+16,2,4,"""CrRRrrRzzzzffFFccRRRkkkk""
+
+Un bruit métallique et robotique vous fait sursauter. Les robots vous ont-ils déjà retrouvé ?
+
+Vous n'entendez pas de bruit de pas sourd et en cadence comme c'était le cas durant l'assaut duquel vous vous êtes échappé. Seulement un bruit robotique qui semble être isolé. Une machine qui a perdu son groupe ? est-elle hostile ? endommagée ?
+
+Cela pourrait être une opportunité d'en savoir un peu plus sur ces robots raiders qui ont attaqué vos ravisseurs. Ou aussi de tomber nez à nez avec une de ces machines tueuses et finir comme eux.",2,5,7,,osm:47.51760/2.15498,0,Inspecter l'origine du bruit,Ignorer le bruit et reprendre la route,,100,
+17,2,5,"Vous vous rapprochez avec la discrétion d'un félin de l'origine du bruit que vous avez entendu et qui se répète par intermittance. Votre coeur bat la chamade, et vous serrez la barre à mine de toutes vos force, prêt à frapper ce qui ne vous paraîtra pas amical.
+
+Le son se fait de plus en plus fort et se situe derrière un arbre. Vous semblez remarquer un amas de ferraille au sol et continuez d'approcher. Un bras de robot ayant perdu son corps gît devant vous. Vous levez votre regard et constatez que le reste du corps est disséminé un peu partout. Il s'agissait bien d'un robot, complètement démoli. 
+
+L'observation des débris vous laisse quelque peu pantois car vous remarquez que la carcasse ne ressemble à aucun autre genre de robots que vous ayez connu. C'est trop fin pour être un Protectron ou équivalent, et vous auriez vite remarqué s'il s'agissait d'une Sentinelle ou encore d'un Assaultron.
+
+La tête de la machine, peut-être bien la seule partie encore un tant soit peu attachée au reste du corps éparpillé ça et là, est à l'origine du grésillement métallique que vous avez entendu. Il semblerait que malgré son état, son ordinateur soit encore alimenté.",2,6,7,,osm:47.51760/2.15498,0,La démonter et l'emporter pour l'analyser plus tard,"Pas de le temps de s'en préoccuper, Rusty Springs est peut être en danger",,100,
+18,2,6,"Vous parvenez à extraire de la carcasse la tête. Séparée de sa source d'énergie, les agaçants grésillements qu'elle émettait ont cessé. 
+
+Vous ranger soigneusement la tête dans votre inventaire et décidez de reprendre votre route.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,misc:1
+19,2,7,"Vous avez eu assez d'émotions, de kidnappeurs, et de robots tueurs pour aujourd'hui. Tout votre corps hurle de douleur et dépuisement, mais il vous reste de la route à faire. 
+
+Ce n'est pas le moment de tergiverser, il faut rentrer à Rusty Springs pour les prévenir du danger qui les attend.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,
+20,2,8,"Malgré votre corps dont il n'y a probablement aucune partie qui ne hurle de douleur et la fatigue, vous ne pouvez pas vous permettre de vous arrêter.
+
+Rusty Springs vous a reccueilli alors que vous êtiez au plus mal et vous avez une dette envers ce campement. Vous prenez votre courage et votre volonté à deux mains et reprenez votre route.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,
+21,3,1,To be continued...,,,,,img:tbc.jpg,0,,,,100,
