@@ -63,6 +63,23 @@ def create_save_database(save_file):
             PRIMARY KEY("id")
         )
         ''')
+        c.execute('''
+        CREATE TABLE "story_path" (
+            "id"	INTEGER,
+            "chapter"	INTEGER NOT NULL,
+            "step"	INTEGER NOT NULL,
+            PRIMARY KEY("id" AUTOINCREMENT)
+        )
+        ''')
+        c.execute('''
+        CREATE TABLE "inventories" (
+            "id"	INTEGER,
+            "save_id"	INTEGER NOT NULL,
+            "item_id"	INTEGER NOT NULL,
+            "type"	TEXT NOT NULL,
+            PRIMARY KEY("id" AUTOINCREMENT)
+        )
+        ''')
         conn.commit()
     except Error as e:
         print(e)
