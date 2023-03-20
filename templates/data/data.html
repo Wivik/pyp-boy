@@ -17,7 +17,7 @@
     {% set illustration_type = chapter_and_step['img'].split(':')[0] %}
     {% set illustration_value = chapter_and_step['img'].split(':')[1] %}
     {% if illustration_type == 'img' %}
-    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/back/'+ illustration_value) }});" class="pixel-art">
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/back/'+ illustration_value) }});" class="pixel-art{% if chapter_and_step.end == 1 %} gameover{% endif %}">
         &nbsp;
     </div>
     {% elif illustration_type == 'osm' %}

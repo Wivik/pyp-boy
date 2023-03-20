@@ -1,8 +1,7 @@
 <nav>
     <ul>
-        <li><a href="/data"{% if request.path.startswith("/data") %} class="active"{% endif %}>Quests</a></li>
-        <li><a href="/data"{% if request.path.startswith("/data/aa") %} class="active"{% endif %}>Something</a></li>
-        <li><a href="/data"{% if request.path.startswith("/data/bb") %} class="active"{% endif %}>else</a></li>
+        <li><a href="/data"{% if request.path == "/data" %} class="active"{% endif %}>Journey</a></li>
+        <li><a href="/data/log"{% if request.path.startswith("/data/log") %} class="active"{% endif %}>Log</a></li>
     </ul>
 
 </nav>

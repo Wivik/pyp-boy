@@ -66,6 +66,7 @@ def create_save_database(save_file):
         c.execute('''
         CREATE TABLE "story_path" (
             "id"	INTEGER,
+            "save_id"	INTEGER,
             "chapter"	INTEGER NOT NULL,
             "step"	INTEGER NOT NULL,
             PRIMARY KEY("id" AUTOINCREMENT)
@@ -185,4 +186,16 @@ def loot(save_file, save_id, items):
         print(item_id)
         add_item(save_file, save_id, int(item_id), item_type)
 
+def save_story_path(save_file, save_id, chapter, step):
+    ret = run_db_change_query(save_file, 'INSERT INTO story_path (save_id, chapter, step) VALUES(?, ?, ?)', (save_id, chapter, step))
+    if ret is None:
+        return
+    else:
+        return ret
 
+def get_story_path(save_file, save_id):
+    ret = run_db_select_all_query(save_file, 'SELECT * FROM story_path WHERE save_id = ? ORDER BY chapter, step ASC', (save_id,))
+    if ret is None:
+        return
+    else:
+        return ret

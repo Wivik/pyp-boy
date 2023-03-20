@@ -185,10 +185,11 @@ div.flash {
 
 /* section */
 section {
-    /* min-height: 610px; */
+    height: 800px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 /* search forms */
@@ -259,7 +260,6 @@ section > form > button.input_button {
 #container_left {
     /* height: 45%; */
     width: 60%;
-    /* min-height: 180px; */
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -354,17 +354,42 @@ section > form > button.input_button {
     color: #8aff00;
 }
 
+/* container story path */
+
+#container_story {
+    width: 70%;
+    height: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left:1rem;
+    padding-right:1rem;
+    overflow-y: scroll;
+    scrollbar-color: var(--main-link-color) var(--bg);
+}
+
+#container_story::-webkit-scrollbar {
+    width: 15px;
+}
+
+#container_story::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+#container_story::-webkit-scrollbar-thumb {
+    background-color: var(--main-link-color);
+}
 /* footer */
 
 footer {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     display: flex;
     height: 2em;
     justify-content: space-between;
     padding: 0 1.5em;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     right: 0;
@@ -397,3 +422,17 @@ footer > img {
     min-height: 480px;
     background-position: center;
 }
+
+.gameover {
+    animation: fadeIn 30s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+

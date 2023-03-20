@@ -31,7 +31,7 @@ Vous vous effondrez au sol, votre vue se teint de rouge, et vous fermez les yeux
 
 Vos dernières questions resteront sans réponses alors que vous perdez conscience.
 
-Vous êtes mort.",1,,,,img:basement.jpg,1,,,,0,
+Vous êtes mort.",1,,,,img:gameover.png,1,,,,0,
 5,1,5,"Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi par des assaillants. Vous ne vous souvenez pas vraiment de tous les détails, mais l'accueil chaleureux de ce campement à une époque où c'est chacun pour soit vous a quand même marqué.
 
 Vous hésitez donc à trahir ceux qui vous ont aidé alors que vous êtiez dans le besoin.
@@ -122,7 +122,7 @@ Vous entendez encore au loin le fracas de l'armée de robots qui a pris d'assaut
 
 Après avoir gravi le talus, aidé par la barre à mine qui vous sert de canne, vous inspectez rapidement l'endroit et en concluez que vous êtes pour l'heure en sécurité.
 
-Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde désolé. ",2,4,,,osm:47.51760/2.15498,0,Suite,,,100,
+Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde désolé.",2,4,,,osm:47.51760/2.15498,0,Suite,,,100,
 16,2,4,"""CrRRrrRzzzzffFFccRRRkkkk""
 
 Un bruit métallique et robotique vous fait sursauter. Les robots vous ont-ils déjà retrouvé ?

@@ -205,6 +205,8 @@ def map_search():
 @check_session
 def data():
     save_data = db.get_save_data(save_file, session['save_id'])
+    ## If it's the first chapter, register it in the path
+    db.save_story_path(save_file, session['save_id'], 1, 1)
     chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
 
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
@@ -236,4 +238,17 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     db.save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
 
+    db.save_story_path(save_file, session['save_id'], chapter_and_step['chapter'], choice_id)
+
     return redirect(url_for('data'))
+
+@app.route("/data/log")
+@check_session
+def data_log():
+    story_path = db.get_story_path(save_file, session['save_id'])
+
+    story = []
+    for story_row in story_path:
+        story_step = db.get_chapter_step(game_file, story_row['chapter'], story_row['step'])
+        story.append(story_step['text'])
+    return render_template('data/log.html', global_vars=global_vars, story=story)

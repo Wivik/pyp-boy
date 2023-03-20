@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'data/submenu.html' %}
+
+<div id="container_story">
+    {% for line in story %}
+    <p>{{ line | replace('\n', '<br />')|safe }}</p>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
