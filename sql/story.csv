@@ -31,7 +31,7 @@ Vous vous effondrez au sol, votre vue se teint de rouge, et vous fermez les yeux
 
 Vos dernières questions resteront sans réponses alors que vous perdez conscience.
 
-Vous êtes mort.",1,,,,img:gameover.png,1,,,,0,
+Vous êtes mort.",1,,,,img:basement.jpg,1,,,,0,
 5,1,5,"Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi par des assaillants. Vous ne vous souvenez pas vraiment de tous les détails, mais l'accueil chaleureux de ce campement à une époque où c'est chacun pour soit vous a quand même marqué.
 
 Vous hésitez donc à trahir ceux qui vous ont aidé alors que vous êtiez dans le besoin.
@@ -122,28 +122,28 @@ Vous entendez encore au loin le fracas de l'armée de robots qui a pris d'assaut
 
 Après avoir gravi le talus, aidé par la barre à mine qui vous sert de canne, vous inspectez rapidement l'endroit et en concluez que vous êtes pour l'heure en sécurité.
 
-Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde désolé.",2,4,,,osm:47.51760/2.15498,0,Suite,,,100,
+Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde désolé. ",2,4,,,img:desolated-hills.jpg,0,Suite,,,100,
 16,2,4,"""CrRRrrRzzzzffFFccRRRkkkk""
 
 Un bruit métallique et robotique vous fait sursauter. Les robots vous ont-ils déjà retrouvé ?
 
 Vous n'entendez pas de bruit de pas sourd et en cadence comme c'était le cas durant l'assaut duquel vous vous êtes échappé. Seulement un bruit robotique qui semble être isolé. Une machine qui a perdu son groupe ? est-elle hostile ? endommagée ?
 
-Cela pourrait être une opportunité d'en savoir un peu plus sur ces robots raiders qui ont attaqué vos ravisseurs. Ou aussi de tomber nez à nez avec une de ces machines tueuses et finir comme eux.",2,5,7,,osm:47.51760/2.15498,0,Inspecter l'origine du bruit,Ignorer le bruit et reprendre la route,,100,
+Cela pourrait être une opportunité d'en savoir un peu plus sur ces robots raiders qui ont attaqué vos ravisseurs. Ou aussi de tomber nez à nez avec une de ces machines tueuses et finir comme eux.",2,5,7,,img:desolated-hills.jpg,0,Inspecter l'origine du bruit,Ignorer le bruit et reprendre la route,,100,
 17,2,5,"Vous vous rapprochez avec la discrétion d'un félin de l'origine du bruit que vous avez entendu et qui se répète par intermittance. Votre coeur bat la chamade, et vous serrez la barre à mine de toutes vos force, prêt à frapper ce qui ne vous paraîtra pas amical.
 
 Le son se fait de plus en plus fort et se situe derrière un arbre. Vous semblez remarquer un amas de ferraille au sol et continuez d'approcher. Un bras de robot ayant perdu son corps gît devant vous. Vous levez votre regard et constatez que le reste du corps est disséminé un peu partout. Il s'agissait bien d'un robot, complètement démoli. 
 
-L'observation des débris vous laisse quelque peu pantois car vous remarquez que la carcasse ne ressemble à aucun autre genre de robots que vous ayez connu. C'est trop fin pour être un Protectron ou équivalent, et vous auriez vite remarqué s'il s'agissait d'une Sentinelle ou encore d'un Assaultron.
+L'observation des débris vous laisse quelque peu pantois car vous remarquez que la carcasse ne ressemble à aucun autre genre de robots que vous ayez connu. Cela ne ressemble ni à un Protectron, ni à une Sentinelle et encore moins un Assaultron.
 
-La tête de la machine, peut-être bien la seule partie encore un tant soit peu attachée au reste du corps éparpillé ça et là, est à l'origine du grésillement métallique que vous avez entendu. Il semblerait que malgré son état, son ordinateur soit encore alimenté.",2,6,7,,osm:47.51760/2.15498,0,La démonter et l'emporter pour l'analyser plus tard,"Pas de le temps de s'en préoccuper, Rusty Springs est peut être en danger",,100,
+La tête de la machine, peut-être bien la seule partie encore un tant soit peu attachée au reste du corps éparpillé ça et là, est à l'origine du grésillement métallique que vous avez entendu. Il semblerait que malgré son état, son ordinateur soit encore alimenté.",2,6,7,,img:destroyed-robot.jpg,0,La démonter et l'emporter pour l'analyser plus tard,"Pas de le temps de s'en préoccuper, Rusty Springs est peut être en danger",,100,
 18,2,6,"Vous parvenez à extraire de la carcasse la tête. Séparée de sa source d'énergie, les agaçants grésillements qu'elle émettait ont cessé. 
 
-Vous ranger soigneusement la tête dans votre inventaire et décidez de reprendre votre route.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,misc:1
-19,2,7,"Vous avez eu assez d'émotions, de kidnappeurs, et de robots tueurs pour aujourd'hui. Tout votre corps hurle de douleur et dépuisement, mais il vous reste de la route à faire. 
+Vous rangez soigneusement la tête dans votre inventaire et décidez de reprendre votre route.",3,1,,,img:destroyed-robot.jpg,0,Suite,,,100,misc:1
+19,2,7,"Vous avez eu assez d'émotions, de kidnappeurs, et de robots tueurs pour aujourd'hui. Tout votre corps hurle de douleur et d'épuisement, mais il vous reste de la route à faire. 
 
-Ce n'est pas le moment de tergiverser, il faut rentrer à Rusty Springs pour les prévenir du danger qui les attend.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,
-20,2,8,"Malgré votre corps dont il n'y a probablement aucune partie qui ne hurle de douleur et la fatigue, vous ne pouvez pas vous permettre de vous arrêter.
+Ce n'est pas le moment de tergiverser, il faut rentrer à Rusty Springs pour les prévenir du danger qui les attend.",3,1,,,img:desolated-hills.jpg,0,Suite,,,100,
+20,2,8,"Il n'y a probablement plus aucune partie de votre corps qui ne hurle pas de douleur, et vous découvrez que vous pouviez avoir mal à des endroits insoupçonnés. Mais malgré cela, vous ne pouvez-pas vous permettre de vous arrêter.
 
-Rusty Springs vous a reccueilli alors que vous êtiez au plus mal et vous avez une dette envers ce campement. Vous prenez votre courage et votre volonté à deux mains et reprenez votre route.",3,1,,,osm:47.51760/2.15498,0,Suite,,,100,
+Rusty Springs vous a reccueilli alors que vous êtiez au plus mal et vous avez une dette envers ce campement. Vous prenez votre courage et votre volonté à deux mains et reprenez votre route.",3,1,,,img:desolated-hills.jpg,0,Suite,,,100,
 21,3,1,To be continued...,,,,,img:tbc.jpg,0,,,,100,
