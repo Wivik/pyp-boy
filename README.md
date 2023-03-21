@@ -82,3 +82,5 @@ Unless other statement, this project is licensed under MIT.
 Maps based on [OpenStreetMap](https://www.openstreetmap.org/), using [Leaflet](https://leafletjs.com) and [Stamenmaps](http://maps.stamen.com/#watercolor/12/37.7706/-122.3782) render.
 
 Icons are from [Remix Icon](https://remixicon.com).
+
+The game's illustrations has been generated with [Craiyon](https://www.craiyon.com).
