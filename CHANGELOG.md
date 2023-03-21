@@ -1,3 +1,13 @@
+# [0.6.0](https://github.com/Wivik/pyp-boy/compare/v0.5.1...v0.6.0) (2023-03-20)
+
+
+### Features
+
+* :sparkles: add story log feature ([1d10ec4](https://github.com/Wivik/pyp-boy/commit/1d10ec47a1737ddf520ba35014307441d8333c49))
+* :sparkles: add story path table ([a8ca05c](https://github.com/Wivik/pyp-boy/commit/a8ca05c43493567cf5ee966bdbacd5af0fe759e3))
+
+
+
 ## [0.5.1](https://github.com/Wivik/pyp-boy/compare/v0.5.0...v0.5.1) (2023-03-19)
 
 
@@ -40,15 +50,6 @@
 ### Features
 
 * :sparkles: fixed new chapter issue ([b6b969a](https://github.com/Wivik/pyp-boy/commit/b6b969ae874f2f99b964b496c58c1334bc017ba9))
-
-
-
-# [0.3.0](https://github.com/Wivik/pyp-boy/compare/v0.2.2...v0.3.0) (2023-03-14)
-
-
-### Features
-
-* :sparkles: save database is automatically generated ([18b9c55](https://github.com/Wivik/pyp-boy/commit/18b9c55f815a011551afcf8c8a8d4bf6aec78370))
 
 
 
