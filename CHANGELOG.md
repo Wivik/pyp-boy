@@ -1,3 +1,17 @@
+# [0.7.0](https://github.com/Wivik/pyp-boy/compare/v0.6.0...v0.7.0) (2023-03-21)
+
+
+### Bug Fixes
+
+* :memo: fixed some typos ([039a452](https://github.com/Wivik/pyp-boy/commit/039a45290853efef604716b2bd446e1b46365188))
+
+
+### Features
+
+* :sparkles: updated various illustrations ([3e121c5](https://github.com/Wivik/pyp-boy/commit/3e121c51cbe694ec50ecd23735071f9706d43266))
+
+
+
 # [0.6.0](https://github.com/Wivik/pyp-boy/compare/v0.5.1...v0.6.0) (2023-03-20)
 
 
@@ -41,15 +55,6 @@
 * db creation script ([0d7ee70](https://github.com/Wivik/pyp-boy/commit/0d7ee70c5a0de924f563583f7f642f635c47cede))
 * db creation script ([5dabf00](https://github.com/Wivik/pyp-boy/commit/5dabf00e9b3ac5f96b5b6947dcab51fafa64004e))
 * db creation script ([e0ff43c](https://github.com/Wivik/pyp-boy/commit/e0ff43cb8f9ad5c1cac9df63478574ef2448703c))
-
-
-
-# [0.4.0](https://github.com/Wivik/pyp-boy/compare/v0.3.0...v0.4.0) (2023-03-15)
-
-
-### Features
-
-* :sparkles: fixed new chapter issue ([b6b969a](https://github.com/Wivik/pyp-boy/commit/b6b969ae874f2f99b964b496c58c1334bc017ba9))
 
 
 
