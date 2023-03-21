@@ -64,13 +64,12 @@ def create_save_database(save_file):
         )
         ''')
         c.execute('''
-        CREATE TABLE "story_path" (
-            "id"	INTEGER,
-            "save_id"	INTEGER,
-            "chapter"	INTEGER NOT NULL,
-            "step"	INTEGER NOT NULL,
-            PRIMARY KEY("id" AUTOINCREMENT)
-        )
+            CREATE TABLE "story_path" (
+                "save_id"	INTEGER,
+                "chapter"	INTEGER NOT NULL,
+                "step"	INTEGER NOT NULL,
+                CONSTRAINT "pk" PRIMARY KEY("save_id","chapter","step")
+            );
         ''')
         c.execute('''
         CREATE TABLE "inventories" (

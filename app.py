@@ -206,7 +206,8 @@ def map_search():
 def data():
     save_data = db.get_save_data(save_file, session['save_id'])
     ## If it's the first chapter, register it in the path
-    db.save_story_path(save_file, session['save_id'], 1, 1)
+    if save_data['current_chapter'] == 1 and save_data['current_step'] == 1:
+        db.save_story_path(save_file, session['save_id'], 1, 1)
     chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
 
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
