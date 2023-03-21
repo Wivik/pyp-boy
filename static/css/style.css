@@ -185,7 +185,7 @@ div.flash {
 
 /* section */
 section {
-    height: 800px;
+    min-height: 800px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
