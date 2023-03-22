@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/Wivik/pyp-boy/compare/v0.7.1...v0.8.0) (2023-03-22)
+
+
+### Features
+
+* :sparkles: fixed typos, add aid inventory ([678f631](https://github.com/Wivik/pyp-boy/commit/678f6318fd3cb526061fdd54f1ecac6b42baddb6))
+
+
+
 ## [0.7.1](https://github.com/Wivik/pyp-boy/compare/v0.7.0...v0.7.1) (2023-03-21)
 
 
@@ -37,22 +46,6 @@
 ### Bug Fixes
 
 * :ambulance: missing function ([f643398](https://github.com/Wivik/pyp-boy/commit/f643398904cf3587547ef57bab543f66e9bcd4f3))
-
-
-
-# [0.5.0](https://github.com/Wivik/pyp-boy/compare/v0.4.2...v0.5.0) (2023-03-19)
-
-
-### Features
-
-* :sparkles: init inventory management ([ae10231](https://github.com/Wivik/pyp-boy/commit/ae102312552cf19145a8ba45ef564502b103b70f))
-* :sparkles: inventory supports misc ([ff364bd](https://github.com/Wivik/pyp-boy/commit/ff364bd4d9bade463fc7df91afeef2a2de4f313d))
-* :sparkles: moved assets to sub folder ([83df64e](https://github.com/Wivik/pyp-boy/commit/83df64e637b1c61f83d9f1e937762d465e8b5f84))
-* :sparkles: story continuation ([c9819c3](https://github.com/Wivik/pyp-boy/commit/c9819c311b773225421c235e17b84143f9ac4d94))
-* add loot to story ([8769db6](https://github.com/Wivik/pyp-boy/commit/8769db6755d7f58d3d278628184b34baedeceba3))
-* csv files for apparel and weapon ([986a301](https://github.com/Wivik/pyp-boy/commit/986a3013a1caf2b2809b04a7364d8fdbd6c7f888))
-* database creation updated ([6ab4b77](https://github.com/Wivik/pyp-boy/commit/6ab4b776dc7016a5963d4ea1cb389078ad048c8e))
-* inventory management is getter better ([3dda956](https://github.com/Wivik/pyp-boy/commit/3dda95606d2d9d37a474ae5c3be0d358f4463fc7))
 
 
 
