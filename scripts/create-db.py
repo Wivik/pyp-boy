@@ -16,6 +16,7 @@ game_db_files = [
     '../sql/game_db_story.sql',
     '../sql/game_db_weapon.sql',
     '../sql/game_db_apparel.sql',
+    '../sql/game_db_aid.sql',
     '../sql/game_db_misc.sql',
     '../sql/game_db_version.sql',
 ]
