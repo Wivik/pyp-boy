@@ -1,113 +1,112 @@
-1,1,1,"Vous vous réveillez en sursaut après avoir reçu le contenu d'un seau d'eau glacée en pleine figure. ""Où suis-je ? Qu'est-ce qu'il se passe ?"". Les questions tournent en boucle dans votre tête confuse par ce réveil brutal. Commençant à retrouver une certaine lucidité, vous constatez alors avec stupeur que vous êtes assis au sol, les mains ligotées dans le dos. En levant votre regard, vous apercevez celui qui vient de vous balancer ce seau d'eau.
+1,1,1,"You wake up with a start after having the contents of a ice water bucket thrown in your face. ""Where am I? What's going on?"". The questions loop around in your head confused by the rude awakening. Beginning to regain some lucidity, you then notice with amazement that you are sitting on the ground, your hands tied behind your back. As you look up, you see the man who just threw the bucket of water at you.
 
-""Où est ton campement ?"", demanda l'homme devant vous en hurlant comme s'il vous croyait sourd. 
+""Where's your camp?"" the man in front of you asked, shouting as if he thought you were deaf. 
 
-""Campement, campement, campement..."" ce mot résonne dans votre tête encore en panique et alerte. La vive douleur à la base de votre crâne vous laisse comprendre qu'on ne vous a pas tiré de votre sommeil mais emmené de force après vous avoir violemment assommé. Ce type veut savoir où se trouve le campement dans lequel vous avez récemment trouvé refuge et avez été accueilli alors que vous êtiez en mauvais poin",1,5,3,2,img:basement.jpg,0,Vous donnez à l'interrogateur ce qu'il veut,Vous tentez de tenir tête à l'interrogatoire et refusez de donner des informations,Vous ne dites rien et observez l'endroit à la recherche d'une échappatoire,100,apparel:1;apparel:2
-2,1,2,"Vous observez l'endroit dans lequel vous êtes. Il semblerait que ce soit une sorte de cave dans le sous-sol d'une maison en ruines. Il y a des petites fenêtres en haut des murs dont la plupart sont brisées qui pourraient permettre de s'échapper en passant à travers. Il y a pas mal d'outils également qui traînent au sol ou sur une table qui semble servir d'établi de fortune. Vous faites un rapide inventaire de ce que votre regard confus parvient à identifer : marteaux, tournevis, des cordes, des chaînes, et ... Un corps gisant sur une couche au fond de la pièce.
+""Camp, camp, camp..."" that word echoes in your head still panicked and alert. The sharp pain at the base of your skull lets you know that you have not been roused from your sleep but taken away by force after being violently knocked out. This guy wants to know the location of the camp where you recently found refuge and were taken in when you were in bad shape.",1,5,3,2,img:basement.jpg,0,You give the guy what he wants,You try to stand up to the interrogation and refuse to give information,You say nothing and look around for an escape plan,100,apparel:1;apparel:2
+2,1,2,"You observe the place you are in. It seems to be some kind of cellar in the basement of a ruined house. There are small windows at the top of the walls, most of them broken, which could allow you to escape through them. There are quite a few tools also lying around on the floor or on a table that seems to serve as a makeshift workbench. You make a quick inventory of what your confused look manages to identify: hammers, screwdrivers, ropes, chains, and ... A body lying on a mattress at the back of the room.
 
-Visiblement, vos ravisseurs ne sont pas des plaisantins et soit le gars au fond a eu moins de chance, soit il était déjà bien amoché car même une goule a meilleure mine que ce qui semblerait être les vestiges de son visage.
+Obviously, your captors are no joke and either the guy at the back was less lucky, or he was already pretty beat up because even a ghoul looks better than what would appear to be the remains of his face.
 
-""T'es sourd ou quoi ? Je t'ai demandé où se trouve ton campement !""
+""Are you deaf or something? I asked you where your camp is!""
 
-Votre interrogateur se fait de plus en plus pressé, comme s'il était sous pression pour obtenir des résultats au plus vite. Il s'emparre alors d'une sorte de barre à mine et la brandit avec l'air menaçant. Vous n'avez pas vraiment envie de finir comme celui qui semblerait avoir été votre prédécesseur.",1,5,3,,img:basement.jpg,0,Vous tentez de mentir sur l'emplacement du campement,Vous refusez de répondre,,100,
-3,1,3,"""Quel campement ?"" répondez-vous à votre agresseur. Vous refusez de lui dire quoi que ce soit à propos du dernier endroit où vous avez trouvé refuge. Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi dans des circonstances dont vous ne vous souvenez plus.
+Your interrogator becomes more and more urgent, as if he is under pressure to get results as soon as possible. He then grabs some kind of crowbar and brandishes it with a threatening look. You don't really want to end up like the one who seems to have been your predecessor.",1,5,3,,img:basement.jpg,0,You try to lie about the location of the camp,You refuse to answer,,100,
+3,1,3,"""What camp?"" you answer your attacker. You refuse to tell him anything about the last place you took refuge. Rusty Springs took you in while you were injured and being chased under circumstances you no longer remember.
 
-""Te fous pas de ma gueule !"" hurla l'interrogateur en postillonant. L'espace d'un instant, vous avez un doute entre savoir si être assis sur le plancher de cette cave, entendre ce type hurler, sentir son odeur putride, ou ses postillons, est le plus désagréable.
+""Don't fuck with me!"" the interrogator yelled, sputtering. For a moment, you have a doubt between whether sitting on the floor of this basement, hearing this guy scream, smelling his putrid odor, or his spitting is the most unpleasant.
 
-Mais l'heure n'était pas à ce genre de question futile, surtout quand le gorille en face se saisie d'une sorte de barre à mine et la brandi devant vous avec l'air menaçant.
+But this was not the time for such trivial questions, especially when the gorilla in front of you grabs some kind of crowbar and brandishes it in front of you with a threatening look.
 
-Il s'approche une nouvelle fois et vous assène un violent coup de pied dans les jambes.
+He approaches once again and gives you a violent kick in the legs.
 
-""Je te le demande une dernière fois gentiement. Où est ton campement ?""
+""I'm asking you one last time nicely. Where is your camp?""
 
-Vous devez réfléchir vite, car la prochaine sommation risque d'être avec cette tige de métal.",1,5,4,,img:basement.jpg,0,Vous mentez à propos du campement,Vous vous obstinez à refuser de répondre,,0,
-4,1,4,"Le gorille gueulard recule et commence à faire les 400 pas dans la petite cave où vous vous situez. Il fait des aller et venues devant vous en faisant râcler au sol la barre à mines.
+You need to think fast, because the next summons might be with that metal rod.",1,5,4,,img:basement.jpg,0,You lie about the camp,You insist on refusing to answer,,0,
+4,1,4,"The screaming gorilla backs up and starts pacing back and forth in the small cellar where you are standing. He paces back and forth in front of you as he rasps the crowbar on the floor.
 
-""OK je vois, tu as donc l'intention de nous être d'aucune utilité. Il te suffit de nous dire de quel campement tu viens. On sait qu'il y en a un dans le coin avec assez de ressources pour passer l'hiver qui approche.""
+""OK I see, so you intend to be of no use to us. All you have to do is tell us which camp you are from. We know there's one around here with enough resources to get through the coming winter.""
 
-Il se retourne une dernière fois devant vous et vous regarde de haut. Votre tête hurle de douleur et ressent toujours le coup qui vous a amené ici, et vos jambes ont rejoint le concert. L'espace d'un instant, vous avez comme une sensation de soulagement juste avant de recevoir un violent coup en pleine tête avec la barre de métal.
+He turns around one last time in front of you and looks down on you. Your head is screaming in pain and still feeling the blow that brought you here, and your legs have joined the concert. For a moment, you feel a sense of relief just before you are hit hard in the head with the metal bar.
 
-Vous vous effondrez au sol, votre vue se teint de rouge, et vous fermez les yeux en pensant ""monde de merde"". Encore légèrement conscient, vous entendez ce qui semble être soudainement un immense fracas et des cris de panique, ou alors est-ce votre traumatisme crânien qui vous fait imaginer tout ceci ? 
+You collapse to the ground, your eyesight turns red, and you close your eyes thinking ""world of crap"". Still slightly conscious, you hear what seems to be a sudden huge crash and screams of panic, or is it your head injury that makes you imagine all this? 
 
-Vos dernières questions resteront sans réponses alors que vous perdez conscience.
+Your last questions will remain unanswered as you lose consciousness.
 
-Vous êtes mort.",1,,,,img:basement.jpg,1,,,,0,
-5,1,5,"Rusty Springs vous a accueilli alors que vous êtiez blessé et poursuivi par des assaillants. Vous ne vous souvenez pas vraiment de tous les détails, mais l'accueil chaleureux de ce campement à une époque où c'est chacun pour soit vous a quand même marqué.
+You are dead.",1,,,,img:basement.jpg,1,,,,0,
+5,1,5,"Rusty Springs took you in while you were wounded and being chased by assailants. You don't really remember all the details, but the warmth of the camp at a time when it was everyone for themselves made an impression on you.
 
-Vous hésitez donc à trahir ceux qui vous ont aidé alors que vous êtiez dans le besoin.
+So you hesitate to betray those who helped you in your time of need.
 
-Toujours agard et totalement ignorant de l'endroit où vous vous situez actuellement, vous marmonnez quelque chose à propos d'un campement nommé Blightwoods au sud-est d'une station Red Rocket.
+Still confused and totally unaware of your current location, you mutter something about a camp called Blightwoods, southeast of a Red Rocket station.
 
-""Blightwoods ? Ca m'dis rien ... Tu pipeauterais pas un peu ?""
+""Blightwoods? I don't know about that... Do you think I'm a fool ?""
 
-Peu convaincu par votre réponse, il s'emparre d'une sorte de barre à mine et commence à vous menacer avec.
+Unconvinced by your answer, he grabs some kind of crowbar and starts threatening you with it.
 
-""Maintenant fini de rigoler, tu vas me dire où est ton campement, à moins que tu n'aies envie de finir comme lui"".
+""Now you're going to tell me where your camp is, unless you want to end up like him.
 
-L'assaillant pointe du doigt un corps gisant qui semble avoir été tellement tabassé qu'il ne reste plus grand chose d'identifiable. L'insistance de votre agresseur se fait de plus en plus pressante, comme s'il était lui-même sous pression.",1,7,6,,img:basement.jpg,0,Vous maintenez votre histoire,Vous regardez autour de vous à la recherche d'une échappatoire,,100,
-6,1,6,"La vue d'un cadavre gisant qui semble correspondre à votre avenir proche vous oblige à trouver une idée, et vite. Ignorant la douleur et maintenu en alerte par l'adrénaline qui se répand dans votre corps, vous balayez du regard la pièce dans laquelle vous vous situez.
+The assailant points to a lying body that looks like it has been beaten up so badly that there is not much left to identify. Your assailant's insistence becomes more and more pressing, as if he himself were under pressure.",1,7,6,,img:basement.jpg,0,You maintain your story,You look around looking for a way out,,100,
+6,1,6,"The sight of a corpse lying in the ground that seems to fit your near future forces you to come up with an idea, and hurry. Ignoring the pain and kept alert by the adrenaline coursing through your body, you scan the room you are in.
 
-Il semblerait que vous vous trouviez dans une sorte de cave au sous-sol d’une maison en ruines. Il y a des petites fenêtres en haut des murs dont la plupart sont brisées qui pourraient permettre de s’échapper en passant à travers. Il y a pas mal d’outils également qui traînent au sol ou sur une table qui semble servir d’établi de fortune. Vous faites un rapide inventaire de ce que votre regard confus parvient à identifer : marteaux, tournevis, des cordes, des chaînes, etc.
+It appears that you are in some sort of basement of a ruined house. There are small windows at the top of the walls, most of which are broken, which could allow you to escape through them. There are also a lot of tools lying around on the floor or on a table that seems to serve as a makeshift workbench. You make a quick inventory of what your confused eyes manage to identify: hammers, screwdrivers, ropes, chains, etc.
 
-""Alors tu vas me répon... BORDEL !""
+""So you're going to answer me... FUCK!""
 
-Votre agresseur est interrompu dans sa tirade menaçante par un immense boucant qui retenti depuis l'extérieur. Des cris de panique se font entendre à l'étage et les acolytiques de votre ravisseur semblent courir dans tous les sens comme s'ils se préparaient à une attaque.
+Your assailant is interrupted in his threatening tirade by a huge booming sound from outside. Screams of panic are heard from upstairs and your captor's acolytes seem to be running around as if preparing for an attack.
 
-Vous concernant, avec vos mains ligotées dans votre dos, vous vous sentez quelque peu impuissant. Mais votre interrogateur ayant relâché son attention sur vous l'espace d'un instant, vous notez alors la présence d'un couteau sur la table en face de vous.",1,8,,,img:basement.jpg,0,Suite,,,100,
-7,1,7,"Vous maintenez votre histoire sur Blightwood, un petit campement situé au sud-est d'une station Red Rocket. Il serait construit sur les ruines de ce qui semble avoir été un petit quartier résidentiel d'une ancienne bourgade, depuis ravagée par les frappes nucléaires qui ont conduit le monde dans l'état qu'on lui connaît.
+With your hands tied behind your back, you feel somewhat helpless. But your interrogator having slackened his attention on you for a moment, you then notice the presence of a knife on the table in front of you.",1,8,,,img:basement.jpg,0,Next,,,100,
+7,1,7,"You maintain your story about Blightwood, a small settlement located southeast of a Red Rocket station. It would be built on the ruins of what seems to have been a small residential area of an ancient town, since ravaged by the nuclear strikes that have brought the world to the state as we know it.
 
-Toujours pas convaincu, l'agresseur perd patience et vous presse de plus en plus.
+Still not convinced, the aggressor loses patience and presses you more and more.
 
-""Ton histoire tiens pas la route, tu te fous de moi. Tu vas me dire où se trouve réellement ton campement sinon cette barre sera dans ta gueule !""
+""Your story doesn't hold water, you're kidding me. You're going to tell me where your camp is really located otherwise this bar will be in your face!""
 
-Il brandit de nouveau sa barre à mine et s'apprêta à vous assener un violent coup dans les jambes quand soudainement un immense boucan retenti depuis l'extérieur avec des vrombissements à faire s'effondrer un mur et des explosions.
+He brandished his crowbar again and was about to hit you in the legs with a heavy blow when suddenly a huge racket sounded from outside with wall-crushing roars and explosions.
 
-""Bordel ils sont là !!"", s'exclama le gorille.
+""Damn they are here!!!"", exclaimed the gorilla.
 
-Vous entendez à l'étage des cris de panique, des ordres hurlés, des gens qui courrent dans tous les sens comme se préparant à une attaque. Ce sont surement les acolytes de votre ravisseur. 
+You hear panicked screams upstairs, orders being shouted, people running around as if preparing for an attack. They are surely the acolytes of your captor. 
 
-Vous profitez de la panique soudaine et, surtout, que l'attention sur vous ait été détournée, pour formenter un plan de fuite. Vous pensez au couteau qui se trouve sur la table en face pour couper vos liens et vous enfuir.",1,8,,,img:basement.jpg,0,Suite,,,100,
-8,1,8,"Tel un éclair, un flash lumineux rougeâtre illumina spontanément la cave où vous vous trouvez avec votre ravisseur. Des hurlements se faisaient entendre à l'étage supérieur. Non pas des cris désorganisés de soldats qui se préparent à un assaut, mais des hurlements de terreur. 
+You take advantage of the sudden panic and, above all, that the attention on you has been diverted, to form an escape plan. You think of the knife on the table in front of you to cut your bonds and escape.",1,8,,,img:basement.jpg,0,Next,,,100,
+8,1,8,"Like a bolt of lightning, a reddish flash of light spontaneously illuminated the cellar where you and your captor are standing. Screams could be heard on the upper floor. Not the disorganized screams of soldiers preparing for an assault, but screams of terror. 
 
-""BORDEL !!"", hurla votre ravisseur. Le gorille n'eût plus trop envie de s'entretenir avec vous ni même de transformer votre tête en oeufs brouillés. Pris de panique, il quitta en précipitation la pièce dans laquelle vous vous trouvez vous laissant seul abandonné à votre sort dans un vacarme ahurissant de vrombissements, de hurlements et d'éclairs rouges.
+""FUCK!"" your captor shouted. The gorilla was no longer interested in talking to you or even turning your head into scrambled eggs. Panic-stricken, he left the room in which you are, leaving you alone and abandoned to your fate in a bewildering din of roars, screams and red lightning.
 
-Vous profitez de cette situation pour vous lever et aller chercher le couteau qui se trouve sur la table en face de vous. Vous parvenez tant bien que mal à couper la ficelle qui vous nouait les poignets, vous êtes enfin libre de vos mouvements. Reprenant peu à peu vos esprits, un éclair de lucidité vous frappe alors : ""... mon arme !!"".
+You take advantage of this situation to get up and go and get the knife which is on the table in front of you. You manage as well as you can to cut the string which tied your wrists, you are finally free of your movements. Gradually coming to your senses, a flash of lucidity strikes you: ""... my gun!""
 
-Vous regardez partout dans la pièce, vous ne trouvez pas votre pistolet ni vos munitions. Vos ravisseurs ont dû les voler ou les laisser là où ils vous ont enlevé. Les seules choses qui pourraient faire office d'armes que vous trouvez dans la précipitation sont le couteau qui a servi à vous libérer, et la barre à mine qui, pas plus tard que quelques minutes auparavant, menaçait de ne faire qu'un avec votre tête.
+You look around the room, but you can't find your weapon or your ammunition. Your captors must have stolen them or left them where they took you. The only things that could be weapons that you find in the rush are the knife that was used to free you, and the crowbar that only minutes before threatened to become one with your head.
 
-Vous embarquez ces objets avec vous et tentez de vous enfuir.",1,9,12,,img:basement.jpg,0,Vous sortez par la porte,Vous sortez par la fenêtre,,100,weapon:1;weapon:2
-9,1,9,"Armé de votre barre à mine, vous ouvrez la porte et tombez soudain nez à nez avec votre ravisseur.
+You take these objects with you and try to escape.",1,9,12,,img:basement.jpg,0,You go out the door,You go out the window,,100,weapon:1;weapon:2
+9,1,9,"Armed with your crowbar, you open the door and suddenly come face to face with your captor.
 
-""Toi !!""
+""You!!!""
 
-Votre sang ne fait qu'un tour, il s'apprête à vous attaquer.",1,10,11,,img:basement.jpg,0,Vous l'attaquez,Vous esquivez,,100,
-10,1,10,"Ce n'est pas sans une certaine ironie que vous brandissez la barre à mine et fracassez le crâne de votre ravisseur. Le gorille tombe et demeure gisant au sol, ce qu'il reste de sa tête couverte de sang.
+Your blood runs cold, he is about to attack you.",1,10,11,,img:basement.jpg,0,You attack him,You dodge him,,100,
+10,1,10,"It is not without a certain irony that you brandish the crowbar and smash the skull of your captor. The gorilla falls and lies on the ground, what is left of its head covered with blood.
 
-Vous ne pouvez vous empêcher de ressentir une certaine satisfaction à l'idée de voir les rôles s'inverser, mais vous n'allez pas jouir de cette malsaine victoire trop longtemps.
+You can't help but feel a sense of satisfaction at seeing the roles reversed, but you won't enjoy this sick victory for too long.
 
-En haut de l'escalier menant à la cave où vous vous situez, vous entendez les voix des acolytes de votre ravisseur.
+At the top of the stairs leading to the cellar where you stand, you hear the voices of your captor's sidekicks.
 
-""Boss ! Boss ! T'es où ! Ils sont là faut qu'on se tire !!""
+""Boss! Boss! Where are you! They're here, we have to get out of here!""
 
-Ne vous sentant pas d'attaque de vous confronter à une toute une bande de raiders, vous optez pour la fuite par la fenêtre finalement.",1,12,,,img:basement.jpg,0,Suite,,,100,
-11,1,11,"Malgré votre état, vous parvenez à bondir en arrière tel un chevreuil et vous esquivez le crochet que votre ravisseur s'apprêtait à vous adresser. 
+Not feeling up to confronting a whole bunch of raiders, you opt to escape through the window after all.",1,12,,,img:basement.jpg,0,Next,,,100,
+11,1,11,"In spite of your state, you manage to jump back like a deer and you dodge the hook that your captor was about to address you. 
 
-Fou de rage, il se lance vers vous et vous brandissez la barre à mine en espérant le mettre à terre. Soudain, le gorille est stoppé net dans sa course, frappé par un faisceau rouge identique à ceux qui flashent dehors. Avec un trou fumant situé à la place de ce qui était son abdomen, l'homme s'effondre au sol.
+Mad with rage, he launches himself towards you and you brandish the crowbar hoping to knock him down. Suddenly, the gorilla is stopped dead in his tracks, hit by a red beam identical to those that flash outside. With a smoking hole located in the place of what used to be his abdomen, the man collapses to the ground.
 
-""Oh ça craint"" vous dites vous subitement. La porte n'était pas vraiment une bonne idée, vous vous tournez vers la fenêtre.
-",1,12,,,img:basement.jpg,0,Suite,,,100,
-12,1,12,"Vous déplacez un meuble qui semble être assez resistant pour soutenir votre poids et parvenez à vous hisser pour sortir par l'étroite fenêtre. 
+""Oh this sucks"" you suddenly say to yourself. The door wasn't really a good idea, you turn to the window.",1,12,,,img:basement.jpg,0,Next,,,100,
+12,1,12,"You move a piece of furniture that seems to be strong enough to support your weight and manage to pull yourself up to exit the narrow window. 
 
-Alors que vous vous démenez à sortir avec une grâce assez relative, vous entendez depuis la cave un des sbires de votre ravisseur hurler. 
+As you struggle to get out with relative grace, you hear from the basement one of your captor's henchmen yelling. 
 
-""BOSS ! BOSS ! Ils ont eu le boss !""
+""BOSS! BOSS! They got the boss!""
 
-Vous regardez brièvement par la fenêtre si le type vous a vu en espérant qu'il ne vous suivra pas, mais il est subitement calciné par un éclair rouge foudroyant. Vous faites un sursaut en arrière après avoir assisté à cette scène. Vous parvenez à vous cacher derrière un buisson et vous entendez les bruits et hurlements confus. 
+You briefly look out the window to see if the guy saw you, hoping he won't follow you, but he's suddenly charred by a fiery red flash. You jump back after witnessing this scene. You manage to hide behind a bush and you hear the confused noises and screams. 
 
-Des robots, ce sont des robots qui attaquent le repaire de vos ravisseurs. Qui les contrôle ? Vous l'ignorez. Est-ce qu'ils seraient amicaux avec vous ? Mieux vaut éviter de chercher à le savoir dans l'immédiat.
+Robots, they are robots attacking your captors' lair. Who is controlling them? You don't know. Would they be friendly to you? It's best not to find out right away.
 
-Vous profitez de la confusion ambiante pour vous enfuir et retourner à Rusty Springs afin de les prévenir de la menace.",2,1,,,img:destroyed-houses.jpg,0,Suite,,,100,
-13,2,1,"Vous avez réussi à vous extraire du chaos et trouvé une cachette pour pouvoir enfin savoir où vous vous trouvez. Vous allumez votre fidèle Pip-boy.
+You take advantage of the confusion to run away and return to Rusty Springs to warn them of the threat.",2,1,,,img:destroyed-houses.jpg,0,Next,,,100,
+13,2,1,"You've managed to extract yourself from the chaos and found a hiding place so you can finally know where you are. You turn on your trusty Pip-boy.
 
 ...
 
@@ -115,36 +114,275 @@ Quincy Square
 
 ...
 
-Par chance, et à votre grande surprise, Rusty Springs est à une dizaine de kilomètres au nord-est de votre emplacement. Comment vos ravisseurs ont pu manquer son emplacement ? Ils n'ont pas du chercher beaucoup ou alors ils n'ont appris son existence que récemment. Bien que vous ayez passé assez peu de temps là bas, vous avez vite remarqué que Rusty Springs est un campement qui sait se montrer d'une grand discrétion.
+Luckily, and to your surprise, Rusty Springs is about ten kilometers northeast of your location. How could your captors have missed its location? They must not have looked very hard or they only recently learned of its existence. Although you've spent little time there, you quickly notice that Rusty Springs is a very discreet camp.
 
-Vous entendez encore au loin le fracas de l'armée de robots qui a pris d'assaut le repaire de vos ravisseurs. Vous décidez donc de poursuivre votre chemin vers Rusty Springs.",2,2,,,osm:47.51760/2.15498,0,Suite,,,100,
-14,2,2,"Arrivé à mi-chemin, votre corps vous rappelle avoir subit quelques violentes attaques récemment. Vos jambes et votre dos deviennent de plus en plus douloureux. Continuer dans ces conditions devient de plus en plus difficile. Vous apercevez un bosquet qui pourrait faire une cachette idéale le temps de vous reposer.",2,3,8,,osm:47.51760/2.15498,0,Vous décidez d'aller y faire une pause,"Rusty Springs est peut-être en danger, il ne faut pas s'arrêter",,100,
-15,2,3,"Vous vous dirigez vers ce bosquet qui est composé d'arbres morts mais aussi d'autres qui ont survécu à l'apocalypse nucléaire. Leurs formes biscornues et leur densité parviennent à faire une barrière visuelle idéale pour vous reposer quelques minutes à l'abri d'éventuels attaquants, et sa position en légère hauteur offre un bon angle de vue. 
+You can still hear in the distance the clatter of the robot army that stormed the lair of your captors. You decide to continue your way to Rusty Springs.",2,2,,,osm:47.51760/2.15498,0,Next,,,100,
+14,2,2,"At the halfway point, your body reminds you that it has suffered some violent attacks recently. Your legs and back become more and more painful. To continue in these conditions becomes more and more difficult. You see a grove that could make an ideal hiding place while you rest.",2,3,8,,osm:47.51760/2.15498,0,You decide to take a break,"Rusty Springs may be in danger, don't stop",,100,
+15,2,3,"You head towards this grove which is composed of dead trees but also others that survived the nuclear apocalypse. Their twisted shapes and density make an ideal visual barrier to rest for a few minutes, safe from possible attackers, and its slightly elevated position offers a good view. 
 
-Après avoir gravi le talus, aidé par la barre à mine qui vous sert de canne, vous inspectez rapidement l'endroit et en concluez que vous êtes pour l'heure en sécurité.
+After having climbed the embankment, helped by the crowbar that serves as your walking stick, you quickly inspect the place and conclude that you are safe for the moment.
 
-Vous vous asseyez et très vite, vous vous allongez au sol pour profiter d'un des rares moments de tranquilité dans ce monde dévasté. ",2,4,,,img:desolated-hills.jpg,0,Suite,,,100,
-16,2,4,"""CrRRrrRzzzzffFFccRRRkkkk""
+You sit down and very quickly, you lie down on the ground to enjoy one of the rare moments of tranquility in this devastated world.",2,4,,,img:desolated-hills.jpg,0,Next,,,100,
+16,2,4,"""CrRRRzzzzffFFccRRRkkkk""
 
-Un bruit métallique et robotique vous fait sursauter. Les robots vous ont-ils déjà retrouvé ?
+A metallic, robotic noise startles you. Have the robots found you yet?
 
-Vous n'entendez pas de bruit de pas sourd et en cadence comme c'était le cas durant l'assaut duquel vous vous êtes échappé. Seulement un bruit robotique qui semble être isolé. Une machine qui a perdu son groupe ? est-elle hostile ? endommagée ? avec un peu de chance inoffensive ?
+You don't hear a thudding, cadenced footstep like you did during the assault you escaped from. Only a robotic noise that seems to be isolated. A machine that has lost its group? is it hostile? damaged? hopefully harmless?
 
-Cela pourrait être une opportunité d'en savoir un peu plus sur ces robots raiders qui ont attaqué vos ravisseurs. Ou aussi de tomber nez à nez avec une de ces machines tueuses et finir comme eux.",2,5,7,,img:desolated-hills.jpg,0,Inspecter l'origine du bruit,Ignorer le bruit et reprendre la route,,100,
-17,2,5,"Vous vous rapprochez avec la discrétion du félin de l'origine du bruit régulièrement répété que vous avez entendu. Votre coeur bat la chamade, et vous serrez la barre à mine de toutes vos forces, prêt à frapper ce qui ne vous paraîtrait pas amical.
+This could be an opportunity to find out a little more about these robot raiders who attacked your captors. Or to come face to face with one of those killer machines and end up like them.",2,5,7,,img:desolated-hills.jpg,0,Inspect the source of the noise,Ignore the noise and get back on the road,,100,
+17,2,5,"You approach with feline discretion the origin of the regularly repeated noise you have heard. Your heart is pounding, and you clench the crowbar with all your might, ready to strike at anything that doesn't seem friendly.
 
-Le son se fait de plus en plus fort et se situe derrière un arbre. Vous semblez remarquer un amas de ferraille au sol et continuez d'approcher. Un bras de robot ayant perdu son corps gît devant vous. Vous levez votre regard et constatez que le reste du corps est disséminé un peu partout. Il s'agissait bien d'un robot, complètement démoli. 
+The sound gets louder and louder and is located behind a tree. You seem to notice a pile of scrap metal on the ground and continue to approach. A robot arm that has lost its body is lying in front of you. You look up and see that the rest of the body is scattered around. It was indeed a robot, completely demolished. 
 
-L'observation des débris vous laisse quelque peu pantois car vous remarquez que la carcasse ne ressemble à aucun autre genre de robots que vous ayez connu. Ni un Protectron, ni une Sentinelle et encore moins un Assaultron, ce type de machine vous semble être inconnu.
+The observation of the debris leaves you a bit puzzled because you notice that the carcass does not resemble any other kind of robot you have ever known. Not a Protectron, not a Sentinel and certainly not an Assaultron, this type of machine seems unknown to you.
 
-La tête de la machine, peut-être bien la seule partie encore un tant soit peu attachée au reste du corps éparpillé ça et là, est à l'origine du grésillement métallique que vous avez entendu. Il semblerait que malgré son état, son ordinateur soit encore alimenté.",2,6,7,,img:destroyed-robot.jpg,0,La démonter et l'emporter pour l'analyser plus tard,"Pas de le temps de s'en préoccuper, Rusty Springs est peut être en danger",,100,
-18,2,6,"Intrigué par cette curieuse machine, vous décidez de démonter la tête en espérant avoir l'occasion de la disséquer plus tard et espérer en apprendre d'avantage. Vous parvenez à l'extraire de la carcasse sans faire plus de dégâts qu'elle n'en a déjà. Séparée de sa source d'énergie, les agaçants grésillements qu'elle émettait ont cessé. 
+The head of the machine, perhaps the only part still somewhat attached to the rest of the body scattered here and there, is at the origin of the metallic sizzling sound you heard. It seems that despite its condition, its computer is still powered.",2,6,7,,img:destroyed-robot.jpg,0,Dismantle it and take it away for later analysis,"No time to worry, Rusty Springs may be in danger",,100,
+18,2,6,"Intrigued by this curious machine, you decide to dismantle the head hoping to have the opportunity to dissect it later and learn more. You manage to extract it from the carcass without doing any more damage than it already has. Separated from its power source, the annoying crackling sounds it was making have stopped. 
 
-Vous rangez soigneusement la tête dans votre inventaire et décidez de reprendre votre route vers Rusty Springs.",3,1,,,img:destroyed-robot.jpg,0,Suite,,,100,misc:1
-19,2,7,"Vous avez eu assez d'émotions, de kidnappeurs, et de robots tueurs pour aujourd'hui. Tout votre corps hurle de douleur et d'épuisement, mais il vous reste de la route à faire. 
+You carefully store the head in your inventory and decide to head back to Rusty Springs.",3,1,,,img:destroyed-robot.jpg,0,Next,,,100,misc:1
+19,2,7,"You've had enough emotions, kidnappers, and killer robots for one day. Your whole body is screaming in pain and exhaustion, but you still have a long way to go. 
 
-Ce n'est pas le moment de tergiverser, il faut rentrer à Rusty Springs pour les prévenir du danger qui les attend.",3,1,,,img:desolated-hills.jpg,0,Suite,,,100,
-20,2,8,"Il n'y a probablement plus aucune partie de votre corps qui ne hurle pas de douleur, et vous découvrez que vous pouviez avoir mal à des endroits insoupçonnés. Mais malgré cela, vous ne pouvez pas vous permettre de vous arrêter.
+Now is not the time to procrastinate, you must return to Rusty Springs to warn them of the danger that awaits them.",3,1,,,img:desolated-hills.jpg,0,Next,,,100,
+20,2,8,"There is probably no part of your body that doesn't scream in pain, and you discover that you may have been hurting in places you never thought possible. But despite this, you can't afford to stop.
 
-Rusty Springs vous a reccueilli alors que vous êtiez au plus mal et vous avez une dette envers ce campement. Vous prenez votre courage et votre volonté à deux mains et reprenez votre route.",3,1,,,img:desolated-hills.jpg,0,Suite,,,100,
-21,3,1,A suivre...,,,,,img:tbc.jpg,0,,,,100,
+Rusty Springs took you in when you were at your worst, and you owe this camp a debt of gratitude. You take your courage and willpower in both hands and set off again.",3,1,,,img:desolated-hills.jpg,0,Next,,,100,
+21,3,1,"After a long and exhausting walk through the Wasteland, you finally catch a glimpse of the woods behind which Rusty Springs is hidden. Your injuries and the fact that you have been on alert almost all the time have worn you out physically and mentally and this last kilometer seems endless.
+
+""Freeze!""
+
+This injunction suddenly puts you back on alert and you suddenly stop. You are unable to identify where this voice is coming from.",3,2,3,,img:wasteland-forrest.png,0,You surrender,You ignore the order,,100,
+22,3,2,"Some of the people of Rusty Springs know you, including Sonja, the camp leader. However, you are not sure whether they are village guards or raiders looking for a place to loot.
+
+In your current state, fighting guards or raiders would end the same way in either case. You stop your painful walk and raise your arms in surrender.
+
+A man emerges from a hunter's hideout and approaches while holding you at gunpoint. Your eyesight, blurred by fatigue and disorientation, does not allow you to identify him.
+
+""Wait, I've seen you around before... you wouldn't be... ?""
+
+You don't have time to listen or even respond. The physical and mental exhaustion comes to an end of the last forces that it remained to you and you collapse on the ground.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,
+23,3,3,"Is it recklessness, stupidity, or desperation that keeps you going despite the order? Good question.
+
+A guard suddenly emerges from a hunter's hideout that you hadn't spotted. That said, with your blurred vision barely discerning your surroundings, it would have been surprising. A man with a gun stands in front and holds you at gunpoint.
+
+You wonder if he is a Rusty Springs guard or a raider. Mind you, a raider probably wouldn't have warned you. Your confused thoughts are suddenly interrupted by the shock of a violent tackle to the ground from another man you didn't see coming either. The violence of the blow plus your physical condition exhaust your last strength and you lose consciousness.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,
+24,3,4,"""...you ..ink... is ... dead ?""
+
+""help... transp...him""
+
+""... caug ... raider ...""
+
+""... find Son...""
+
+""... that's ...""
+
+Images, sounds, smells come together in a delirium where, barely conscious, you think you hear and see things.
+
+""AH!"" you scream.
+
+You suddenly wake up, drenched in sweat, lying on a mattress on the floor. You quickly feel that your hands are tied. As you think to yourself that this is starting to become a habit, you also notice that you are shirtless with bandages where your injuries are.
+
+Unlike the previous time, the people holding you prisoner seem to be less nefarious.
+
+You observe the room where you are located and it seems familiar. You note the presence of rudimentary medical equipment and a bed near an opaque window. 
+
+You hear a sound of footsteps coming towards the room you are in.
+",3,5,6,7,img:medical-room.png,0,You lie down and pretend to be asleep,You get into position to attack the incoming person,You do nothing and wait,100,
+25,3,5,"You lie down again, facing the wall, and pretend you are still asleep. You hope to hear some clues that will help you to better assess the situation.
+
+The footsteps get closer and you hear a muffled conversation between two women.
+
+""How is he?"" the first one asked in a confident tone.
+""In bad shape but he'll survive. You can come in,"" the second voice replies.
+
+The door opens and you hear a person enter the room. This one seems to stop midway for a few long seconds. You feel your heart racing.
+
+""It's okay Sleeping Beauty, stop pretending, we heard you screaming five minutes ago"".
+
+""What the hell,"" you think as you feel your face redden with embarrassment.
+
+You roll over on the mattress and look up at the woman standing in front of you and crouch down to get to your level.
+
+""You look really bad,"" she throws out with an amused look.
+
+Your face lights up and a big smile shows your relief. You recognize Sonja, the leader of Rusty Springs, the one who took you in some time before under rather similar conditions.
+
+""You should see the other guy,"" you say in a reassuring tone, before coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,
+26,3,6,"The footsteps get closer and you hear a muffled conversation between two women.
+
+""How is he?"" the first asked in a confident tone.
+""In bad shape but he'll survive. You can come in,"" the second voice replies.
+
+Despite your bound hands, you try to get into position to pounce on the first person to burst into the room. Your heart is beating like never.
+
+The door opens and a woman confidently enters the room. You leap but your run stops halfway because the belt of your pants is itself attached to a rope you hadn't noticed. Your momentum stopped dead in your tracks, you crash to the floor.
+
+""Jerk,"" the woman says in an amused tone while turning you around with a gentle kick.
+
+Your ego seems to have suffered more than your body this time. Red with embarrassment, you look up and recognize Sonja, the head of Rusty Springs.
+
+""It's getting to be a habit for you to show up at my house half dead,"" Sonja observed.
+
+A big smile then lights up your face and you start to laugh in relief, just before you start coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,
+27,3,7,"The footsteps get closer and you hear a muffled conversation between two women.
+
+""How is he?"" the first asked in a confident tone.
+""In bad shape but he'll survive. You can come in,"" the second voice replies.
+
+You sit down as best you can on the mattress and stare at the door of the room. When it opens, a tall woman enters the room.
+
+""You look like hell,"" she says.
+
+""You should see the other guy,"" you reply with an amused and reassured look on your face with a huge smile lighting up your face.
+
+Being reassured is a luxury that is difficult to enjoy in the Wasteland. But this time you can because your interlocutor is none other than Sonja, the chief of Rusty Springs. The same one who had welcomed you some time before in a more or less similar situation.
+
+""It's getting to be a habit to show up at my house half-dead,"" she answered while putting your good old coat on your shoulders.
+
+""Guess so,"" you reply in a slightly embarrassed tone.",3,8,,,img:medical-room.png,0,Next,,,100,
+28,3,8,"""I'm sorry about the tied hands. The guards didn't recognize you and didn't want to take any chances,"" Sonja said as she cut the rope that bound your wrists. She couldn't help but notice that your hands bore more previous marks.
+
+You then explained your recent misadventures to Sonja, the raiders' lair that captured you, the robot attack and your escape. When she asked you how you were captured, you realize you are unable to answer.
+
+""With what you took on your head, it's normal that you don't remember everything that happened to you recently"". This wise explanation comes from Iren, the Rusty Springs doctor who attended to your injuries... Again. This one approaches you and changes your bandages.
+
+""You left about ten days ago saying you had to continue your mission. We didn't know what happened to you,"" Sonja continues.
+
+""The mission,"" you suddenly think. You hear the word, you understand what it means, but you are immediately unable to associate it with yourself. If you had a ""mission"", for the moment, you do not remember what it is.
+
+Seeing your blank, troubled look, Sonja understands that something is wrong.
+
+""I'd like to help you, but you never told us anything about it. And since it's none of our business, I didn't want to know about it,"" she says in a calm tone. ""But I think it will come back to you before long,"" she continued, wanting to reassure you.
+
+""Boss!"" yelled one of the Rusty Springs guards as he burst into the room.
+
+The tranquility of your reunion seemed to be short-lived.",3,9,,,img:medical-room.png,0,Next,,,100,
+29,3,9,"Catching his breath, the guard gradually regains his composure and explains the situation. 
+
+""We came across a merchant during a patrol who seemed worried and rushed. Upon asking him what happened, he told us that Midwich Valley was completely razed, burned to the ground even.""
+
+Midwich Valley is the closest thing to a town as far as the Wasteland can conceive it. It is a camp, located about thirty kilometers from Rusty Springs, where over a hundred people live, not counting the itinerant merchants and other slightly less approachable oddballs.
+
+A place so frequented and populated cannot have been destroyed so easily. Not to mention that it was a city with good fortifications because it was regularly targeted by raiders and even Super Mutants.",3,10,14,,img:medical-room.png,0,You ask where the merchant is located,You think it's not your problem,,100,
+30,3,10,"""Where is that merchant?"" you suddenly ask the guard. He gives you a sideways glance and doesn't really want to answer.
+
+If mistrust of others is probably the most common sentiment in the Wasteland, Rusty Springs has made it a real culture in addition to its sense of discretion. It may seem inhospitable to outsiders, but this rigidity has allowed this village to continue to be almost unknown deep in its forest and thus avoid being targeted by raiders. When the guards are on patrol, they pretend to be wanderers who roam the Wasteland with no real purpose. While to an outsider their patrol cycle seems very random, it is actually well calculated to avoid arousing suspicion.
+
+""You can tell him,"" Sonja answered the guard.
+
+""He was set up in a clearing five kilometers to the northeast,"" the guard continued. He went on to say that the merchant intended to stay a few days to rest his brahmin. 
+
+The guard points out the location on the map of your Pip-boy. After exchanging a glance with Sonja, she understands that you intend to go and meet this merchant. However, you are still too weak to leave the village, you still need to rest.",3,11,,,img:medical-room.png,0,Next,,,100,
+31,3,11,"You had a real night's sleep, something that hasn't happened to you since... To tell you the truth, you don't remember it. Your body is still sore, but less so than the day before and the stimpack Iren injected you with is working wonders. After getting dressed and taking your stuff, you go to see Iren and Sonja to inform them that you have to go and see this merchant.
+
+You pass the guard who accompanies you towards the exit of the village. This is one of the advantages of Rusty Springs. The village is built in the middle of such a dense forest that it is almost invisible from the outside. Palisades of vegetation provide additional camouflage that further hides the location. The only way to enter is through well guarded underground tunnels scattered all over the place. They allow you to enter and leave the village at a good distance from it.
+
+The guard accompanies you along one of these tunnels and then points you in the direction of the clearing where the merchant has set up shop temporarily.
+
+After a little less than an hour's walk, you reach the location and go to meet the merchant.",3,12,,,img:medical-room.png,0,Next,,,100,
+32,3,12,"You pass in a nonchalant way in front of the merchant and this one calls you. 
+
+""Hey, I have some good cheap stuff, do you want to buy it?""
+
+""Why not"", you answer him with a moderately convinced air. ""I didn't expect to meet a merchant in this hole"", you continue.
+
+""But I don't work here. I'm just passing through but Germaine and Maryse have to rest"", he says pointing to his brahmin. The two heads of the mutant animal stare at him in a way that could be considered embarrassing.
+
+As you look at the merchant's inventory, you take the opportunity to start questioning him about your real intentions.
+
+""Tell me, do you have any idea of the fastest way to Midwich Valley? My pip-boy's map is unable to tell me anything.""
+
+Just by saying the name ""Midwich Valley"", you had the impression to have invoked a kind of taboo which made your interlocutor blush.
+
+""Ah but ... in fact ... Midwich ... There's no more. Crammed, razed, destroyed, only debris and cadavers,"" he said with a trembling voice. ""I've seen camps looted by Super Mutants before, but not a butchery like this, nothing left but smoking corpses.""
+
+You feign a revolted look mixing surprise and disgust with an acting skill that amazes yourself.
+
+""I hope there are no people you knew there,"" the merchant muttered, hoping to cheer you up. You tell him no, you were simply planning to go there to do business.
+
+As you look around the merchant's bazaar, you notice a rusty and badly damaged robotic hand that seems to remind you of something.",3,13,,,img:merchant.png,0,How much for the robot part?,,,100,
+33,3,13,"""This? say 20 caps will do?"" the merchant asked. After the discussion about Midwich Valley, the naturalness came back to him. You try to haggle a little about the price, which seems quite high to you, while feeling curiously attracted by this robotic debris, which is at first glance useless.
+
+""Aah you're tough on business... Well ok go for 15"", capitulated the merchant after a few long minutes of negotiation during which you agreed to take some extra ammunition.
+
+With both parties satisfied with their transaction, you eventually continue on your way back to the rendezvous point you had set with the Rusty Springs guard. On the way back, you observe the robotic hand from every joint, as if trying to unravel an ancient mystery.
+
+Very damaged, this one seems to have been burned, but you distinguish some characters written in the palm. 
+
+""SN..R...V..27-..78""
+
+With a little scraping of the encrusted grime on the inscription, you manage to see a little more.
+
+""SN...R...V127-M78""
+
+Suddenly, you stop dead in your tracks.
+
+""127!!!"" you shout as if having discovered the answer to the ultimate question. A bolt of lightning seems to have flashed through your mind as you read this half-covered, dirt-erased inscription.
+
+You hurry to your meeting point, as if taken by a sudden euphoria.
+
+Accompanied by the guard, you notice that a faint indicator light has started to flash on your Pip-boy. A symbol indicating to read a Holotape flashes on the screen.
+
+You wait until you find a quiet corner to read it.
+",3,15,,,img:merchant.png,0,Read the holotape,,,100,misc:2
+34,3,14,"You listen to the discussion between Sonja and the guard, but eventually you turn away. Midwich Valley is a big town, but it wasn't impregnable either, contrary to what people might think. Besides, while you're still itching to find out what happened to this town, you don't feel up to going on another adventure yet.
+
+For now, your priority is to recover from your kidnapping and remember your mission. You have alerted Sonja about the robots that attacked the raider camp that kidnapped you, and you offer to assist her if Rusty Springs is ever in danger.
+
+The next day, after what seems like the first night's sleep in ages, you decide to take a walk through Rusty Springs to stock up on weapons and ammunition.
+
+You spend the few Caps you had and feel a little less naked now that you've picked up a weapon and ammo. As you inspect your new acquisition, you notice a faint yellow light flashing on your Pip-boy. A holotape you didn't know existed is inside it and a message on the screen prompts you to read its contents.
+
+You decide to find a quiet corner for this.",3,15,,,img:rusty-springs.png,0,Read the holotape,,,100,
+35,3,15,"You start the recording which seems to contain only text.
+
+---
+
+SENTINEL OF EXPEDITION 127
+
+MISSION: FIND AND SECURE VAULT 127 AND ITS TECHNOLOGY
+
+PRIORITY: HIGH
+
+DESCRIPTION: OUR INFORMATION INDICATES THE EXISTENCE OF VAULT 127 AS YET UNDISCOVERED. LOCATION UNKNOWN TO THE ARCHIVES. VAULT 127 IS BELIEVED TO CONTAIN TECHNOLOGY WHOSE EXACT NATURE IS UNIDENTIFIED. INITIAL ESTIMATES INDICATE A HIGH DEGREE OF IMPORTANCE.
+
+MISSION PARAMETERS : 
+
+- ABSOLUTE DISCRETION, INCLUDING BETWEEN CHAPTERS OF THE BROTHERHOOD.
+- TOTAL AUTONOMY ON METHODS OF INVESTIGATION AND RESEARCH.
+- RECORD IN THIS HOLOTAPE ANY DISCOVERIES RELATED TO VAULT 127.
+- REGULAR MISSION FOLLOW-UPS WILL BE TRIGGERED BY THE DAEMON INSTALLED IN THIS PIP-BOY.
+
+OBJECTIVES: 
+
+- FIND AND SECURE THE COORDINATES OF VAULT 127.
+- QUALIFY THE TECHNOLOGY IT CONTAINS.
+- ELIMINATE ANY POSSIBLE THREAT THAT COULD JEOPARDISE THE MISSION.
+- MAINTAIN THE HIGHEST LEVEL OF DISCRETION AND SECURITY AT ALL TIMES.
+- REPORT THE DISCOVERY IMMEDIATELY.
+
+GOOD LUCK SENTINEL.
+
+AD VICTORIAM!
+
+---",3,16,,,img:brotherhood.png,0,...,,,100,
+36,3,16,"You feel yourself turning pale as you read this document. You have been reminded of your mission, and the lost connections in your head are slowly being rebuilt. You remember your encounter with a Brotherhood's Elder a few months ago. You've been in trouble before for your meddling skills, but this time you've gone a little too far and have drawn the wrath of one of the factions you don't want to be angry with.
+
+However, to your surprise, the Elder did not have you imprisoned or executed but saw you as an asset. Your unpredictability and ability to find hidden secrets are matched only by your ability to get into and out of impossible situations. And that, the Elder seems to have seen in you and offered you a deal. Find the location of a Vault whose coordinates have been lost and discover what's inside.
+
+If you succeed, you will be pardoned and considered an ally of the Brotherhood. If not, you will be executed for attempting to steal its secrets.
+
+You don't remember thinking much about it at the time and quickly accepted the mission without even knowing all the details. The last thing you remember is being dropped into the wilderness from a Vertibird by Squires who thought they were releasing a civilian who had no business being there. They didn't know that you had been promoted in the greatest secrecy by the Elder as a Sentinel of the Brotherhood, granting you complete autonomy to accomplish your mission at the cost of absolute discretion.
+
+You wonder what you're going to do.",3,17,,,img:brotherhood.png,0,Next,,,100,
+37,3,17,"That night, you didn't sleep so well. Being on the verge of death seems to be a better way for you to sleep than being a Sentinel of the Brotherhood on a mission. You've turned the situation over in your head to try to find a way out that won't endanger Rusty Springs, but you'll have to keep investigating. With Midwich Valley burned to the ground, you'll have to find another populated town to investigate.
+
+But first, you decide to go see Sonja and inform her of your recent discovery.
+
+""I would never have imagined that you were one of those fanatics,"" Sonja threw out in an inquisitive tone.
+
+""Neither did I,"" you reply with a forced smile. You explain as well as you can the situation while making some lies by omission, in particular on the passages indicating not to speak about it to anybody and to remove any possible threat. You only give Sonja the bare essentials, telling her that you are a mercenary on a mission for the Brotherhood. You reassure her that you will continue to keep the location of the village secret and that it has no connection with your objective.
+
+Despite Sonja's sympathetic attitude, her natural distrust quickly returns and she promises you many unpleasant things should the safety of Rusty Spring be compromised. To show your good faith, you show your Pip-boy's map: the location where they are is not marked with any campsite, only a forest. You have managed to delete the information about this place.
+
+You thank Sonja one last time for helping you twice, and decide to leave Rusty Springs the next morning.",4,1,,,img:rusty-springs.png,0,Next,,,100,
+41,4,1,To be continued...,,,,,img:tbc.jpg,0,,,,100,
