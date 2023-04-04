@@ -6,9 +6,9 @@ Pyp-boy is a Python Flask-based text role playing game inspired by the *Fallout*
 
 ## Warning
 
-This game is still under development. The story is currently available in French.
+This game is still under development.
 
-The first chapter of the story is complete.
+So far, the story is 4 chapters long. They've all been translated in English.
 
 ## Install
 
@@ -69,6 +69,7 @@ Your character will earn EXP and increase its level. There is currently no incid
 ### Roadmap
 
 - Translate the story in English, multilingual support may be useful.
+	+ Translation done, the multilingual support is not yet implemented
 - The story does not takes account in the character's selected gender yet, it would be nice to implement it later.
 - The MAP tab is intended to display the various discovered locations using OSM as a background. It will try to create a fictional map using actual ones.
 - Continue the story.
