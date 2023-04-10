@@ -1,3 +1,9 @@
+# License
+
+## Application's source code
+
+The source code of this project is licensed under MIT. This includes the Python programs, scripts, SQL files, HTML and CSS templates.
+
 MIT License
 
 Copyright (c) 2023 Seb
@@ -19,3 +25,33 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Story and assets
+
+The story written for this game and the various assets are licensed under CreativeCommons Attribution ShareAlike 4.0
+
+This cover the following files :
+
+- `sql/*.csv`
+- `static/img/**`
+
+Exception for the assets that originate from the Fallout games which are copyrighted by Bethesda and included under [fair use](https://en.wikipedia.org/wiki/Fair_use) terms, such as :
+
+- `static/img/back/holotape.jpg`
+- `static/img/back/brotherhood.png`
+- `static/img/aid/rad-x.png`
+- `static/img/aid/stimpak.png`
+- `static/img/misc/mininuke.png`
+
+![Creative Commons BY SA 4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+https://creativecommons.org/licenses/by-sa/4.0/
+
+You are free to:
+Share — copy and redistribute the material in any medium or format
+Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+
