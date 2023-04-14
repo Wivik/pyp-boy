@@ -60,7 +60,7 @@ else:
 
 ## Start flask
 app = Flask(__name__)
-app.config['SECRET_KEY'] = f.load_secret_key(data_path)
+app.config['SECRET_KEY'] = os.urandom(32)
 csrf = CSRFProtect()
 csrf.init_app(app)
 geolocator = Nominatim(user_agent="pyp-boy")

@@ -6,21 +6,6 @@ from flask import session
 import requests
 import json
 
-def load_secret_key(data_dir):
-    secret_key_file = os.path.join(data_dir, 'secret.key')
-    if not os.path.exists(secret_key_file):
-        secret_key = os.urandom(32)
-        with open(secret_key_file, 'wb') as file:
-            file.write(secret_key)
-            file.close()
-        return secret_key
-    else:
-        with open(secret_key_file, 'rb') as file:
-            secret_key = file.read()
-            file.close()
-        return secret_key
-
-
 def test_save_file(save_file):
     """ Ensure save file is present, redirect to the sys tab if not """
     if os.path.exists(save_file):
