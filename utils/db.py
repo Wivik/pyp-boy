@@ -3,46 +3,47 @@ from sqlite3.dbapi2 import Error
 from datetime import datetime
 
 ## open the database connection
-def get_db_connection(db_file):
+def get_db_connection(db_file, logger):
+    logger.debug('Open sqlite file ' + str(db_file))
     conn = sqlite3.connect(db_file)
     conn.row_factory = sqlite3.Row
     return conn
 
-def run_db_change_query(db_file, query, values):
-        conn = get_db_connection(db_file)
-        try:
-            print(query)
-            print(values)
-            conn.execute(query, values)
-            conn.commit()
+def run_db_change_query(db_file, query, values, logger):
+    conn = get_db_connection(db_file, logger=logger)
+    try:
+        logger.debug(query)
+        logger.debug(values)
+        conn.execute(query, values)
+        conn.commit()
+        conn.close()
+        return
+    except sqlite3.IntegrityError:
+        return sqlite3.IntegrityError
+    except sqlite3.Error as er:
+        return er
+    finally:
+        if conn:
             conn.close()
-            return
-        except sqlite3.IntegrityError:
-            return sqlite3.IntegrityError
-        except sqlite3.Error as er:
-            return er
-        finally:
-            if conn:
-                conn.close()
 
-def run_db_select_one_query(db_file, query, values):
-    conn = get_db_connection(db_file)
-    print(query)
-    print(values)
+def run_db_select_one_query(db_file, query, values, logger):
+    conn = get_db_connection(db_file, logger)
+    logger.debug(query)
+    logger.debug(values)
     results = conn.execute(query, values).fetchone()
     conn.close()
     return results
 
-def run_db_select_all_query(db_file, query, values):
-    conn = get_db_connection(db_file)
-    print(query)
-    print(values)
+def run_db_select_all_query(db_file, query, values, logger):
+    conn = get_db_connection(db_file, logger)
+    logger.debug(query)
+    logger.debug(values)
     results = conn.execute(query, values).fetchall()
     conn.close()
     return results
 
 
-def create_save_database(save_file):
+def create_save_database(save_file, logger):
     conn = None
     try:
         conn = sqlite3.connect(save_file)
@@ -82,43 +83,43 @@ def create_save_database(save_file):
         ''')
         conn.commit()
     except Error as e:
-        print(e)
+        logger.error(e)
     finally:
         conn.close()
 
-def create_character(save_file, character_name, gender):
+def create_character(save_file, character_name, gender, logger):
     now = datetime.utcnow()
     iso8601 = now.isoformat()
     date_create = iso8601
     date_update = iso8601
-    ret = run_db_change_query(save_file, 'INSERT INTO saves (name, gender, date_create, date_update) VALUES(?, ?, ?, ?)', (character_name, gender, date_create, date_update))
+    ret = run_db_change_query(save_file, 'INSERT INTO saves (name, gender, date_create, date_update) VALUES(?, ?, ?, ?)', (character_name, gender, date_create, date_update), logger)
     if ret is None:
         return
     else:
         return ret
 
-def list_save_data(save_file):
-    ret = run_db_select_all_query(save_file, 'SELECT id, name, failed FROM saves ORDER BY date_update DESC', '')
+def list_save_data(save_file, logger):
+    ret = run_db_select_all_query(save_file, 'SELECT id, name, failed FROM saves ORDER BY date_update DESC', '', logger=logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_save_data(save_file, save_id):
-    ret = run_db_select_one_query(save_file, 'SELECT * FROM saves WHERE id = ?', (save_id,))
+def get_save_data(save_file, save_id, logger):
+    ret = run_db_select_one_query(save_file, 'SELECT * FROM saves WHERE id = ?', (save_id,), logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_chapter_step(game_file, chapter, step):
-    ret = run_db_select_one_query(game_file, 'SELECT * FROM story WHERE chapter = ? and step = ?', (chapter, step,))
+def get_chapter_step(game_file, chapter, step, logger):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM story WHERE chapter = ? and step = ?', (chapter, step,), logger)
     if ret is None:
         return
     else:
         return ret
 
-def save_progress(save_file, save_id, **kwargs):
+def save_progress(save_file, save_id, logger, **kwargs):
     chapter_id = kwargs.get('chapter')
     step_id = kwargs.get('step')
     current_xp = kwargs.get('current_xp')
@@ -126,27 +127,27 @@ def save_progress(save_file, save_id, **kwargs):
     end = kwargs.get('end', 0)
     now = datetime.utcnow()
     iso8601 = now.isoformat()
-    ret = run_db_change_query(save_file, 'UPDATE saves set current_chapter = ?, current_step = ?, current_xp = ?, level= ?, date_update = ?, failed = ? WHERE id = ?', (chapter_id, step_id, current_xp, level, iso8601, end, save_id))
+    ret = run_db_change_query(save_file, 'UPDATE saves set current_chapter = ?, current_step = ?, current_xp = ?, level= ?, date_update = ?, failed = ? WHERE id = ?', (chapter_id, step_id, current_xp, level, iso8601, end, save_id), logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_game_db_version(game_file):
-    ret = run_db_select_one_query(game_file, 'SELECT * FROM db_version', '')
+def get_game_db_version(game_file, logger):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM db_version', '', logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_inventory(save_file, save_id, filter=''):
-    ret = run_db_select_all_query(save_file, 'SELECT * FROM inventories WHERE save_id = ? AND type = ?', (save_id, filter))
+def get_inventory(save_file, save_id, logger, filter=''):
+    ret = run_db_select_all_query(save_file, 'SELECT * FROM inventories WHERE save_id = ? AND type = ?', (save_id, filter), logger=logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_inv_items(game_file, items, item_type):
+def get_inv_items(game_file, items, item_type, logger):
     if len(items) == 1:
         for item in items:
             list_items = item
@@ -154,46 +155,44 @@ def get_inv_items(game_file, items, item_type):
     else:
         list_items = str(tuple(items))
     query = f'SELECT * FROM {item_type} WHERE id IN {list_items} ORDER BY name ASC'
-    ret = run_db_select_all_query(game_file, query, '')
+    ret = run_db_select_all_query(game_file, query, '', logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_item(game_file, db, item_id):
-    ret = run_db_select_one_query(game_file, 'SELECT * FROM '+ db +' WHERE id = ?', (item_id,))
+def get_item(game_file, db, item_id, logger):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM '+ db +' WHERE id = ?', (item_id,), logger)
     if ret is None:
         return
     else:
         return ret
 
-def add_item(save_file, save_id, item_id, item_type):
-    ret = run_db_change_query(save_file, 'INSERT INTO inventories (save_id, item_id, type) VALUES(?, ?, ?)', (save_id, item_id, item_type))
+def add_item(save_file, save_id, item_id, item_type, logger):
+    ret = run_db_change_query(save_file, 'INSERT INTO inventories (save_id, item_id, type) VALUES(?, ?, ?)', (save_id, item_id, item_type), logger)
     if ret is None:
         return
     else:
         return ret
 
-def loot(save_file, save_id, items):
-    print('items')
-    print(items)
+def loot(save_file, save_id, items, logger):
+    logger.debug('items ' + str(items))
     for loot in items.split(';'):
-        print('loot')
-        print(loot)
+        logger.debug('loot '+ str(loot))
         item_type, item_id = loot.split(':')
-        print(item_type)
-        print(item_id)
-        add_item(save_file, save_id, int(item_id), item_type)
+        logger.debug('item_type ' + str(item_type))
+        logger.debug('item_id ' + str(item_id))
+        add_item(save_file, save_id, int(item_id), item_type, logger)
 
-def save_story_path(save_file, save_id, chapter, step):
-    ret = run_db_change_query(save_file, 'INSERT INTO story_path (save_id, chapter, step) VALUES(?, ?, ?)', (save_id, chapter, step))
+def save_story_path(save_file, save_id, chapter, step, logger):
+    ret = run_db_change_query(save_file, 'INSERT INTO story_path (save_id, chapter, step) VALUES(?, ?, ?)', (save_id, chapter, step), logger)
     if ret is None:
         return
     else:
         return ret
 
-def get_story_path(save_file, save_id):
-    ret = run_db_select_all_query(save_file, 'SELECT * FROM story_path WHERE save_id = ? ORDER BY chapter, step ASC', (save_id,))
+def get_story_path(save_file, save_id, logger):
+    ret = run_db_select_all_query(save_file, 'SELECT * FROM story_path WHERE save_id = ? ORDER BY chapter, step ASC', (save_id,), logger)
     if ret is None:
         return
     else:

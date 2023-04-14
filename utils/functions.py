@@ -6,11 +6,13 @@ from flask import session
 import requests
 import json
 
-def test_save_file(save_file):
+def test_save_file(save_file, logger):
     """ Ensure save file is present, redirect to the sys tab if not """
     if os.path.exists(save_file):
+        logger.debug('save false exists')
         return True
     else:
+        logger.debug('save false does not exist')
         return False
 
 
@@ -19,7 +21,7 @@ def gen_random_hex_number():
     hex_num = hex(random.randint(0, 16**num_digits - 1))[2:].upper()
     return hex_num
 
-def register_session(save_id, **kwargs):
+def register_session(save_id, logger, **kwargs):
     session['save_id'] = save_id
     session['character_name'] = kwargs.get('name')
     session['current_xp'] = kwargs.get('current_xp')
@@ -27,16 +29,18 @@ def register_session(save_id, **kwargs):
     session['current_chapter'] = kwargs.get('current_chapter')
     session['current_step'] = kwargs.get('current_step')
     session['required_xp'] = 1000
-
+    logger.debug(session)
     return session
 
-def exp_character(current_xp, level, earned_xp):
+def exp_character(current_xp, level, earned_xp, logger):
     level = int(level)
     required_xp = 1000
     current_xp += earned_xp
+    logger.debug('current_xp = ' + str(current_xp))
     if current_xp >= required_xp:
         # level up !
         level += 1
+        logger.debug('new level ' + str(level))
         session['level'] = level
         # get back the over xp
         change_xp = int(current_xp) - int(required_xp)
@@ -44,33 +48,38 @@ def exp_character(current_xp, level, earned_xp):
             session['current_xp'] = change_xp
         else:
             session['current_xp'] = 0
+        logger.debug('change_xp = '+ str(change_xp))
     # calculate new required xp
     else:
         session['current_xp'] = current_xp
         session['required_xp'] = required_xp
     return session
 
-def check_new_version(current_version, owner, repo):
+def check_new_version(current_version, owner, repo, logger):
     release_api=f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+    logger.debug(release_api)
     response = requests.get(release_api)
+    logger.debug(response)
     if response.ok:
         release = json.loads(response.content)
         release_version = release["tag_name"]
         current_version = 'v' + current_version['version']
-        print(release_version)
-        print(current_version)
+        logger.debug(release_version)
+        logger.debug(current_version)
         if release_version != current_version:
-            print('new version')
+            lgger.debug('new version')
             return True
         else:
             return False
     else:
-        print('error while checking version')
+        logger.warn('error while checking version')
         return False
 
-def get_latest_release(owner, repo, game_file):
+def get_latest_release(owner, repo, game_file, logger):
     release_api=f"https://api.github.com/repos/{owner}/{repo}/releases/latest"
+    logger.debug(release_api)
     response = requests.get(release_api)
+    logger.debug(response)
     if response.ok:
         release = json.loads(response.content)
         asset_url = release["assets"][0]["browser_download_url"]
@@ -78,19 +87,19 @@ def get_latest_release(owner, repo, game_file):
         if response.ok:
             with open(game_file, 'wb') as db:
                 db.write(response.content)
-                print("db downloaded")
+                logger.info("db downloaded")
                 return True
         else:
-            print("failed to download db")
+            logger.error("failed to download db")
             return False
     else:
-        print('failed to download db')
+        logger.error('failed to download db')
         return False
 
-def get_app_version(version_file):
+def get_app_version(version_file, logger):
     ver_file = open(version_file, 'r')
     version = json.load(ver_file)
-    # print(version['version'])
+    logger.debug(version['version'])
     version = str(version['version'])
     return version
 

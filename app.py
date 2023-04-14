@@ -48,15 +48,15 @@ if not os.path.isdir(data_path):
         raise
 
 ## Start logger
-log = logging.getLogger(global_vars['app_name'])
-log_handler = logging.FileHandler(log_file)
-log_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-log_handler.setFormatter(log_format)
-log.addHandler(log_handler)
-if log_level == 'DEBUG':
-    log.setLevel(logging.DEBUG)
-else:
-    log.setLevel(logging.INFO)
+logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+console = logging.StreamHandler()
+console.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(levelname)s: %(message)s')
+console.setFormatter(formatter)
+logging.getLogger('').addHandler(console)
+logger = logging.getLogger('')
 
 ## Start flask
 app = Flask(__name__)
@@ -76,18 +76,18 @@ def check_session(f):
 @app.route("/")
 def root():
     # create save file if missing
-    db.create_save_database(save_file)
+    db.create_save_database(save_file, logger=logger)
     # check if story db is present
     if not os.path.exists(game_file):
         # get the latest release
-        get_release = f.get_latest_release(repository_owner, repository_name, game_file)
+        get_release = f.get_latest_release(repository_owner, repository_name, game_file, logger=logger)
         return render_template('db.html', footer_vars=footer_vars, global_vars=v.global_vars, get_release=get_release, new=False)
     else:
         ## check new version
         db_version = db.get_game_db_version(game_file)
         global_vars['app_version'] = db_version['version']
-        # print(db_version['version'])
-        check_version = f.check_new_version(db_version, repository_owner, repository_name)
+        log.debug('db_version = ' + str(db_version['version']))
+        check_version = f.check_new_version(db_version, repository_owner, repository_name, logger=logger)
         if check_version:
             return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, new=True)
         else:
@@ -97,43 +97,43 @@ def root():
 def root_new():
     # delete current game db and download it
     os.remove(game_file)
-    f.get_latest_release(repository_owner, repository_name, game_file)
-    db_version = db.get_game_db_version(game_file)
+    f.get_latest_release(repository_owner, repository_name, game_file, logger=logger)
+    db_version = db.get_game_db_version(game_file, logger=logger)
     global_vars['app_version'] = db_version['version']
     return redirect(url_for('sys'))
 
 @app.route("/sys")
 @app.route("/sys/load/<int:save_id>")
 def sys(save_id=0):
-    try_test_save_file = f.test_save_file(save_file)
-    log.debug(try_test_save_file)
+    try_test_save_file = f.test_save_file(save_file, logger=logger)
+    logger.debug(try_test_save_file)
     save_data = None
     read_save = None
     if try_test_save_file:
-        save_data = db.list_save_data(save_file)
+        save_data = db.list_save_data(save_file, logger=logger)
     if save_id != 0:
-        read_save = db.get_save_data(save_file, save_id)
+        read_save = db.get_save_data(save_file, save_id, logger=logger)
     return render_template('sys/sys.html', footer_vars=footer_vars, global_vars=global_vars, try_test_save_file=try_test_save_file, save_data=save_data, read_save=read_save)
 
 @app.route("/sys/load/save/<int:save_id>")
 def sys_load_save(save_id):
-    save_data = db.get_save_data(save_file, save_id)
+    save_data = db.get_save_data(save_file, save_id, logger=logger)
 
     global session
 
-    session = f.register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'])
+    session = f.register_session(save_data['id'], name=save_data['name'], current_xp=save_data['current_xp'], level=save_data['level'], current_chapter=save_data['current_chapter'], current_step=save_data['current_step'], logger=logger)
 
     return redirect(url_for('data'))
 
 @app.route("/sys/create")
 def sys_create():
-    db.create_save_database(save_file)
+    db.create_save_database(save_file, logger=logger)
     return redirect(url_for('sys'))
 
 @app.route("/sys/new", methods=('GET', 'POST'))
 def sys_new():
     if request.method == 'POST':
-        ret = db.create_character(save_file, character_name=request.form['sys_new_character'], gender=request.form['sys_new_gender'])
+        ret = db.create_character(save_file, character_name=request.form['sys_new_character'], gender=request.form['sys_new_gender'], logger=logger)
         if ret is None:
             return redirect(url_for('sys'))
         else:
@@ -145,7 +145,7 @@ def sys_new():
 
 @app.route("/stat")
 def stat():
-    test_save_file = f.test_save_file(save_file)
+    test_save_file = f.test_save_file(save_file, logger=logger)
     return render_template('stat/stat.html', global_vars=global_vars, test_save_file=test_save_file)
 
 @app.route("/inv")
@@ -158,17 +158,17 @@ def inv(item_id=None, inv_category=None):
         return redirect(url_for('inv', inv_category='weapon'))
 
     if item_id is not None:
-        inv_item = db.get_item(game_file, inv_category, item_id)
+        inv_item = db.get_item(game_file, inv_category, item_id, logger=logger)
         selected_item = inv_item
         selected_item_type = inv_category
     else:
         selected_item = None
         selected_item_type = None
-    inventory = db.get_inventory(save_file, session['save_id'], filter=inv_category)
+    inventory = db.get_inventory(save_file, session['save_id'], filter=inv_category, logger=logger)
     items = []
     for item in inventory:
         items.append(item['item_id'])
-    inv_items = db.get_inv_items(game_file, items, inv_category)
+    inv_items = db.get_inv_items(game_file, items, inv_category, logger=logger)
 
     return render_template('inv/inv.html', global_vars=global_vars, inv_category=inv_category, inventory=inv_items, selected_item=selected_item, selected_item_type=selected_item_type)
 
@@ -204,11 +204,11 @@ def map_search():
 @app.route("/data")
 @check_session
 def data():
-    save_data = db.get_save_data(save_file, session['save_id'])
+    save_data = db.get_save_data(save_file, session['save_id'], logger=logger)
     ## If it's the first chapter, register it in the path
     if save_data['current_chapter'] == 1 and save_data['current_step'] == 1:
-        db.save_story_path(save_file, session['save_id'], 1, 1)
-    chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'])
+        db.save_story_path(save_file, session['save_id'], 1, 1, logger=logger)
+    chapter_and_step = db.get_chapter_step(game_file, save_data['current_chapter'], save_data['current_step'], logger=logger)
 
     return render_template('data/data.html', global_vars=global_vars, chapter_and_step=chapter_and_step)
 
@@ -218,15 +218,14 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
 
     global session
 
-    exp_char = f.exp_character(session['current_xp'], session['level'], exp)
+    exp_char = f.exp_character(session['current_xp'], session['level'], exp, logger=logger)
     session = exp_char
 
     url_params = request.args
-    print('url args')
-    print(url_params['loot'])
+    logger.debug(url_params['loot'])
     loot = url_params['loot']
     if loot != 'None':
-        db.loot(save_file, session['save_id'], loot)
+        db.loot(save_file, session['save_id'], loot, logger=logger)
 
     if chapter_id != next_chapter:
         chapter = next_chapter
@@ -235,21 +234,21 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
         chapter = chapter_id
         step = choice_id
 
-    chapter_and_step = db.get_chapter_step(game_file, chapter, step)
+    chapter_and_step = db.get_chapter_step(game_file, chapter, step, logger=logger)
 
-    db.save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'])
+    db.save_progress(save_file, session['save_id'], chapter=chapter_and_step['chapter'], step=choice_id, level=session['level'], current_xp=session['current_xp'], end=chapter_and_step['end'], logger=logger)
 
-    db.save_story_path(save_file, session['save_id'], chapter_and_step['chapter'], choice_id)
+    db.save_story_path(save_file, session['save_id'], chapter_and_step['chapter'], choice_id, logger=logger)
 
     return redirect(url_for('data'))
 
 @app.route("/data/log")
 @check_session
 def data_log():
-    story_path = db.get_story_path(save_file, session['save_id'])
+    story_path = db.get_story_path(save_file, session['save_id'], logger=logger)
 
     story = []
     for story_row in story_path:
-        story_step = db.get_chapter_step(game_file, story_row['chapter'], story_row['step'])
+        story_step = db.get_chapter_step(game_file, story_row['chapter'], story_row['step'], logger=logger)
         story.append(story_step['text'])
     return render_template('data/log.html', global_vars=global_vars, story=story)
