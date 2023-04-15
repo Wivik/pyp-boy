@@ -162,6 +162,17 @@ def sys_debug():
                 db.add_item(save_file, session['save_id'], item['id'], item_type, logger=logger)
                 flash('Item '+ item_type +' id ' + str(item['id']) +' added')
             return render_template('sys/debug.html', global_vars=global_vars)
+
+        elif url_params['action'] == 'add_all_maps':
+            maps = db.run_db_select_all_query(game_file, 'SELECT id, name FROM map', '', logger=logger)
+            for map in maps:
+                ret = db.discover_location(save_file, session['save_id'], map['id'], logger=logger)
+                if ret is not None:
+                    flash('Error : '+ str(ret))
+                else:
+                    flash('Map '+ map['name'] +' id ' + str(map['id']) +' added')
+            return render_template('sys/debug.html', global_vars=global_vars)
+
     else:
         return render_template('sys/debug.html', global_vars=global_vars)
 
@@ -195,21 +206,18 @@ def inv(item_id=None, inv_category=None):
     return render_template('inv/inv.html', global_vars=global_vars, inv_category=inv_category, inventory=inv_items, selected_item=selected_item, selected_item_type=selected_item_type)
 
 @app.route("/map", methods=['GET'])
-@app.route("/map/", methods=['GET'])
-def map():
-    url = 'https://ipinfo.io/json'
-    response = requests.get(url)
-    get_latitude = request.args.get('latitude', '0')
-    get_longitude = request.args.get('longitude', '0')
+@app.route("/map/<int:loc_id>", methods=['GET'])
+@check_session
+def map(loc_id=None):
 
-    if get_latitude == '0' and get_longitude == '0':
-        geoloc_request = response.json()['loc']
+    if loc_id is not None:
+        selected_location = db.get_location(game_file, loc_id, logger=logger)
     else:
-        geoloc_request = str(get_latitude) + ',' +str(get_longitude)
+        selected_location = None
 
-    print(geoloc_request)
-    location = geolocator.geocode(geoloc_request)
-    return render_template('map/map.html', location=location, global_vars=global_vars)
+    locations = db.get_discovered_locations(save_file, game_file, session['save_id'], logger=logger)
+
+    return render_template('map/map.html', locations=locations, selected_location=selected_location, global_vars=global_vars)
 
 @app.route("/map/search", methods=('GET', 'POST'))
 def map_search():

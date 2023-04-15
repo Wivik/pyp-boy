@@ -5,69 +5,29 @@
 
 {% include 'map/map_submenu.html' %}
 
-<div id="location">
-    <div class="location_place">{{ location.raw['display_name'].split(',')[0] }}</div>
-    <div>{{ location.latitude }}</div>
-    <div>{{ location.longitude }}</div>
-</div>
-
-<div id="container_map">
-    <div id="map"></div>
-    <div id="container_location">
-    {%for item in location.raw['display_name'].split(',') %}
-    {{ item }}<br />
-    {%endfor%}
+<div id="container">
+    <div id="container_left">
+        {% if locations|length != 0 %}
+        {% for location in locations %}
+        <a href="{{ url_for('map', loc_id=location.id) }}">{{ location.name }}</a>
+        {% endfor %}
+        {% endif %}
     </div>
+
+    <div id="container_right">
+        {% if selected_location and selected_location|length != 0 %}
+        {% with location=selected_location %}
+            {% include 'map/map_display.html'  %}
+        {% endwith %}
+        <span>{{ selected_location.name }}</span>
+        <span>Type : {{ selected_location.type }}</span>
+        <span class="descr">{{ selected_location.descr }}</span>
+        {% else %}
+        &nbsp;
+        {% endif %}
+    </div>
+
 </div>
-
-
-<script>
-
-    var map = L.map('map').setView(['{{ location.latitude }}', '{{ location.longitude }}'], 13);
-    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png', {
-        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors using Stamen Toner map design'
-    }).addTo(map);
-    var circle = L.circle(['{{ location.latitude }}', '{{ location.longitude }}'], {
-        color: '#8aff00',
-        fillColor: '#0b6e13',
-        fillOpacity: .50,
-        radius: 250
-    }).addTo(map);
-    L.control.locate({
-        position: 'topleft',
-        drawCircle: true,
-        follow: true,
-        setView: true,
-        keepCurrentZoomLevel: true,
-        stopFollowingOnDrag: false,
-        remainActive: true,
-        markerClass: L.marker,
-        circleStyle: {},
-        markerStyle: {},
-        followCircleStyle: {},
-        followMarkerStyle: {},
-        icon: 'fa fa-location-arrow',
-        iconLoading: 'fa fa-spinner fa-spin',
-        iconElementTag: 'span',
-        circlePadding: [0, 0],
-        metric: true,
-        onLocationError: function(err) {
-            alert(err.message);
-        },
-        onLocationOutsideMapBounds: function(context) {
-            alert("You are outside the boundaries of the map.");
-        },
-        setZoom: 16,
-        strings: {
-            title: "Show me where I am",
-            metersUnit: "meters",
-            feetUnit: "feet",
-            popup: "You are within {distance} {unit} from this point",
-            outsideMapBoundsMsg: "You seem located outside the boundaries of the map"
-        }
-    }).addTo(map);
-
-</script>
 
 
 {% endblock %}

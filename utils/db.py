@@ -73,13 +73,22 @@ def create_save_database(save_file, logger):
             );
         ''')
         c.execute('''
-        CREATE TABLE "inventories" (
-            "id"	INTEGER,
-            "save_id"	INTEGER NOT NULL,
-            "item_id"	INTEGER NOT NULL,
-            "type"	TEXT NOT NULL,
-            PRIMARY KEY("id" AUTOINCREMENT)
-        )
+            CREATE TABLE "inventories" (
+                "id"	INTEGER,
+                "save_id"	INTEGER NOT NULL,
+                "item_id"	INTEGER NOT NULL,
+                "type"	TEXT NOT NULL,
+                PRIMARY KEY("id" AUTOINCREMENT)
+            )
+        ''')
+        c.execute('''
+            CREATE TABLE "locations" (
+                "id"	INTEGER,
+                "save_id"	INTEGER,
+                "location"	INTEGER,
+                PRIMARY KEY("id" AUTOINCREMENT),
+                UNIQUE("save_id","location")
+            )
         ''')
         conn.commit()
     except Error as e:
@@ -193,6 +202,38 @@ def save_story_path(save_file, save_id, chapter, step, logger):
 
 def get_story_path(save_file, save_id, logger):
     ret = run_db_select_all_query(save_file, 'SELECT * FROM story_path WHERE save_id = ? ORDER BY chapter, step ASC', (save_id,), logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def discover_location(save_file, save_id, location, logger):
+    ret = run_db_change_query(save_file, 'INSERT INTO locations (save_id, location) VALUES(?, ?)', (save_id, location), logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_discovered_locations(save_file, game_file, save_id, logger):
+    locations = []
+    get_locations = run_db_select_all_query(save_file, 'SELECT id FROM locations WHERE save_id = ?', (save_id,), logger)
+    for location in get_locations:
+        locations.append(location['id'])
+    if len(locations) == 1:
+        for location in locations:
+            list_locations = location
+        list_locations = '('+ str(list_locations) +')'
+    else:
+        list_locations = str(tuple(locations))
+    query = f'SELECT * FROM map WHERE id IN {list_locations} ORDER BY name ASC'
+    ret = run_db_select_all_query(game_file, query, '', logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_location(game_file, location, logger):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM map WHERE id = ?', (location,), logger)
     if ret is None:
         return
     else:
