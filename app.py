@@ -25,12 +25,13 @@ log_file = os.path.join(log_path, 'app.log')
 repository_owner = 'Wivik'
 repository_name = 'pyp-boy'
 
-PYP_BOY_LOG_LEVEL = os.environ.get('PYP_BOY_LOG_LEVEL')
+PYP_BOY_MODE = os.environ.get('PYP_BOY_MODE')
 
-if PYP_BOY_LOG_LEVEL is not None and PYP_BOY_LOG_LEVEL == 'DEBUG':
-    log_level = 'DEBUG'
-else:
-    log_level = 'INFO'
+if PYP_BOY_MODE is not None and PYP_BOY_MODE == 'DEBUG':
+    print('debug mode on')
+    global_vars.update(
+        pyp_boy_debug_mode=True,
+    )
 
 ## Create dir
 if not os.path.isdir(log_path):
@@ -81,7 +82,7 @@ def root():
     if not os.path.exists(game_file):
         # get the latest release
         get_release = f.get_latest_release(repository_owner, repository_name, game_file, logger=logger)
-        return render_template('db.html', footer_vars=footer_vars, global_vars=v.global_vars, get_release=get_release, new=False)
+        return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, get_release=get_release, new=False)
     else:
         ## check new version
         db_version = db.get_game_db_version(game_file)
@@ -91,6 +92,7 @@ def root():
         if check_version:
             return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, new=True)
         else:
+            global_vars.update(app_version=db_version)
             return redirect(url_for('sys'))
 
 @app.route("/newfile")
@@ -142,6 +144,26 @@ def sys_new():
             return redirect(url_for('sys'))
     else:
         return render_template('sys/new.html', global_vars=global_vars)
+
+@app.route("/sys/debug")
+@check_session
+def sys_debug():
+
+    url_params = request.args
+    if len(url_params) > 0:
+        if url_params['action'] == 'add_all_items':
+            item_type = url_params['type']
+            if item_type not in ['weapon', 'aid', 'apparel', 'misc']:
+                error_number = f.gen_random_hex_number()
+                flash(error_number + ' DEBUG_ITEMS '+str(ret))
+                return redirect(url_for('sys_debug'))
+            items = db.run_db_select_all_query(game_file, 'SELECT id FROM '+ item_type, '', logger=logger)
+            for item in items:
+                db.add_item(save_file, session['save_id'], item['id'], item_type, logger=logger)
+                flash('Item '+ item_type +' id ' + str(item['id']) +' added')
+            return render_template('sys/debug.html', global_vars=global_vars)
+    else:
+        return render_template('sys/debug.html', global_vars=global_vars)
 
 @app.route("/stat")
 def stat():
@@ -252,3 +274,5 @@ def data_log():
         story_step = db.get_chapter_step(game_file, story_row['chapter'], story_row['step'], logger=logger)
         story.append(story_step['text'])
     return render_template('data/log.html', global_vars=global_vars, story=story)
+
+

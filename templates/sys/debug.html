@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'sys/sys_submenu.html' %}
+
+<div id="container">
+
+    <div id="container_left">
+        <p>Debug section</p>
+
+        <a href="{{ url_for('sys_debug', action='add_all_items', type='weapon') }}">Add all weapons items to inventory</a>
+        <a href="{{ url_for('sys_debug', action='add_all_items', type='apparel') }}">Add all apparel items to inventory</a>
+        <a href="{{ url_for('sys_debug', action='add_all_items', type='aid') }}">Add all aid items to inventory</a>
+        <a href="{{ url_for('sys_debug', action='add_all_items', type='misc') }}">Add all misc items to inventory</a>
+    </div>
+    <div id="container_right" style="background-image: url({{ url_for('static', filename='img/back/debug.png') }});" class="pixel-art">
+        &nbsp;
+    </div>
+
+</div>
+
+
+
+{% endblock %}
