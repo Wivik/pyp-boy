@@ -1,6 +1,7 @@
 <nav>
     <ul>
-        <li><a href="/map"{% if request.path.startswith('/map') %} class="active"{% endif %}>Locations</a></li>
+        <li><a href="/map"{% if request.path.startswith('/map') or request.path.startswith('/map/location') %} class="active"{% endif %}>Locations</a></li>
+        <li><a href="/map/region"{% if request.path.startswith('/map/region') %} class="active"{% endif %}>Map</a></li>
     </ul>
 
 </nav>

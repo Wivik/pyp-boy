@@ -1,53 +1,64 @@
-<div id="map"></div>
+<div id="map"{% if big_map %} class="big_map"{% endif %}></div>
 
 <script>
-    var map = L.map('map', {attributionControl: false}).setView(['{{ location.latitude }}', '{{ location.longitude }}'], 16);
-    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.png', {
-        attribution: 'Map data ©OpenStreetMap contributors using Stamen Toner map design'
+    var map = L.map('map', {
+            attributionControl: false,
+            zoom: {{ zoom_level | default('18') }},
+            minZoom: 5,
+            maxZoom: 18
+        }
+    ).setView(['{{ default.latitude }}', '{{ default.longitude }}'], 16);
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png', {
+        attribution: ''
     }).addTo(map);
-    var circle = L.circle(['{{ location.latitude }}', '{{ location.longitude }}'], {
+
+    {% if display_circle %}
+    var circle = L.circle(['{{ default.latitude }}', '{{ default.longitude }}'], {
         color: '#8aff00',
         fillColor: '#0b6e13',
         fillOpacity: .50,
-        radius: 50
+        radius: 70
     }).addTo(map);
-    var customIcon = L.icon({
-        iconUrl: '{{ url_for('static', filename='icons/'+ location.type+ '.png') }}',
+    {% endif %}
+
+    var campIcon = L.icon({
+        iconUrl: '{{ url_for('static', filename='icons/camp.png') }}',
         iconSize: [24, 24]
     })
-    L.marker(['{{ location.latitude }}', '{{ location.longitude }}'], {icon: customIcon}).addTo(map);
-    L.control.locate({
-        position: 'topleft',
-        drawCircle: true,
-        follow: true,
-        setView: true,
-        keepCurrentZoomLevel: true,
-        stopFollowingOnDrag: false,
-        remainActive: true,
-        markerClass: L.marker,
-        circleStyle: {},
-        markerStyle: {},
-        followCircleStyle: {},
-        followMarkerStyle: {},
-        icon: 'fa fa-location-arrow',
-        iconLoading: 'fa fa-spinner fa-spin',
-        iconElementTag: 'span',
-        circlePadding: [0, 0],
-        metric: true,
-        onLocationError: function(err) {
-            alert(err.message);
-        },
-        onLocationOutsideMapBounds: function(context) {
-            alert("You are outside the boundaries of the map.");
-        },
-        setZoom: 18,
-        strings: {
-            title: "Show me where I am",
-            metersUnit: "meters",
-            feetUnit: "feet",
-            popup: "You are within {distance} {unit} from this point",
-            outsideMapBoundsMsg: "You seem located outside the boundaries of the map"
-        }
-    }).addTo(map);
+    var cityIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/city.png') }}',
+            iconSize: [24, 24]
+        })
+    var facilityIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/facility.png') }}',
+            iconSize: [24, 24]
+        })
+    var governmentIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/government.png') }}',
+            iconSize: [24, 24]
+        })
+    var leasureIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/leasure.png') }}',
+            iconSize: [24, 24]
+        })
+    var rocketIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/rocket.png') }}',
+            iconSize: [24, 24]
+        })
+    var villageIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/village.png') }}',
+            iconSize: [24, 24]
+        })
+    var warehouseIcon = L.icon({
+            iconUrl: '{{ url_for('static', filename='icons/warehouse.png') }}',
+            iconSize: [24, 24]
+        })
+
+    {% for location in locations %}
+    var {{ location.type }}{{ location.id }} = L.marker(['{{ location.latitude }}', '{{ location.longitude }}'], {icon: {{ location.type }}Icon}).addTo(map);
+    {{ location.type }}{{ location.id }}.bindPopup('{{ location.name }}')
+
+    {% endfor %}
+
 
 </script>

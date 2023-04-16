@@ -3,6 +3,7 @@
         <li><a href="/sys"{% if request.path == '/' or request.path == '/sys' or request.path == '/sys/' or request.path.startswith("/sys/load") %} class="active"{% endif %}>Open</a></li>
         <li><a href="/sys/new"{% if request.path == '/sys/new' %} class="active"{% endif %}>New</a></li>
         <li><a href="/sys/manage"{% if request.path == '/sys/manage' %} class="active"{% endif %}>Manage</a></li>
+        <li><a href="/sys/about"{% if request.path == '/sys/about' %} class="active"{% endif %}>About</a></li>
         {%if global_vars.pyp_boy_debug_mode %}
         <li><a href="/sys/debug"{% if request.path == '/sys/debug' %} class="active"{% endif %}>Debug</a></li>
         {% endif %}

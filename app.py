@@ -176,6 +176,10 @@ def sys_debug():
     else:
         return render_template('sys/debug.html', global_vars=global_vars)
 
+@app.route("/sys/about")
+def sys_about():
+    return render_template('sys/about.html', global_vars=global_vars)
+
 @app.route("/stat")
 def stat():
     test_save_file = f.test_save_file(save_file, logger=logger)
@@ -206,7 +210,7 @@ def inv(item_id=None, inv_category=None):
     return render_template('inv/inv.html', global_vars=global_vars, inv_category=inv_category, inventory=inv_items, selected_item=selected_item, selected_item_type=selected_item_type)
 
 @app.route("/map", methods=['GET'])
-@app.route("/map/<int:loc_id>", methods=['GET'])
+@app.route("/map/location/<int:loc_id>", methods=['GET'])
 @check_session
 def map(loc_id=None):
 
@@ -219,16 +223,14 @@ def map(loc_id=None):
 
     return render_template('map/map.html', locations=locations, selected_location=selected_location, global_vars=global_vars)
 
-@app.route("/map/search", methods=('GET', 'POST'))
-def map_search():
-    if request.method == 'POST':
-        map_search_item = request.form['map_search_item']
-        search_location = geolocator.geocode(map_search_item, exactly_one=False, limit=10)
-        print(search_location)
-        return render_template('map/map_search.html', search_results=search_location, global_vars=global_vars)
+@app.route("/map/region", methods=['GET'])
+@check_session
+def map_region():
 
-    else:
-        return render_template('map/map_search.html', global_vars=global_vars)
+    selected_location = db.get_location(game_file, 1, logger=logger)
+    locations = db.get_discovered_locations(save_file, game_file, session['save_id'], logger=logger)
+
+    return render_template('map/region.html', locations=locations, selected_location=selected_location, global_vars=global_vars)
 
 
 @app.route("/data")

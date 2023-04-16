@@ -16,7 +16,7 @@
 
     <div id="container_right">
         {% if selected_location and selected_location|length != 0 %}
-        {% with location=selected_location %}
+        {% with location=selected_location, default=selected_location, display_circle=True %}
             {% include 'map/map_display.html'  %}
         {% endwith %}
         <span>{{ selected_location.name }}</span>

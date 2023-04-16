@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% include 'map/map_submenu.html' %}
+
+{% with locations=locations, default=selected_location, display_circle=False, zoom_level=10 %}
+{% include 'map/map_display.html'  %}
+{% endwith %}
+
+
+{% endblock %}
