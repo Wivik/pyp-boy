@@ -216,9 +216,9 @@ def discover_location(save_file, save_id, location, logger):
 
 def get_discovered_locations(save_file, game_file, save_id, logger):
     locations = []
-    get_locations = run_db_select_all_query(save_file, 'SELECT id FROM locations WHERE save_id = ?', (save_id,), logger)
+    get_locations = run_db_select_all_query(save_file, 'SELECT location FROM locations WHERE save_id = ?', (save_id,), logger)
     for location in get_locations:
-        locations.append(location['id'])
+        locations.append(location['location'])
     if len(locations) == 1:
         for location in locations:
             list_locations = location
@@ -234,6 +234,38 @@ def get_discovered_locations(save_file, game_file, save_id, logger):
 
 def get_location(game_file, location, logger):
     ret = run_db_select_one_query(game_file, 'SELECT * FROM map WHERE id = ?', (location,), logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def meet_character(save_file, save_id, character, logger):
+    ret = run_db_change_query(save_file, 'INSERT INTO characters (save_id, character_id) VALUES(?, ?)', (save_id, character), logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_encountered_characters(save_file, game_file, save_id, logger):
+    characters = []
+    get_characters = run_db_select_all_query(save_file, 'SELECT character_id FROM characters WHERE save_id = ?', (save_id,), logger)
+    for character in get_characters:
+        characters.append(character['character_id'])
+    if len(characters) == 1:
+        for character in characters:
+            list_characters = character
+        list_characters = '('+ str(list_characters) +')'
+    else:
+        list_characters = str(tuple(characters))
+    query = f'SELECT * FROM character WHERE id IN {list_characters} ORDER BY name ASC'
+    ret = run_db_select_all_query(game_file, query, '', logger)
+    if ret is None:
+        return
+    else:
+        return ret
+
+def get_character(game_file, character, logger):
+    ret = run_db_select_one_query(game_file, 'SELECT * FROM character WHERE id = ?', (character,), logger)
     if ret is None:
         return
     else:

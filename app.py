@@ -85,9 +85,9 @@ def root():
         return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, get_release=get_release, new=False)
     else:
         ## check new version
-        db_version = db.get_game_db_version(game_file)
+        db_version = db.get_game_db_version(game_file, logger=logger)
         global_vars['app_version'] = db_version['version']
-        log.debug('db_version = ' + str(db_version['version']))
+        logger.debug('db_version = ' + str(db_version['version']))
         check_version = f.check_new_version(db_version, repository_owner, repository_name, logger=logger)
         if check_version:
             return render_template('db.html', footer_vars=footer_vars, global_vars=global_vars, new=True)
@@ -173,6 +173,16 @@ def sys_debug():
                     flash('Map '+ map['name'] +' id ' + str(map['id']) +' added')
             return render_template('sys/debug.html', global_vars=global_vars)
 
+        elif url_params['action'] == 'add_all_characters':
+            characters = db.run_db_select_all_query(game_file, 'SELECT id, name FROM character', '', logger=logger)
+            for character in characters:
+                ret = db.meet_character(save_file, session['save_id'], character['id'], logger=logger)
+                if ret is not None:
+                    flash('Error : '+ str(ret))
+                else:
+                    flash('Character '+ character['name'] +' id ' + str(character['id']) +' added')
+            return render_template('sys/debug.html', global_vars=global_vars)
+
     else:
         return render_template('sys/debug.html', global_vars=global_vars)
 
@@ -214,6 +224,12 @@ def inv(item_id=None, inv_category=None):
 @check_session
 def map(loc_id=None):
 
+    url_params = request.args
+    if len(url_params) > 0 and url_params['mode'] in ['map', 'pict']:
+        mode = url_params['mode']
+    else:
+        mode = None
+
     if loc_id is not None:
         selected_location = db.get_location(game_file, loc_id, logger=logger)
     else:
@@ -221,7 +237,7 @@ def map(loc_id=None):
 
     locations = db.get_discovered_locations(save_file, game_file, session['save_id'], logger=logger)
 
-    return render_template('map/map.html', locations=locations, selected_location=selected_location, global_vars=global_vars)
+    return render_template('map/map.html', locations=locations, selected_location=selected_location, global_vars=global_vars, mode=mode)
 
 @app.route("/map/region", methods=['GET'])
 @check_session
@@ -285,4 +301,16 @@ def data_log():
         story.append(story_step['text'])
     return render_template('data/log.html', global_vars=global_vars, story=story)
 
+@app.route("/data/characters")
+@app.route("/data/characters/<int:character_id>")
+@check_session
+def data_characters(character_id=None):
+    if character_id is not None:
+        selected_character = db.get_character(game_file, character_id, logger=logger)
+    else:
+        selected_character = None
 
+    characters = db.get_encountered_characters(save_file, game_file, session['save_id'], logger=logger)
+    print(characters)
+
+    return render_template('data/characters.html', characters=characters, selected_character=selected_character, global_vars=global_vars)

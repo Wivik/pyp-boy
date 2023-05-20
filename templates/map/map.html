@@ -9,23 +9,40 @@
     <div id="container_left">
         {% if locations|length != 0 %}
         {% for location in locations %}
-        <a href="{{ url_for('map', loc_id=location.id) }}">{{ location.name }}</a>
+        <a href="{{ url_for('map', loc_id=location.id) }}" {% if request.path.endswith('location/'+location.id|string) %}class="active"{% endif %}>{{ location.name }}</a>
         {% endfor %}
         {% endif %}
     </div>
 
+    {% if selected_location and selected_location|length != 0 %}
+    {% if mode == 'map' or mode == None %}
     <div id="container_right">
-        {% if selected_location and selected_location|length != 0 %}
+        <a href="{{ url_for('map', loc_id=selected_location.id, mode='map') }}" {% if request.args['mode']|default('map') == 'map' %}class="active"{% endif %}>Map</a>
+        <a href="{{ url_for('map', loc_id=selected_location.id, mode='pict') }}" {% if request.args['mode']|default('map') == 'pict' %}class="active"{% endif %}>Picture</a>
         {% with location=selected_location, default=selected_location, display_circle=True %}
             {% include 'map/map_display.html'  %}
         {% endwith %}
         <span>{{ selected_location.name }}</span>
         <span>Type : {{ selected_location.type }}</span>
         <span class="descr">{{ selected_location.descr }}</span>
-        {% else %}
-        &nbsp;
-        {% endif %}
     </div>
+    {% else %}
+    <div id="container_right">
+        <a href="{{ url_for('map', loc_id=selected_location.id, mode='map') }}" {% if request.args['mode']|default('map') == 'map' %}class="active"{% endif %}>Map</a>
+        <a href="{{ url_for('map', loc_id=selected_location.id, mode='pict') }}" {% if request.args['mode']|default('map') == 'pict' %}class="active"{% endif %}>Picture</a>
+        <div style="background-image: url('{{ url_for('static', filename='img/back/'+ selected_location.pict )}}');" class="pixel-art">
+            &nbsp;
+        </div>
+        <span>{{ selected_location.name }}</span>
+        <span>Type : {{ selected_location.type }}</span>
+        <span class="descr">{{ selected_location.descr }}</span>
+    </div>
+    {% endif %}
+    {% else %}
+    <div id="container_right">
+        &nbsp;
+    </div>
+    {% endif %}
 
 </div>
 

@@ -2,6 +2,7 @@
     <ul>
         <li><a href="/data"{% if request.path == "/data" %} class="active"{% endif %}>Journey</a></li>
         <li><a href="/data/log"{% if request.path.startswith("/data/log") %} class="active"{% endif %}>Log</a></li>
+        <li><a href="/data/characters"{% if request.path.startswith("/data/characters") %} class="active"{% endif %}>Characters</a></li>
     </ul>
 
 </nav>

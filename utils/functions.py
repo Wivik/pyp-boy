@@ -67,7 +67,7 @@ def check_new_version(current_version, owner, repo, logger):
         logger.debug(release_version)
         logger.debug(current_version)
         if release_version != current_version:
-            lgger.debug('new version')
+            logger.debug('new version')
             return True
         else:
             return False

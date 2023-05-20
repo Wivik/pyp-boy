@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'data/submenu.html' %}
+
+
+<div id="container">
+    <div id="container_left">
+        {% if characters | length > 0 %}
+        {% for character in characters %}
+        <a href="{{ url_for('data_characters', character_id=character.id) }}"{% if request.path.endswith('data/characters/'+character.id|string) %} class="active"{% endif %}>{{ character.name }}</a>
+        {% endfor %}
+        {% endif %}
+    </div>
+
+    <div id="container_right">
+        {% if selected_character  and selected_character | length > 0 %}
+        <div style="background-image: url('{{ url_for('static', filename='img/characters/'+selected_character.pict )}}');" class="pixel-art">
+            &nbsp;
+        </div>
+        <span>{{ selected_character.name }}</span>
+        <span class="descr">{{ selected_character.descr }}</span>
+        {% else %}
+        &nbsp;
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

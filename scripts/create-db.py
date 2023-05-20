@@ -16,8 +16,10 @@ game_db_files = [
     '../sql/game_db_story.sql',
     '../sql/game_db_weapon.sql',
     '../sql/game_db_apparel.sql',
+    '../sql/game_db_character.sql',
     '../sql/game_db_aid.sql',
     '../sql/game_db_misc.sql',
+    '../sql/game_db_map.sql',
     '../sql/game_db_version.sql',
 ]
 
@@ -47,6 +49,7 @@ with open('../sql/story.csv', 'r') as story_file:
 
 inventory_files = [
     {'name': 'apparel', 'file': '../sql/apparel.csv'},
+    {'name': 'aid', 'file': '../sql/aid.csv'},
     {'name': 'weapon', 'file': '../sql/weapon.csv'},
     {'name': 'misc', 'file': '../sql/misc.csv'},
 ]
@@ -69,5 +72,32 @@ conn.commit()
 
 conn.close()
 
+c.execute('INSERT INTO db_version values(?)', (version,))
+conn.commit()
 
+with open('../sql/map.csv', 'r') as map_file:
+    map = csv.reader(map_file)
+
+    for row in map:
+        # print(row)
+        row = [None if value.strip() == '' else value.strip() for value in row]
+
+        c.execute('INSERT INTO map VALUES (?, ?, ?, ?, ?, ?, ?)', row)
+
+    conn.commit()
+
+    conn.close()
+
+with open('../sql/character.csv', 'r') as character_file:
+    character = csv.reader(character_file)
+
+    for row in character:
+        # print(row)
+        row = [None if value.strip() == '' else value.strip() for value in row]
+
+        c.execute('INSERT INTO character VALUES (?, ?, ?, ?)', row)
+
+    conn.commit()
+
+    conn.close()
 
