@@ -31,11 +31,11 @@ This project is mainly a playground for coding learning for a not-developer guy.
 
 This project is licensed under MIT and CC-BY-SA 4.0. Please refer to the [LICENSE](LICENSE) file for more information.
 
-Other attributions are : 
+Other attributions are :
 
 - Maps based on [OpenStreetMap](https://www.openstreetmap.org/), using [Leaflet](https://leafletjs.com) and [Stamenmaps](http://maps.stamen.com/#watercolor/12/37.7706/-122.3782) render.
 - Icons are from [Remix Icon](https://remixicon.com).
-- The game's illustrations has been generated with [Craiyon](https://www.craiyon.com).
+- The game's illustrations has been generated with [InvokeAI](http://github.com/invoke-ai/InvokeAI) using the [DarkSushi model](https://civitai.com/models/48671?modelVersionId=56009).
 - Some images are from the *Fallout* game, they're listed in the LICENSE content.
-- The story has been written in French, the English translation has been initiated using [DeepL Free translation tool](https://www.deepl.com/translator).
+- The story has been written in French, the English translation has been made using [DeepL Free translation tool](https://www.deepl.com/translator) with manual review.
 
