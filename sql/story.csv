@@ -2,14 +2,14 @@
 
 ""Where's your camp?"" the man in front of you asked, shouting as if he thought you were deaf. 
 
-""Camp, camp, camp..."" that word echoes in your head still panicked and alert. The sharp pain at the base of your skull lets you know that you have not been roused from your sleep but taken away by force after being violently knocked out. This guy wants to know the location of the camp where you recently found refuge and were taken in when you were in bad shape.",1,5,3,2,img:basement.jpg,0,You give the guy what he wants,You try to stand up to the interrogation and refuse to give information,You say nothing and look around for an escape plan,100,apparel:1;apparel:2
+""Camp, camp, camp..."" that word echoes in your head still panicked and alert. The sharp pain at the base of your skull lets you know that you have not been roused from your sleep but taken away by force after being violently knocked out. This guy wants to know the location of the camp where you recently found refuge and were taken in when you were in bad shape.",1,5,3,2,img:basement.jpg,0,You give the guy what he wants,You try to stand up to the interrogation and refuse to give information,You say nothing and look around for an escape plan,100,apparel:1;apparel:2,10,
 2,1,2,"You observe the place you are in. It seems to be some kind of cellar in the basement of a ruined house. There are small windows at the top of the walls, most of them broken, which could allow you to escape through them. There are quite a few tools also lying around on the floor or on a table that seems to serve as a makeshift workbench. You make a quick inventory of what your confused look manages to identify: hammers, screwdrivers, ropes, chains, and ... A body lying on a mattress at the back of the room.
 
 Obviously, your captors are no joke and either the guy at the back was less lucky, or he was already pretty beat up because even a ghoul looks better than what would appear to be the remains of his face.
 
 ""Are you deaf or something? I asked you where your camp is!""
 
-Your interrogator becomes more and more urgent, as if he is under pressure to get results as soon as possible. He then grabs some kind of crowbar and brandishes it with a threatening look. You don't really want to end up like the one who seems to have been your predecessor.",1,5,3,,img:basement.jpg,0,You try to lie about the location of the camp,You refuse to answer,,100,
+Your interrogator becomes more and more urgent, as if he is under pressure to get results as soon as possible. He then grabs some kind of crowbar and brandishes it with a threatening look. You don't really want to end up like the one who seems to have been your predecessor.",1,5,3,,img:basement.jpg,0,You try to lie about the location of the camp,You refuse to answer,,100,,6,
 3,1,3,"""What camp?"" you answer your attacker. You refuse to tell him anything about the last place you took refuge. Rusty Springs took you in while you were injured and being chased under circumstances you no longer remember.
 
 ""Don't fuck with me!"" the interrogator yelled, sputtering. For a moment, you have a doubt between whether sitting on the floor of this basement, hearing this guy scream, smelling his putrid odor, or his spitting is the most unpleasant.
@@ -20,7 +20,7 @@ He approaches once again and gives you a violent kick in the legs.
 
 ""I'm asking you one last time nicely. Where is your camp?""
 
-You need to think fast, because the next summons might be with that metal rod.",1,5,4,,img:basement.jpg,0,You lie about the camp,You insist on refusing to answer,,0,
+You need to think fast, because the next summons might be with that metal rod.",1,5,4,,img:basement.jpg,0,You lie about the camp,You insist on refusing to answer,,0,,,
 4,1,4,"The screaming gorilla backs up and starts pacing back and forth in the small cellar where you are standing. He paces back and forth in front of you as he rasps the crowbar on the floor.
 
 ""OK I see, so you intend to be of no use to us. All you have to do is tell us which camp you are from. We know there's one around here with enough resources to get through the coming winter.""
@@ -31,7 +31,7 @@ You collapse to the ground, your eyesight turns red, and you close your eyes thi
 
 Your last questions will remain unanswered as you lose consciousness.
 
-You are dead.",1,,,,img:basement.jpg,1,,,,0,
+You are dead.",1,,,,img:basement.jpg,1,,,,0,,,
 5,1,5,"Rusty Springs took you in while you were wounded and being chased by assailants. You don't really remember all the details, but the warmth of the camp at a time when it was everyone for themselves made an impression on you.
 
 So you hesitate to betray those who helped you in your time of need.
@@ -44,7 +44,7 @@ Unconvinced by your answer, he grabs some kind of crowbar and starts threatening
 
 ""Now you're going to tell me where your camp is, unless you want to end up like him.
 
-The assailant points to a lying body that looks like it has been beaten up so badly that there is not much left to identify. Your assailant's insistence becomes more and more pressing, as if he himself were under pressure.",1,7,6,,img:basement.jpg,0,You maintain your story,You look around looking for a way out,,100,
+The assailant points to a lying body that looks like it has been beaten up so badly that there is not much left to identify. Your assailant's insistence becomes more and more pressing, as if he himself were under pressure.",1,7,6,,img:basement.jpg,0,You maintain your story,You look around looking for a way out,,100,,,
 6,1,6,"The sight of a corpse lying in the ground that seems to fit your near future forces you to come up with an idea, and hurry. Ignoring the pain and kept alert by the adrenaline coursing through your body, you scan the room you are in.
 
 It appears that you are in some sort of basement of a ruined house. There are small windows at the top of the walls, most of which are broken, which could allow you to escape through them. There are also a lot of tools lying around on the floor or on a table that seems to serve as a makeshift workbench. You make a quick inventory of what your confused eyes manage to identify: hammers, screwdrivers, ropes, chains, etc.
@@ -53,7 +53,7 @@ It appears that you are in some sort of basement of a ruined house. There are sm
 
 Your assailant is interrupted in his threatening tirade by a huge booming sound from outside. Screams of panic are heard from upstairs and your captor's acolytes seem to be running around as if preparing for an attack.
 
-With your hands tied behind your back, you feel somewhat helpless. But your interrogator having slackened his attention on you for a moment, you then notice the presence of a knife on the table in front of you.",1,8,,,img:basement.jpg,0,Next,,,100,
+With your hands tied behind your back, you feel somewhat helpless. But your interrogator having slackened his attention on you for a moment, you then notice the presence of a knife on the table in front of you.",1,8,,,img:basement.jpg,0,Next,,,100,,,
 7,1,7,"You maintain your story about Blightwood, a small settlement located southeast of a Red Rocket station. It would be built on the ruins of what seems to have been a small residential area of an ancient town, since ravaged by the nuclear strikes that have brought the world to the state as we know it.
 
 Still not convinced, the aggressor loses patience and presses you more and more.
@@ -66,7 +66,7 @@ He brandished his crowbar again and was about to hit you in the legs with a heav
 
 You hear panicked screams upstairs, orders being shouted, people running around as if preparing for an attack. They are surely the acolytes of your captor. 
 
-You take advantage of the sudden panic and, above all, that the attention on you has been diverted, to form an escape plan. You think of the knife on the table in front of you to cut your bonds and escape.",1,8,,,img:basement.jpg,0,Next,,,100,
+You take advantage of the sudden panic and, above all, that the attention on you has been diverted, to form an escape plan. You think of the knife on the table in front of you to cut your bonds and escape.",1,8,,,img:basement.jpg,0,Next,,,100,,,
 8,1,8,"Like a bolt of lightning, a reddish flash of light spontaneously illuminated the cellar where you and your captor are standing. Screams could be heard on the upper floor. Not the disorganized screams of soldiers preparing for an assault, but screams of terror. 
 
 ""FUCK!"" your captor shouted. The gorilla was no longer interested in talking to you or even turning your head into scrambled eggs. Panic-stricken, he left the room in which you are, leaving you alone and abandoned to your fate in a bewildering din of roars, screams and red lightning.
@@ -75,12 +75,12 @@ You take advantage of this situation to get up and go and get the knife which is
 
 You look around the room, but you can't find your weapon or your ammunition. Your captors must have stolen them or left them where they took you. The only things that could be weapons that you find in the rush are the knife that was used to free you, and the crowbar that only minutes before threatened to become one with your head.
 
-You take these objects with you and try to escape.",1,9,12,,img:basement.jpg,0,You go out the door,You go out the window,,100,weapon:1;weapon:2
+You take these objects with you and try to escape.",1,9,12,,img:basement.jpg,0,You go out the door,You go out the window,,100,weapon:1;weapon:2,,
 9,1,9,"Armed with your crowbar, you open the door and suddenly come face to face with your captor.
 
 ""You!!!""
 
-Your blood runs cold, he is about to attack you.",1,10,11,,img:basement.jpg,0,You attack him,You dodge him,,100,
+Your blood runs cold, he is about to attack you.",1,10,11,,img:basement.jpg,0,You attack him,You dodge him,,100,,,
 10,1,10,"It is not without a certain irony that you brandish the crowbar and smash the skull of your captor. The gorilla falls and lies on the ground, what is left of its head covered with blood.
 
 You can't help but feel a sense of satisfaction at seeing the roles reversed, but you won't enjoy this sick victory for too long.
@@ -89,12 +89,12 @@ At the top of the stairs leading to the cellar where you stand, you hear the voi
 
 ""Boss! Boss! Where are you! They're here, we have to get out of here!""
 
-Not feeling up to confronting a whole bunch of raiders, you opt to escape through the window after all.",1,12,,,img:basement.jpg,0,Next,,,100,
+Not feeling up to confronting a whole bunch of raiders, you opt to escape through the window after all.",1,12,,,img:basement.jpg,0,Next,,,100,,,
 11,1,11,"In spite of your state, you manage to jump back like a deer and you dodge the hook that your captor was about to address you. 
 
 Mad with rage, he launches himself towards you and you brandish the crowbar hoping to knock him down. Suddenly, the gorilla is stopped dead in his tracks, hit by a red beam identical to those that flash outside. With a smoking hole located in the place of what used to be his abdomen, the man collapses to the ground.
 
-""Oh this sucks"" you suddenly say to yourself. The door wasn't really a good idea, you turn to the window.",1,12,,,img:basement.jpg,0,Next,,,100,
+""Oh this sucks"" you suddenly say to yourself. The door wasn't really a good idea, you turn to the window.",1,12,,,img:basement.jpg,0,Next,,,100,,,
 12,1,12,"You move a piece of furniture that seems to be strong enough to support your weight and manage to pull yourself up to exit the narrow window. 
 
 As you struggle to get out with relative grace, you hear from the basement one of your captor's henchmen yelling. 
@@ -105,7 +105,7 @@ You briefly look out the window to see if the guy saw you, hoping he won't follo
 
 Robots, they are robots attacking your captors' lair. Who is controlling them? You don't know. Would they be friendly to you? It's best not to find out right away.
 
-You take advantage of the confusion to run away and return to Rusty Springs to warn them of the threat.",2,1,,,img:destroyed-houses.jpg,0,Next,,,100,
+You take advantage of the confusion to run away and return to Rusty Springs to warn them of the threat.",2,1,,,img:destroyed-houses.jpg,0,Next,,,100,,,
 13,2,1,"You've managed to extract yourself from the chaos and found a hiding place so you can finally know where you are. You turn on your trusty Pip-boy.
 
 ...
@@ -116,41 +116,41 @@ Quincy Square
 
 Luckily, and to your surprise, Rusty Springs is about ten kilometers northeast of your location. How could your captors have missed its location? They must not have looked very hard or they only recently learned of its existence. Although you've spent little time there, you quickly notice that Rusty Springs is a very discreet camp.
 
-You can still hear in the distance the clatter of the robot army that stormed the lair of your captors. You decide to continue your way to Rusty Springs.",2,2,,,osm:47.51760/2.15498,0,Next,,,100,
-14,2,2,"At the halfway point, your body reminds you that it has suffered some violent attacks recently. Your legs and back become more and more painful. To continue in these conditions becomes more and more difficult. You see a grove that could make an ideal hiding place while you rest.",2,3,8,,osm:47.51760/2.15498,0,You decide to take a break,"Rusty Springs may be in danger, don't stop",,100,
+You can still hear in the distance the clatter of the robot army that stormed the lair of your captors. You decide to continue your way to Rusty Springs.",2,2,,,osm:47.51760/2.15498,0,Next,,,100,,,1
+14,2,2,"At the halfway point, your body reminds you that it has suffered some violent attacks recently. Your legs and back become more and more painful. To continue in these conditions becomes more and more difficult. You see a grove that could make an ideal hiding place while you rest.",2,3,8,,osm:47.51760/2.15498,0,You decide to take a break,"Rusty Springs may be in danger, don't stop",,100,,,
 15,2,3,"You head towards this grove which is composed of dead trees but also others that survived the nuclear apocalypse. Their twisted shapes and density make an ideal visual barrier to rest for a few minutes, safe from possible attackers, and its slightly elevated position offers a good view. 
 
 After having climbed the embankment, helped by the crowbar that serves as your walking stick, you quickly inspect the place and conclude that you are safe for the moment.
 
-You sit down and very quickly, you lie down on the ground to enjoy one of the rare moments of tranquility in this devastated world.",2,4,,,img:desolated-hills.jpg,0,Next,,,100,
+You sit down and very quickly, you lie down on the ground to enjoy one of the rare moments of tranquility in this devastated world.",2,4,,,img:desolated-hills.png,0,Next,,,100,,,
 16,2,4,"""CrRRRzzzzffFFccRRRkkkk""
 
 A metallic, robotic noise startles you. Have the robots found you yet?
 
 You don't hear a thudding, cadenced footstep like you did during the assault you escaped from. Only a robotic noise that seems to be isolated. A machine that has lost its group? is it hostile? damaged? hopefully harmless?
 
-This could be an opportunity to find out a little more about these robot raiders who attacked your captors. Or to come face to face with one of those killer machines and end up like them.",2,5,7,,img:desolated-hills.jpg,0,Inspect the source of the noise,Ignore the noise and get back on the road,,100,
+This could be an opportunity to find out a little more about these robot raiders who attacked your captors. Or to come face to face with one of those killer machines and end up like them.",2,5,7,,img:desolated-hills.png,0,Inspect the source of the noise,Ignore the noise and get back on the road,,100,,,
 17,2,5,"You approach with feline discretion the origin of the regularly repeated noise you have heard. Your heart is pounding, and you clench the crowbar with all your might, ready to strike at anything that doesn't seem friendly.
 
 The sound gets louder and louder and is located behind a tree. You seem to notice a pile of scrap metal on the ground and continue to approach. A robot arm that has lost its body is lying in front of you. You look up and see that the rest of the body is scattered around. It was indeed a robot, completely demolished. 
 
 The observation of the debris leaves you a bit puzzled because you notice that the carcass does not resemble any other kind of robot you have ever known. Not a Protectron, not a Sentinel and certainly not an Assaultron, this type of machine seems unknown to you.
 
-The head of the machine, perhaps the only part still somewhat attached to the rest of the body scattered here and there, is at the origin of the metallic sizzling sound you heard. It seems that despite its condition, its computer is still powered.",2,6,7,,img:destroyed-robot.jpg,0,Dismantle it and take it away for later analysis,"No time to worry, Rusty Springs may be in danger",,100,
+The head of the machine, perhaps the only part still somewhat attached to the rest of the body scattered here and there, is at the origin of the metallic sizzling sound you heard. It seems that despite its condition, its computer is still powered.",2,6,7,,img:destroyed-robot.jpg,0,Dismantle it and take it away for later analysis,"No time to worry, Rusty Springs may be in danger",,100,,,
 18,2,6,"Intrigued by this curious machine, you decide to dismantle the head hoping to have the opportunity to dissect it later and learn more. You manage to extract it from the carcass without doing any more damage than it already has. Separated from its power source, the annoying crackling sounds it was making have stopped. 
 
-You carefully store the head in your inventory and decide to head back to Rusty Springs.",3,1,,,img:destroyed-robot.jpg,0,Next,,,100,misc:1
+You carefully store the head in your inventory and decide to head back to Rusty Springs.",3,1,,,img:destroyed-robot.jpg,0,Next,,,100,misc:1,,
 19,2,7,"You've had enough emotions, kidnappers, and killer robots for one day. Your whole body is screaming in pain and exhaustion, but you still have a long way to go. 
 
-Now is not the time to procrastinate, you must return to Rusty Springs to warn them of the danger that awaits them.",3,1,,,img:desolated-hills.jpg,0,Next,,,100,
+Now is not the time to procrastinate, you must return to Rusty Springs to warn them of the danger that awaits them.",3,1,,,img:desolated-hills.png,0,Next,,,100,,,
 20,2,8,"There is probably no part of your body that doesn't scream in pain, and you discover that you may have been hurting in places you never thought possible. But despite this, you can't afford to stop.
 
-Rusty Springs took you in when you were at your worst, and you owe this camp a debt of gratitude. You take your courage and willpower in both hands and set off again.",3,1,,,img:desolated-hills.jpg,0,Next,,,100,
+Rusty Springs took you in when you were at your worst, and you owe this camp a debt of gratitude. You take your courage and willpower in both hands and set off again.",3,1,,,img:desolated-hills.png,0,Next,,,100,,,
 21,3,1,"After a long and exhausting walk through the Wasteland, you finally catch a glimpse of the woods behind which Rusty Springs is hidden. Your injuries and the fact that you have been on alert almost all the time have worn you out physically and mentally and this last kilometer seems endless.
 
 ""Freeze!""
 
-This injunction suddenly puts you back on alert and you suddenly stop. You are unable to identify where this voice is coming from.",3,2,3,,img:wasteland-forrest.png,0,You surrender,You ignore the order,,100,
+This injunction suddenly puts you back on alert and you suddenly stop. You are unable to identify where this voice is coming from.",3,2,3,,img:wasteland-forrest.png,0,You surrender,You ignore the order,,100,,,
 22,3,2,"Some of the people of Rusty Springs know you, including Sonja, the camp leader. However, you are not sure whether they are village guards or raiders looking for a place to loot.
 
 In your current state, fighting guards or raiders would end the same way in either case. You stop your painful walk and raise your arms in surrender.
@@ -159,12 +159,12 @@ A man emerges from a hunter's hideout and approaches while holding you at gunpoi
 
 ""Wait, I've seen you around before... you wouldn't be... ?""
 
-You don't have time to listen or even respond. The physical and mental exhaustion comes to an end of the last forces that it remained to you and you collapse on the ground.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,
+You don't have time to listen or even respond. The physical and mental exhaustion comes to an end of the last forces that it remained to you and you collapse on the ground.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,,,
 23,3,3,"Is it recklessness, stupidity, or desperation that keeps you going despite the order? Good question.
 
 A guard suddenly emerges from a hunter's hideout that you hadn't spotted. That said, with your blurred vision barely discerning your surroundings, it would have been surprising. A man with a gun stands in front and holds you at gunpoint.
 
-You wonder if he is a Rusty Springs guard or a raider. Mind you, a raider probably wouldn't have warned you. Your confused thoughts are suddenly interrupted by the shock of a violent tackle to the ground from another man you didn't see coming either. The violence of the blow plus your physical condition exhaust your last strength and you lose consciousness.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,
+You wonder if he is a Rusty Springs guard or a raider. Mind you, a raider probably wouldn't have warned you. Your confused thoughts are suddenly interrupted by the shock of a violent tackle to the ground from another man you didn't see coming either. The violence of the blow plus your physical condition exhaust your last strength and you lose consciousness.",3,4,,,img:wasteland-forrest.png,0,Next,,,100,,,
 24,3,4,"""...you ..ink... is ... dead ?""
 
 ""help... transp...him""
@@ -186,7 +186,7 @@ Unlike the previous time, the people holding you prisoner seem to be less nefari
 You observe the room where you are located and it seems familiar. You note the presence of rudimentary medical equipment and a bed near an opaque window. 
 
 You hear a sound of footsteps coming towards the room you are in.
-",3,5,6,7,img:medical-room.png,0,You lie down and pretend to be asleep,You get into position to attack the incoming person,You do nothing and wait,100,
+",3,5,6,7,img:medical-room.png,0,You lie down and pretend to be asleep,You get into position to attack the incoming person,You do nothing and wait,100,,,
 25,3,5,"You lie down again, facing the wall, and pretend you are still asleep. You hope to hear some clues that will help you to better assess the situation.
 
 The footsteps get closer and you hear a muffled conversation between two women.
@@ -206,7 +206,7 @@ You roll over on the mattress and look up at the woman standing in front of you 
 
 Your face lights up and a big smile shows your relief. You recognize Sonja, the leader of Rusty Springs, the one who took you in some time before under rather similar conditions.
 
-""You should see the other guy,"" you say in a reassuring tone, before coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,
+""You should see the other guy,"" you say in a reassuring tone, before coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,,2,
 26,3,6,"The footsteps get closer and you hear a muffled conversation between two women.
 
 ""How is he?"" the first asked in a confident tone.
@@ -222,7 +222,7 @@ Your ego seems to have suffered more than your body this time. Red with embarras
 
 ""It's getting to be a habit for you to show up at my house half dead,"" Sonja observed.
 
-A big smile then lights up your face and you start to laugh in relief, just before you start coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,
+A big smile then lights up your face and you start to laugh in relief, just before you start coughing and writhing in pain while laughing.",3,8,,,img:medical-room.png,0,Next,,,100,,2,
 27,3,7,"The footsteps get closer and you hear a muffled conversation between two women.
 
 ""How is he?"" the first asked in a confident tone.
@@ -238,7 +238,7 @@ Being reassured is a luxury that is difficult to enjoy in the Wasteland. But thi
 
 ""It's getting to be a habit to show up at my house half-dead,"" she answered while putting your good old coat on your shoulders.
 
-""Guess so,"" you reply in a slightly embarrassed tone.",3,8,,,img:medical-room.png,0,Next,,,100,
+""Guess so,"" you reply in a slightly embarrassed tone.",3,8,,,img:medical-room.png,0,Next,,,100,,2,
 28,3,8,"""I'm sorry about the tied hands. The guards didn't recognize you and didn't want to take any chances,"" Sonja said as she cut the rope that bound your wrists. She couldn't help but notice that your hands bore more previous marks.
 
 You then explained your recent misadventures to Sonja, the raiders' lair that captured you, the robot attack and your escape. When she asked you how you were captured, you realize you are unable to answer.
@@ -255,14 +255,14 @@ Seeing your blank, troubled look, Sonja understands that something is wrong.
 
 ""Boss!"" yelled one of the Rusty Springs guards as he burst into the room.
 
-The tranquility of your reunion seemed to be short-lived.",3,9,,,img:medical-room.png,0,Next,,,100,
+The tranquility of your reunion seemed to be short-lived.",3,9,,,img:medical-room.png,0,Next,,,100,,12,2
 29,3,9,"Catching his breath, the guard gradually regains his composure and explains the situation. 
 
 ""We came across a merchant during a patrol who seemed worried and rushed. Upon asking him what happened, he told us that Midwich Valley was completely razed, burned to the ground even.""
 
 Midwich Valley is the closest thing to a town as far as the Wasteland can conceive it. It is a camp, located about thirty kilometers from Rusty Springs, where over a hundred people live, not counting the itinerant merchants and other slightly less approachable oddballs.
 
-A place so frequented and populated cannot have been destroyed so easily. Not to mention that it was a city with good fortifications because it was regularly targeted by raiders and even Super Mutants.",3,10,14,,img:medical-room.png,0,You ask where the merchant is located,You think it's not your problem,,100,
+A place so frequented and populated cannot have been destroyed so easily. Not to mention that it was a city with good fortifications because it was regularly targeted by raiders and even Super Mutants.",3,10,14,,img:medical-room.png,0,You ask where the merchant is located,You think it's not your problem,,100,,,
 30,3,10,"""Where is that merchant?"" you suddenly ask the guard. He gives you a sideways glance and doesn't really want to answer.
 
 If mistrust of others is probably the most common sentiment in the Wasteland, Rusty Springs has made it a real culture in addition to its sense of discretion. It may seem inhospitable to outsiders, but this rigidity has allowed this village to continue to be almost unknown deep in its forest and thus avoid being targeted by raiders. When the guards are on patrol, they pretend to be wanderers who roam the Wasteland with no real purpose. While to an outsider their patrol cycle seems very random, it is actually well calculated to avoid arousing suspicion.
@@ -271,14 +271,14 @@ If mistrust of others is probably the most common sentiment in the Wasteland, Ru
 
 ""He was set up in a clearing five kilometers to the northeast,"" the guard continued. He went on to say that the merchant intended to stay a few days to rest his brahmin. 
 
-The guard points out the location on the map of your Pip-boy. After exchanging a glance with Sonja, she understands that you intend to go and meet this merchant. However, you are still too weak to leave the village, you still need to rest.",3,11,,,img:medical-room.png,0,Next,,,100,
+The guard points out the location on the map of your Pip-boy. After exchanging a glance with Sonja, she understands that you intend to go and meet this merchant. However, you are still too weak to leave the village, you still need to rest.",3,11,,,img:medical-room.png,0,Next,,,100,,,
 31,3,11,"You had a real night's sleep, something that hasn't happened to you since... To tell you the truth, you don't remember it. Your body is still sore, but less so than the day before and the stimpack Iren injected you with is working wonders. After getting dressed and taking your stuff, you go to see Iren and Sonja to inform them that you have to go and see this merchant.
 
 You pass the guard who accompanies you towards the exit of the village. This is one of the advantages of Rusty Springs. The village is built in the middle of such a dense forest that it is almost invisible from the outside. Palisades of vegetation provide additional camouflage that further hides the location. The only way to enter is through well guarded underground tunnels scattered all over the place. They allow you to enter and leave the village at a good distance from it.
 
 The guard accompanies you along one of these tunnels and then points you in the direction of the clearing where the merchant has set up shop temporarily.
 
-After a little less than an hour's walk, you reach the location and go to meet the merchant.",3,12,,,img:medical-room.png,0,Next,,,100,
+After a little less than an hour's walk, you reach the location and go to meet the merchant.",3,12,,,img:medical-room.png,0,Next,,,100,,,
 32,3,12,"You pass in a nonchalant way in front of the merchant and this one calls you. 
 
 ""Hey, I have some good cheap stuff, do you want to buy it?""
@@ -299,10 +299,10 @@ You feign a revolted look mixing surprise and disgust with an acting skill that 
 
 ""I hope there are no people you knew there,"" the merchant muttered, hoping to cheer you up. You tell him no, you were simply planning to go there to do business.
 
-As you look around the merchant's bazaar, you notice a rusty and badly damaged robotic hand that seems to remind you of something.",3,13,,,img:merchant.png,0,How much for the robot part?,,,100,
+As you look around the merchant's bazaar, you notice a rusty and badly damaged robotic hand that seems to remind you of something.",3,13,,,img:merchant.png,0,How much for the robot part?,,,100,,,
 33,3,13,"""This? say 20 caps will do?"" the merchant asked. After the discussion about Midwich Valley, the naturalness came back to him. You try to haggle a little about the price, which seems quite high to you, while feeling curiously attracted by this robotic debris, which is at first glance useless.
 
-""Aah you're tough on business... Well ok go for 15"", capitulated the merchant after a few long minutes of negotiation during which you agreed to take some extra ammunition.
+""Aah you're tough on business... Well ok go for 15"", capitulated the merchant after a few long minutes of negotiation during which you agreed to take a weapon and some extra ammunition.
 
 With both parties satisfied with their transaction, you eventually continue on your way back to the rendezvous point you had set with the Rusty Springs guard. On the way back, you observe the robotic hand from every joint, as if trying to unravel an ancient mystery.
 
@@ -322,8 +322,7 @@ You hurry to your meeting point, as if taken by a sudden euphoria.
 
 Accompanied by the guard, you notice that a faint indicator light has started to flash on your Pip-boy. A symbol indicating to read a Holotape flashes on the screen.
 
-You wait until you find a quiet corner to read it.
-",3,15,,,img:merchant.png,0,Read the holotape,,,100,misc:2
+You wait until you find a quiet corner to read it.",3,15,,,img:merchant.png,0,Read the holotape,,,100,misc:2;weapon:3,,
 34,3,14,"You listen to the discussion between Sonja and the guard, but eventually you turn away. Midwich Valley is a big town, but it wasn't impregnable either, contrary to what people might think. Besides, while you're still itching to find out what happened to this town, you don't feel up to going on another adventure yet.
 
 For now, your priority is to recover from your kidnapping and remember your mission. You have alerted Sonja about the robots that attacked the raider camp that kidnapped you, and you offer to assist her if Rusty Springs is ever in danger.
@@ -332,7 +331,7 @@ The next day, after what seems like the first night's sleep in ages, you decide 
 
 You spend the few Caps you had and feel a little less naked now that you've picked up a weapon and ammo. As you inspect your new acquisition, you notice a faint yellow light flashing on your Pip-boy. A holotape you didn't know existed is inside it and a message on the screen prompts you to read its contents.
 
-You decide to find a quiet corner for this.",3,15,,,img:rusty-springs.png,0,Read the holotape,,,100,
+You decide to find a quiet corner for this.",3,15,,,img:rusty-springs.png,0,Read the holotape,,,100,weapon:3,,
 35,3,15,"You start the recording which seems to contain only text.
 
 ---
@@ -364,7 +363,7 @@ GOOD LUCK SENTINEL.
 
 AD VICTORIAM!
 
----",3,16,,,img:brotherhood.png,0,...,,,100,
+---",3,16,,,img:brotherhood.png,0,...,,,100,,,
 36,3,16,"You feel yourself turning pale as you read this document. You have been reminded of your mission, and the lost connections in your head are slowly being rebuilt. You remember your encounter with a Brotherhood's Elder a few months ago. You've been in trouble before for your meddling skills, but this time you've gone a little too far and have drawn the wrath of one of the factions you don't want to be angry with.
 
 However, to your surprise, the Elder did not have you imprisoned or executed but saw you as an asset. Your unpredictability and ability to find hidden secrets are matched only by your ability to get into and out of impossible situations. And that, the Elder seems to have seen in you and offered you a deal. Find the location of a Vault whose coordinates have been lost and discover what's inside.
@@ -373,7 +372,7 @@ If you succeed, you will be pardoned and considered an ally of the Brotherhood. 
 
 You don't remember thinking much about it at the time and quickly accepted the mission without even knowing all the details. The last thing you remember is being dropped into the wilderness from a Vertibird by Squires who thought they were releasing a civilian who had no business being there. They didn't know that you had been promoted in the greatest secrecy by the Elder as a Sentinel of the Brotherhood, granting you complete autonomy to accomplish your mission at the cost of absolute discretion.
 
-You wonder what you're going to do.",3,17,,,img:brotherhood.png,0,Next,,,100,
+You wonder what you're going to do.",3,17,,,img:brotherhood.png,0,Next,,,100,,,
 37,3,17,"That night, you didn't sleep so well. Being on the verge of death seems to be a better way for you to sleep than being a Sentinel of the Brotherhood on a mission. You've turned the situation over in your head to try to find a way out that won't endanger Rusty Springs, but you'll have to keep investigating. With Midwich Valley burned to the ground, you'll have to find another populated town to investigate.
 
 But first, you decide to go see Sonja and inform her of your recent discovery.
@@ -384,5 +383,1370 @@ But first, you decide to go see Sonja and inform her of your recent discovery.
 
 Despite Sonja's sympathetic attitude, her natural distrust quickly returns and she promises you many unpleasant things should the safety of Rusty Spring be compromised. To show your good faith, you show your Pip-boy's map: the location where they are is not marked with any campsite, only a forest. You have managed to delete the information about this place.
 
-You thank Sonja one last time for helping you twice, and decide to leave Rusty Springs the next morning.",4,1,,,img:rusty-springs.png,0,Next,,,100,
-41,4,1,To be continued...,,,,,img:tbc.jpg,0,,,,100,
+You thank Sonja one last time for helping you twice, and decide to leave Rusty Springs the next morning.",4,1,,,img:rusty-springs.png,0,Next,,,100,,,
+41,4,1,"The next day you were accompanied by one of the Rusty Springs guards for the last time. He lets you out through the North Tunnel and watches you slowly move away before closing the access.
+
+However, one question nags at you more than ever: where to go?
+
+According to the latest information, there is nothing left of Midwich Valley. This large town would have been useful for finding research bases. You scan your Pip-boy for other camps of varying sizes that you think might be relevant to gathering information about a Vault in the area.
+
+Several possibilities emerge: 
+
+- Radtown
+- Radiant Terrace
+- Junktown Prime
+
+""Oh no, not that shithole,"" you suddenly think at the sight of Junktown Prime. This town, similar to Midwich Valley, is a great place to gather intelligence, but also very bad and frequented by the worst gangs you could find. Radtown is one of the Children of Atom's places of worship and you have little affinity with this faction, but it is the closest town. As for Radiant Terrace, you wonder if it's safe because it's close to the robots' attack.
+
+Where do you plan to head?",4,2,38,85,img:tbc.jpg,0,Radtown,Junktown Prime,Radiant Terrace,100,,,
+42,4,2,"It's decided, you're heading for Radtown. Built on the ruins of a devastated city, it is located near the Poseidon Energy Facility NR-04. This plant miraculously survived the war and is said to be still operational. Despite this good condition, the area is heavily irradiated and it has become the ""Holy Land"" for the local Church of the Children of Atom.
+
+You may remember going near the place in the past, but you didn't go much further because the Children of Atom are somewhat... special. You've never really tried to sympathise with this faction and their love of radiation has always struck you as odd.
+
+Anyway, you'll have to deal with them eventually. But given the location, you'll have to prepare yourself beforehand. Obviously, they might not like you too much if you come with an anti-radiation suit. On the other hand, it would be advisable to stock up on Rad-X. You set off, hoping to find a merchant who can help you out.",4,3,,,img:desolated-hills.png,0,Next,,,100,,,
+43,4,3,"With Radtown only a few kilometers away, after a couple of hours of walking you start to see the smokestacks of the nuclear power plant. The road was surprisingly quiet, with only one group of 3 raiders attacking you, which you managed to get rid of without too much trouble. 
+
+As you rest for a few minutes, you think about your plan of action. How will you approach the cult members, what will you ask them, are you sure you'll find something there about Vault 127... Lots of questions.
+
+You get back on the road and from a distance you can only see the huge chimneys of the nuclear power plant. Looking at the map on your pip-boy, you notice that you are not far away. However, you find it hard to make out the village of Radtown as a huge, thick, slightly shiny fog is telling you nothing. In the distance you hear strange ritual chants echoing in the atmosphere. No doubt, you are close.",4,4,,,img:desolated-hills.png,0,Next,,,100,,,
+44,4,4,"As you continue on your way, luck seems to smile on you. You see a merchant passing by with his two bodyguards and you wave to him.
+
+""Do you need anything?"" he says.
+
+""Is this Radtown?"" you ask him, before following up with a request from Rad-X.
+
+""You're in luck, I've got a few left,"" the merchant replies, rummaging through his trunks. ""Ah, and yes, Radtown is a couple of kilometers that way,"" he pointed. ""What are you going to do there? You don't look like a member of Atom's cult.
+
+You tell a story that your sister joined the cult and you haven't heard from her since, which worries you. You go on to say that you've just come to see if she's all right.
+
+""Here you go,"" he says, giving you the Rad-X in exchange for a nice handful of Caps. Rad-X are quite rare and expensive, so this operation will have put a strain on your personal finances.
+
+You leave the merchant and go back on your way.",4,5,,,img:desolated-hills.png,0,So this is Radtown,,,100,,,
+45,4,5,"About twenty minutes of walking later, you arrive at what appears to be Radtown. To tell the truth, it's hard to make out where you are because the shiny fog is so thick that you can barely make out the few ruined buildings of the old town. The Geiger-Müller counter of your Pip-boy goes crazy and you decide to take a first dose of Rad-X.
+
+Soon after, you are suddenly approached by what appear to be zealots of the Atom cult.
+
+""You have arrived on sacred ground, stranger,"" one of the two zealots announces.
+
+""You are welcome as long as you respect the sanctity of this place and our traditions,"" continued the second Zealot. ""What brings you here?""
+
+Since you are not very familiar with the practices of the Children of Atom either, apart from the fact that their members have the reputation of having a very singular resistance, or even immunity, to radiation, you quickly imagine a couple of pretexts for your visit.",4,6,7,,img:radtown.png,0,You claim to be studying the culture of the Church of the Children of Atom,You claim to have had a vision guiding you to this place,,100,,,3
+46,4,6,"You explain to the Zealots that you have always had a fascination with the culture of the Children of Atom. You are interested in their beliefs and practices and explain that you believe they can bring salvation to this devastated world.
+
+The Zealots look at you with approval and decide to accompany you to their leader.",4,8,,,img:radtown.png,0,Enter Radtown,,,100,,,
+47,4,7,"You explain that in your dream you saw the image of a person walking in a thick, glowing fog inviting you to follow them. The ghostly figure would have given you the impression of being a light to follow in the night that is the Wasteland. So you think that Atom's cult would have the answers to your existential questions.
+
+The two zealots look at you almost enviously at your story and decide to accompany you to their leader.",4,8,,,img:radtown.png,0,Enter Radtown,,,100,,,
+48,4,8,"You are brought before Mother Aurora, the spiritual leader of the Children of Atom community in Radtown. She is a middle-aged woman who, despite apparent decades of radiation exposure, does not appear to have any radiation contamination.
+
+She asks you why you have come and you repeat what you told the two zealots. With a wave of her hand, she sends them back to their post and addresses you solemnly. 
+
+""If you seek to embrace the faith of Atom, you must demonstrate your commitment to it,"" she commands you. She goes on to explain that newcomers must pass a series of tests designed to test their budding faith before committing to the cult. She offers you to undergo these tests before letting you stay in their community. You will be accompanied by a zealot who will testify to your achievements.
+
+Mother Aurora gives you your first test.",4,9,,,img:radtown.png,0,Finding relics and bringing them to the church,,,100,,8,
+49,4,9,"From your knowledge of the practices of the Atom cult, they worship anything with a high source of radioactivity.
+
+Accompanied by the zealot in charge of observing you, you return to the entrance of the village and look at the map on your Pip-boy. After a few minutes of searching, you note the presence of a military warehouse southwest of Radtown. In order to avoid wasting time, you ask the zealot if the location of this warehouse means anything to him. But he doesn't say a word... ""It's going to be a long ride,"" you say to yourself, seeing that your fellow traveller doesn't seem to be very talkative.
+
+You set off towards this warehouse.",4,10,,,img:radtown.png,0,To the military warehouse,,,100,,,
+50,4,10,"After scanning the area, you notice that the place seems deserted except for a pair of Radroaches. You manage to eliminate the two ugly insects without too much difficulty with the help of your gun.
+
+You connect with your Pip-boy to the terminal that seems to control the warehouse door.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- PINECREST MILITARY WAREHOUSE -
+
+WARNING : Unauthorized access to this facility is strictly prohibited. All unauthorized individuals will be subject to immediate detention and potential prosecution under the laws of the US Government.
+
+---
+
+You briefly raise an eyebrow and access the terminal command line with your hacking skills.",4,11,,,img:military-warehouse.png,0,Unlock the door,,,100,,,5
+51,4,11,"* CLONK *
+
+The magnetic lock on the front door of the warehouse unlocks and you can now enter. The building is quite full and you quickly notice a terminal in an office near the entrance. Thinking that this would contain the inventory of the stock, you head for it.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- PINECREST MILITARY WAREHOUSE -
+
+WARNING: Unauthorized access to this facility is strictly prohibited. All unauthorized individuals will be subject to immediate detention and potential prosecution under the laws of the US Government.
+
+Warehouse management system online.
+
+---
+
+""You don't say,"" you think with a disillusioned look.",4,12,13,15,img:military-warehouse-inside.png,0,1. Equipement,2. Restricted access,3. Log out,100,,,
+52,4,12,"You select the Equipment section of the inventory.
+
+---
+
+- PINECREST MILITARY WAREHOUSE - 
+
+Equipment Section
+_________________
+
+
+- M16A4 Rifle.............................450
+- M9 Pistol.................................650
+- M203 Grenade Launcher.....150
+- M9A1 Bayonet.........................100
+- M2 .50 Cal Machine Gun.......50
+- M136 AT4....................................75
+- Fusion Cores.............................15
+- Mini Nuke....................................1
+
+---
+
+Quite a few crates seem to have been looted, you're certainly not the first one to come here despite the warehouse being locked. It probably locked itself again. Nevertheless, the Mini Nuke has caught your attention and you hope to find it.",4,13,15,,img:military-warehouse-inside.png,0,2. Restricted access,3. Log out,,100,,,
+53,4,13,"What better way to arouse your curiosity than with a menu entry called ""Restricted Access""? You select it and hope to break the code.
+
+---
+
+- PINECREST MILITARY WAREHOUSE - 
+
+RESTRICTED AREA
+_______________
+
+Access to this system is restricted to authorized personnel. Unauthorized access is strictly prohibited and will be prosecuted.
+
+By accessing this system, you acknowledge that you are an authorized user and that any attempted or unauthorized access to this system may result in criminal and/or civil liability.
+
+Please enter your authorization data to continue.
+
+---
+
+This terminal may contain secret military information, will you attempt to decrypt it?",4,14,15,,img:military-warehouse-inside.png,0,1. Enter access code,2. Log out,,100,,,
+54,4,14,"You insert the connector of your Pip-boy and start hacking.
+
+---
+
+...
+...
+...
+
+Access granted
+
+---
+
+After an interminable wait, a new page appears on the screen.
+
+---
+
+Inventory Management System
+___________________________
+
+
+By decision of the United States Government, Pinecrest Warehouse has been assigned as a secondary deported reserve for Vault 127 under the responsibility of the Radiant Terrace Base Chain of Command.
+
+***********************
+The Sanctuary project and all that surrounds it is classified at the highest level of defense secrecy by the United States Government and the Department of Defense. Unauthorised use will result in prosecution and imprisonment.
+**********************
+
+Inventory
+
+- SNCTRN Hands.......................154
+- SNCTRN Inhibitor Chip........348
+- SNCTRN Heat laser................421
+- SNCTRN Motherboard...........175
+
+---
+
+""Interesting"", you mutter to yourself. Finally this little sojourn to the Children of Atom is starting to pay off. As you look up from the terminal, your eyes suddenly meet those of the zealot accompanying you. Still silent, he nevertheless makes you understand that you should speed up.",4,15,,,img:military-warehouse-inside.png,0,1. Log out,,,100,,,
+55,4,15,"You log out of the terminal and start to wander around the warehouse. Many of the crates are destroyed or appear to have been looted and you are beginning to worry about returning empty-handed.
+
+You look at the contents of some of the crates and take the opportunity to discreetly take some ammunition. You avoid the weapons as you are unsure of your companion's reaction at the time.
+
+As you walk back and forth through the aisles, your Pip-boy's Geiger-Müller counter suddenly goes crazy. It seems to detect a source of radioactivity and you start to follow the trail. It stops in front of a gutted crate and you fear you have had a disillusionment. However, you notice another crate in good condition behind it which seems to have been missed by your predecessors. You ask the zealot for a little help, and to your surprise, he assists you, removing the debris blocking access to your loot.
+
+Opening the box, you find a Mini Nuke.
+
+""Bingo!"" you exclaim. You proudly show the heavy and dangerous loot to your companion who seems to give an approving look. Clearly, you have completed your quest and can return to Mother Aurora.",4,16,,,img:military-warehouse-inside.png,0,"On the way to Radtown, again",,,100,,,
+56,4,16,"Back in Radtown, you hurry to Mother Aurora accompanied by your chatty best friend of the moment. When you arrive at the community's spiritual leader, you humbly display your find.
+
+""It is a relic of great value and will contribute to the sanctification of our village,"" she tells you in a tone as solemn as the last time. ""Now that you have proven your willingness to join our community, you will have to show us your commitment.
+
+You feel a slight chill at the thought of what test awaits you.
+
+""You have two options,"" she continued, ""you can go to the reliquary and deposit this artefact and pray to the Atom to bless our community. ""Or,"" she continued after a pause that seemed to last an eternity, ""you can purify yourself in the sacred waters of Atom. She pointed to the site, which is actually a water retention basin connected to the nuclear plant. Even though the plant had withstood the war, it was still damaged and the presence of the cult of Atom was a much better indicator of radioactive leaks than any other instrument.",4,17,18,,img:radtown.png,0,Depositing the relic,Purify yourself in the pool,,100,,,
+57,4,17,"Accompanied by Brother Malachi, a young member of the Cult but already well damaged by radiations, you head towards the church, preciously and respectfully holding the Mini nuke in your hands.
+
+Once inside the building, you are dispossessed of your property for a moment by Sister Mayline, who adorns you with braided cables and a metal plate on which the symbol ""radioactive"" is engraved.
+
+She returns your relic to you and tells you where you can put it. You solemnly place the object in the requested location and improvise a prayer for Atom.
+
+""I humbly present myself before the Glow of Atom and offer you this sacred relic. May its power fulfill Atom's will and free us from our bodies to enter his sacred Glow.""
+
+You feel a little strange by this impromptu account, but Sister Mayline's smiling gaze seems to reassure you of your choice of words. You leave the place and return to Mother Aurora.",4,19,,,img:children-of-atom-church.png,0,Pilgrimage,,,100,,9,14
+58,4,18,"Accompanied by Brother Malachi, a young member of the Cult but already well damaged by radiation, you head towards the retention basin into which the radioactive water produced by the power station upstream is poured.
+
+After a few minutes of walking, you arrive at the expected place. As you suspected that you were going to get a good dose of radiation, you took another dose of Rad-X.
+
+Brother Malachi then confirms your suspicions.
+
+""To imbue your body with the brilliance of Atom, you will have to swim in this sacred pool. He then invites you to undress and enter the water.
+
+After a moment's hesitation, you remove your clothes and prepare to dive, in yours birthday suit, into the radioactive water. It's hard to know if this is really reassuring, but the water is not as cold as you thought it would be. You do a breaststroke to the end of the pool and then return to your starting point. As you get out of the water, Brother Malachi starts to dry you off and looks at your body carefully.
+
+He stands up to you and gives you a big smile that says ""welcome home"". You get dressed and go back to Aurora.",4,19,,,img:nuclear-plant.png,0,Pilgrimage,,,100,,9,
+59,4,19,"""Welcome to our community,"" Mother Aurora addresses you warmly. You answer her with a shy smile.
+
+""You have one last thing to do to be considered a full member,"" she continued. ""You will have to go and get Atom's blessing from our most sacred land,"" she said, turning to the nuclear power plant.
+
+""There you will find Atom's Glow and splendour that will guide you on your quest,"" she concluded.
+
+You humbly accept the final challenge.
+
+You set off with Brother Malachi to the plant formerly known as the Poseidon Energy Facility NR-04.",4,20,,,img:radtown.png,0,Go to the Poseidon Energy Facility NR-04,,,100,,,
+60,4,20,"The closer you get to the location, the more the pointer on your Pip-boy goes crazy. You end up disabling the Geiger-Müller counter to avoid offending Brother Malachi. 
+
+To your surprise, the gates to the power plant don't seem to be guarded despite the fact that you are in one of the cult's most sacred lands. ""The Zealots are on patrol,"" Brother Malachi points out as if he has read your mind.
+
+You enter the main hall through the plant offices and Brother Malachi points out the floor plan of the facility. You note that the director's office is next door to where you are standing.
+
+On the way here, an idea occurred to you. The military warehouse gave you a clue that Vault 127 existed and that it would obviously be in the area. What if this plant is connected to it?
+
+You want to explore the facility, but you can't take Brother Malachi with you because that would raise suspicion. You have two options... Knock him out and lock him up somewhere, or kill him to prevent him from raising the alarm.",4,21,29,,img:nuclear-plant.png,0,Knock him out,Kill him,,100,,,4
+61,4,21,"Without warning, you wait until Brother Malachi's back is turned before hitting him on the head. The young man collapses to the ground, his weak constitution and radioactively weakened body enough to immobilise him.
+
+You take him with you into the director's office and tie him up in case he wakes up before you finish.",4,22,,,img:nuclear-plant.png,0,Search the director's office,,,100,,,
+62,4,22,"You turn on the terminal on the desk and start exploring its contents.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+---",4,23,24,25,img:nuclear-plant.png,0,1. Display status,2. Staff schedule,3. Restricted access,100,,,
+63,4,23,"You select the menu ""Central unit status"".
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+System status
+_______________
+
+
+- Operating time: 208 years, 3 months, 15 days, 8 hours, 23 minutes, 45 seconds
+- Autonomous control system: ONLINE
+- Current production: 3.3GW
+
+
+---
+
+""Wow,"" you say with a surprised look. Maybe the metrics are wrong, but it's still impressive.",4,24,25,,img:nuclear-plant.png,0,2. Staff schedule,3. Restricted access,,100,,,
+64,4,24,"You select the menu ""Staff schedule"".
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+Employee schedule, week of 2077-10-20
+
+Team 1: 2077-10-20 - 2077-10-22
+
+Operator: John Smith
+Assistant Operator: Sarah Lee
+Maintenance Technician: David Chen
+
+Team 2: 2077-10-24 - 2077-10-26
+
+Operator: Samantha Taylor
+Assistant Operator: Michael Johnson
+Maintenance Technician: Jose Rodriguez
+
+Team 3: 2077-10-27 - 2077-10-29
+
+Operator: Karen Lee
+Assistant Operator: Patrick Davis
+Maintenance Technician: James Wong
+
+Note: All employees must report to the security checkpoint 15 minutes prior to the scheduled start time of their shift. Any deviation from the scheduled time must be approved by the Plant Manager. Thank you for your cooperation.
+
+---
+
+""Meh,"" you mutter in an uninterested tone.",4,25,,,img:nuclear-plant.png,0,3. Restricted area,,,100,,,
+65,4,25,"You select the ""Restricted access"" menu
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+Access to this system is restricted to authorized personnel. Unauthorized access is strictly prohibited and will be prosecuted.
+
+By accessing this system, you acknowledge that you are an authorized user and that any attempted or unauthorized access to this system may result in criminal and/or civil prosecution.
+
+Please enter your authorization data to continue.
+
+---
+
+""Music to my ears"", you think. You plug in your Pip-boy to try to break the code.",4,26,,,img:nuclear-plant.png,0,Start hacking,,,100,,,
+66,4,26,"...
+...
+
+...
+
+The wait still seems interminable, but the protection gives way and the terminal changes page. An email catches your attention.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+From: Poseidon Energy Management Board
+
+To: Taylor Grandson, Manager Poseidon Energy Facility NR-04
+
+Date: 2025-06-24
+
+Manager of the NR-04 facility,
+
+The Government has ordered the requisition of the NR-04 facility to carry out exceptional work to connect to a Vault which is highly confidential in nature.
+
+The official communication from the group is the modernisation of the network served by the NR-04 plant. You have been assigned a Board-appointed officer on the subject who will arrive on the 23rd at your premises. A temporary office will be opened to synchronise our work with the Government agents in charge of the project. The location will be communicated to you shortly.
+
+Any disclosure of information that could reveal the true nature of the work could jeopardise the future of the Group.
+
+We rely on your full cooperation and discretion in the completion of this plan.
+
+Sincerely,
+
+
+---
+
+""Interesting,"" you mutter, not without some excitement in your voice. As you suspected, this plant does have a connection to Vault 127.
+
+You look through some other documents and find what you think is the address of the temporary office, a building, apparently, located in the town of Briardwood and more exactly in a neighbourhood called ...",4,27,,,img:nuclear-plant.png,0,Midwich Valley ?!,,,100,,,
+67,4,27,"You could not have expected for more interesting clues than what you found. You have no more business here and you form your escape plan.
+
+First, wake up Brother Malachi. This brave young man has done nothing wrong to you and the thought of doing it to him is somewhat sickening, but the mission was still your priority. You remove his restraints and move his body back into the room where you knocked him out. 
+
+""Hey, are you okay?"" you ask him with a worried look on your face as he starts to wake up.
+
+""What happened?"", Brother Malachi replies while feeling his skull hurt.
+
+You manage to come up with a very convincing lie, taking advantage of the young man's frail and radiation-weakened apperance, that he suddenly passed out and hit a desk. You help him back to Mother Aurora.",4,28,,,img:nuclear-plant.png,0,Next,,,100,,,
+68,4,28,"Back in front of Mother Aurora, Brother Malachi having witnessed as little as he could of the completion of the pilgrimage, you tell the spiritual leader that you have had an epiphany that prompts you to continue your quest.
+
+She urges you to continue your journey, which you decide to do.",4,37,,,img:radtown.png,0,Plan your next move,,,100,,,
+69,4,29,"It is not without a certain amount of bitterness that you decide to get rid of Brother Malachi. You have nothing against him, but your mission comes first and you cannot risk compromising a possible discovery.
+
+As the young man's back is turned, you grab hold of him and choke him, making sure he doesn't make a sound. You feel him begin to let go and his fragile constitution, riddled with radioactivity, quickly overcomes him.
+
+""Sorry,"" you say in the corner of his ear before letting his inert body fall heavily to the ground.
+
+You take the body with you to the director's office to avoid it being discovered during your search.",4,30,,,img:nuclear-plant.png,0,Search in the director's office,,,100,,,
+70,4,30,"You turn on the terminal on the desk and start exploring its contents.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+---",4,31,32,33,img:nuclear-plant.png,0,1. Display status,2. Staff schedule,3. Restricted access,100,,,
+71,4,31,"You select the menu ""Central unit status"".
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+System status
+_______________
+
+
+- Operating time: 208 years, 3 months, 15 days, 8 hours, 23 minutes, 45 seconds
+- Autonomous control system: ONLINE
+- Current production: 3.3GW
+
+
+---
+
+""Wow,"" you say with a surprised look. Maybe the metrics are wrong, but it's still impressive.",4,32,33,,img:nuclear-plant.png,0,2. Staff schedule,3. Restricted access,,100,,,
+72,4,32,"You select the menu ""Staff schedule"".
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+Employee schedule, week of 2077-10-20
+
+Team 1: 2077-10-20 - 2077-10-22
+
+Operator: John Smith
+Assistant Operator: Sarah Lee
+Maintenance Technician: David Chen
+
+Team 2: 2077-10-24 - 2077-10-26
+
+Operator: Samantha Taylor
+Assistant Operator: Michael Johnson
+Maintenance Technician: Jose Rodriguez
+
+Team 3: 2077-10-27 - 2077-10-29
+
+Operator: Karen Lee
+Assistant Operator: Patrick Davis
+Maintenance Technician: James Wong
+
+Note: All employees must report to the security checkpoint 15 minutes prior to the scheduled start time of their shift. Any deviation from the scheduled time must be approved by the Plant Manager. Thank you for your cooperation.
+
+---
+
+""Meh,"" you mutter in an uninterested tone.",4,33,,,img:nuclear-plant.png,0,3. Restricted access,,,100,,,
+73,4,33,"You select the ""Restricted access"" menu
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+Access to this system is restricted to authorized personnel. Unauthorized access is strictly prohibited and will be prosecuted.
+
+By accessing this system, you acknowledge that you are an authorized user and that any attempted or unauthorized access to this system may result in criminal and/or civil prosecution.
+
+Please enter your authorization data to continue.
+
+---
+
+""Music to my ears"", you think. You plug in your Pip-boy to try to break the code.",4,34,,,img:nuclear-plant.png,0,Start hacking,,,100,,,
+74,4,34,"...
+...
+
+...
+
+The wait still seems interminable, but the protection gives way and the terminal changes page. An email catches your attention.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- POSEIDON ENERGY FACILITY NR-04 -
+
+From: Poseidon Energy Management Board
+
+To: Taylor Grandson, Manager Poseidon Energy Facility NR-04
+
+Date: 2025-06-24
+
+Manager of the NR-04 facility,
+
+The Government has ordered the requisition of the NR-04 facility to carry out exceptional work to connect to a Vault which is highly confidential in nature.
+
+The official communication from the group is the modernisation of the network served by the NR-04 plant. You have been assigned a Board-appointed officer on the subject who will arrive on the 23rd at your premises. A temporary office will be opened to synchronise our work with the Government agents in charge of the project. The location will be communicated to you shortly.
+
+Any disclosure of information that could reveal the true nature of the work could jeopardise the future of the Group.
+
+We rely on your full cooperation and discretion in the completion of this plan.
+
+Sincerely,
+
+
+---
+
+""Interesting,"" you mutter, not without some excitement in your voice. As you suspected, this plant does have a connection to Vault 127.
+
+You look through some other documents and find what you think is the address of the temporary office, a building, apparently, located in the town of Briardwood and more exactly in a neighbourhood called ...",4,35,,,img:nuclear-plant.png,0,Midwich Valley ?!,,,100,,,
+75,4,35,"You couldn't have hoped for a better clue, and you also have a direction to go in. Now the question is: how do you get out of here without starting a war?
+
+You look at Brother Malachi's corpse and regret killing him, but your fears of compromising the mission have taken over. The young man was of a weak constitution and his body was already badly damaged by radiation. He didn't seem to have that famous immunity that most cult members have.
+
+You decide to try a way out in your favour by taking the body with you and bringing it back to Mother Aurora.",4,36,,,img:nuclear-plant.png,0,Take the corpse and go back,,,100,,,
+76,4,36,"Back in front of Mother Aurora, you manage to invent the circumstances of Brother Malachi's death. He suddenly collapsed and hit a desk in the power station while he was with you. You did not manage to save him.
+
+You seem to notice a certain distrust in Mother Aurora's eyes, but she replies that Brother Malachi has joined Atom's Glow thanks to the blessing of radiation.
+
+You continue your story by saying that you were able to see the Glow during your pilgrimage and that you were shown a new path. 
+
+You leave Radtown in peace, but not sure if Mother Aurora actually believed your story.",4,37,,,img:radtown.png,0,Plan your next move,,,100,,,
+77,4,37,"After a few hours of walking, and another dose of Rad-X, you feel the fatigue coming on. And the daemon in your Pip-boy must have felt it too, because the notification light started to blink once more.
+
+You stop in a clearing that is rather protected from prying eyes and start the holotape. This tape is very annoying because after several tries, you cannot remove it. It's as if the Brotherhood of Steel have managed to lock your Pip-boy in place to keep you on a leash and ensure that you complete your mission.
+
+The terminal displays a text entry to fill in the progress in the log. You take the opportunity to review what you have learned.
+
+The Vault 127 does exist, that's the first thing, since the Brotherhood itself was not sure about it because of the erased archives. It would be actually located in this area because the Poseidon Energy Plant NR-04 seems to have been used for its power supply, probably while the Vault was under construction and not yet autonomous. The military warehouse contained parts of a category of robots you may not be familiar with, prefixed SNCTRN. As you recall the attack on the raider camp, you realise that they were like nothing you had ever seen before. Finally, Vault 127 is said to be part of a project called ""Sanctuary"" whose purpose you have no idea.
+
+The next clue would be in Midwich Valley, part of an old town destroyed during the war, where temporary offices had been set up to oversee the construction of Vault 127.
+
+You record your findings in the holotape and stop for the night before heading back to Midwich Valley.",5,1,,,img:radtown.png,0,To Midwich Valley,,,100,,,
+78,4,38,"Junktown Prime. Situated quite a way south west of Rusty Springs, it is the second largest population concentration in this part of the Wasteland. Although it is now arguably the largest if the latest news from Midwich Valley is anything to go by.
+
+To say that it is the place where the worst of the region comes together would be an understatement, as this town is a den of raiders, mutants, ghouls, rapists and other fanatics of all kinds.
+
+In the ancient traditions of Yin and Yang, Midwich Valley and Junktown Prime would be the two sides: a relatively positive side (because Midwich Valley was not a haven of peace either), and another side that concentrates the worst. On the one hand, people who were trying to survive and rebuild, on the other hand, people who have lost all attachment to civilisation and whose only reason for being is to plunder and survive until they die. This usually happens to them after a few months spent there. It is also a place of debauchery where several factions indulge in sordid delusions.
+
+Is there a better place to go in the Wasteland? Absolutely.
+
+Is there a better place to glean information about secret, shady things? Unfortunately, the options aren't that plentiful.
+
+If your map is to be believed, it's at least a day's walk. You hope to come across a merchant or a few abandoned warehouses where you can store some weapons and ammunition.",4,39,,,img:desolated-hills.png,0,Taking the road,,,100,,,
+79,4,39,"You've been walking for hours and despite a few breaks along the way, punctuated by a few attacks from Raiders or Mole rats which you got rid of without too much difficulty, you feel it's time to find a place to rest.
+
+It's early afternoon and you finally arrive at a Red Rocket station that looks surprisingly abandoned. This is the first real place where you can stop and take a breather. And maybe stock up on some supplies.
+
+You enter the station's shop and meet what you assume to be the former owner, some dried up human remains. You rummage around and eventually find some useful items such as a bottle of purified water and some ammunition.
+
+On the wall next to the counter is a map of the area. You take the opportunity to look at it in order to find out more precisely where you are, as your Pip-boy has no precise data on the area. A little further, a few kilometers away, is Sunset Mesa, a kind of activity park near a lake.
+
+You take advantage of the quietness of the place to rest a little, then you take your road again.",4,40,,,img:red-rocket-gas-station.png,0,Leaving the station,,,100,,,16
+80,4,40,"It's getting dark and you think it's time to find a safe place to sleep. You have followed the main road and apart from a merchant caravan, you have surprisingly not come across any hostile groups.
+
+You arrived at the location indicated on the map of the Red Rocket station, Sunset Mesa. From a distance, it looks like an old country club that is now in a sorry state. However, there appear to be some buildings that are still fit to house you. But maybe they are already occupied by raiders or any other faction whose intentions you don't know.",4,41,48,,img:desolated-road.png,0,Spend the night at Sunset Mesa,Continue on the road in search of a less exposed location,,100,,,7
+81,4,41,"You walk through the gates of Sunset Mesa and head for what you think is the lobby. Cautious, alert, you watch for any movement that might indicate a presence on the premises.
+
+As you enter the lobby, you notice that the place appears to have been recently looted. The destroyed bottles on the floor and the spilled liquids everywhere are recent, with the smell of wine lingering in the air. All this would seem to be from the previous day at the latest. You manage to make as little noise as possible to avoid being startled by any occupants.
+
+As you walk through the back of the reception, you see the golf course behind and hear laughter. It's confirmed, you are not alone.
+
+Glancing out the window, you see two raiders around a campfire celebrating the success of their looting.",4,42,47,,img:sunset-mesa.png,0,Attack them,Ignore them,,100,,,
+82,4,42,"You take out your pistol and activate the V.A.S.T. of your Pip-boy. The targeting assistance offered by this device has always been a great help to your survival in the Wasteland. You aim for the head of one of the two raiders and pull the trigger.
+
+You hit the bull's eye and kill one of the two raiders instantly. The second raider gets up and starts running around in panic. He looks left and right, then notices you behind the French window where you are standing. He then starts charging at you with a blade.",4,43,44,,img:sunset-mesa-ruined-hall.png,0,Parry the attack,Dodge the attack,,100,,,
+83,4,43,"You drop your pistol and pull out the crowbar and manage to parry the blade blow, which pushes your opponent back. Furious, he tries the same crazy charge again but you have time to point the crowbar in front of you, impaling the raider.
+
+He collapses to the ground and you quickly finish him off.",4,45,,,img:sunset-mesa-ruined-hall.png,0,Search the bodies,,,100,,,
+84,4,44,"You get up quickly and manage to dodge his attack. Disoriented, he stumbles to the windowsill and tries to get up. You take this opportunity to finish him off with your pistol.",4,45,,,img:sunset-mesa-ruined-hall.png,0,Search the bodies,,,100,,,
+85,4,45,"As usual, you search the bodies of the raiders you are dealing with, picking up some ammunition and dropping the useless clothes they were wearing. An object in the pocket of the second raider catches your attention. It is a map drawn on a piece of cloth that seems to indicate the location of some loot they have hidden.
+
+You compare the crude drawing with your Pip-boy's map, hoping to find a match.
+
+Apparently their hideout is in a room a little further away. You decide to go there, preparing yourself for the idea of facing other raiders.
+",4,49,,,img:sunset-mesa-ruined-hall.png,0,Go to the location of the hideout,,,100,,,
+86,4,47,"You don't particularly want to waste your time fighting a pair of raiders. However, as you turn away from them, you suddenly hear them talking about the hideout where they put the ""army stuff"". Your instinct is to stay and listen for a while.
+
+Pre-war military artefacts still have some value and sometimes there are nuggets to be found. 
+
+If you believe what you hear from them, they have stashed the loot from their recent raids in a room a hundred meters past Sunset Mesa. They're talking about weapons, ammunition, military equipment, but also ""bullshit"" tapes. If there are any military-issue Holotapes in their loot, it might be worth a look.",4,49,,,img:sunset-mesa-ruined-hall.png,0,Go to the location of the hideout,,,100,,,
+87,4,48,"Sunset Mesa looks like a nice spot, but it's also very open and probably a raider's paradise. Although you've had a long day of walking, you prefer to continue on, hoping to find a slightly less exposed hiding place.
+
+You pass on your way and ignore Sunset Mesa.
+
+A few meters further on, you see a group of two raiders in the park and this reinforces your decision. You didn't really feel like facing them.
+
+A hundred meters later, a curious shelter seems to catch your attention. It is an old building, probably for storing maintenance equipment, which must be attached to Sunset Mesa. But what intrigues you most is that there is a raider, alone, in front of it who seems to be standing guard. 
+
+This is a typical case of a raider's loot stash. Although caution is the order of the day, you get the feeling that there might be some interesting stuff in there.",4,49,,,img:sunset-mesa.png,0,Go to the location of the hideout,,,100,,,
+88,4,49,"You approach the place discreetly and start to observe the surroundings carefully. No doubt the guard is alone and seems even less involved in his duty. He barely looks around and seems more focused on his feet than anything else. No doubt again, if the raiders have chosen a guard for their hideout, they don't seem to have taken the sharpest knife in the drawer.
+
+You should be able to get rid of them easily.",4,50,51,,img:sunset-mesa-storage-house.png,0,Knock him out and search the hideout,Kill him and search the hideout,,100,,,12
+89,4,50,"You don't particularly want to shoot him unless he puts up some resistance. You go around the house and manage to discreetly make your way behind him. Once there, you hit him hard on the head. He falls to the ground unconscious.
+
+After tying him up, you find the key to the padlock in one of his pockets.",4,53,,,img:sunset-mesa-storage-house.png,0,Search the raiders' hideout,,,100,,,
+90,4,51,"Although you don't particularly want to shoot him, there is still a risk that he will raise the alarm if things go wrong. So you go around the house and manage to discreetly make your way behind him. Once there, you grab him from behind and manage to break his neck without too much difficulty. The raider falls inert to the ground.
+
+You find the key to the padlock in one of his pockets.",4,53,,,img:sunset-mesa-storage-house.png,0,Search the raiders' hideout,,,100,,,
+91,4,53,"You feel like a kid on Christmas morning, if that phrase means anything to you. The raiders have been hard at work and you see a fine collection of all kinds of items. 
+
+Military weapons, ammunition, equipment, various spare parts, electronic equipment that could be used, scientific or technical books from before the war, these are some of the treasures that would allow you to get back on your feet in Junktown Prime. If there is one place where you could take advantage of all this, it is there. You also find a few other useful weapons, including grenades.
+
+In another crate, you notice Holotapes. Most of the items you find are stamped with either the army or pre-war government logo. You think that it might be a luck break to find some interesting files for your research. Or maybe it's just a big waste of time.
+
+One tape in particular catches your eye. The label is damaged, but you can make out enough characters that would form ""Project"" and ""127"" on it. Could the raiders have found something that could help you in your quest? It seems too good to be true.",4,54,,,img:sunset-mesa-storage-house.png,0,Leave the place and go back on the road,,,100,,,
+92,4,54,"You leave the place with your bag weighed down with a few trinkets that you could trade in Junktown Prime. It is getting late and you eventually find a quiet spot to camp a little further on.
+
+Once you are settled, you take the opportunity to review your finds. Obviously, the one that interests you the most is a holotape marked with the former government's logo.
+
+You insert it into the second free holotape reader of your Pip-boy and wait impatiently for it to load.
+
+---
+
+HOLOTAPE INSERTED
+
+PLAYBACK IN PROGRESS
+
+..............
+
+\FE1\BD#hv}\98\A5""\C8\BB\BFJ\84*\84\AB
+\A4\89\D1,ZR\C0\EC\E0 {cTݬD\BBm𣛐\CA\DBvb\93\F1\F5\85X\C32\9B\ED\C8:\F1\EC+\AB\94\C9\D6A\86^\BD\AD\8FM\F9\86^\95@-\EB;\E1\9A%a\F0\C6L! \AF\89\85\89\E1ENB 61Z\C2u\A2U|\F0\91{\82\87\B5g+\84̨\D5\FEa7\AD\C4X\91M\FB}֢9
+bN\F7\CE^\BEV\89\D0\C3;p\99\FB+ңe\F7}A,\E1\84\B8\91\A8\E8\85\C5>})1\E4\8Dx;\\AAE\EC\9A\D6T:|#Vv؆\FEaR\E9Ų
+\83^\EF\A6\C0\E4qpF\E2
+t8xL\99L\94\DBa\DF\B6\F4\8Aюp\81\E1GT\BD\E6T/ /ʗ\91\F7=g\D0|\B6\88\AB\B2\A3<݇\CD<p\9F,\BF\95NA
+
+---",4,55,,,img:night-sky.png,0,Damn it!,,,100,,,
+93,4,55,"That was too good to be true. Either the holotape is broken or it's encrypted. Either way, it's beyond your skill set and you don't have the equipment to restore the data on the tape.
+
+You lie on your back under the stars, hoping to come up with an idea. Watching the stars at night has always soothed you and, without looking for any mystical meaning, guided you.
+
+You have electronic junk and old science books to sell back to Junktown Prime. You review your memories of the last time you were there. There's the scrap dealer who collects anything and everything mechanical. Smugglers are more likely to deal in drugs or weapons. You're sure you've already met an electronics enthusiast there who can break the encryption on this kind of holotape or even restore damaged ones.
+
+Lost in your thoughts, your tired eyes begin to close.
+
+A few seconds later, your eyes open again, frightened, as if you had seen a ghost.
+
+""Oh no, not her!"" you exclaim.
+
+You lie on your side and curl up. Not because of the cool night air, but because of the person you just remembered. After letting out a long sigh, you finally fall asleep.",4,56,,,img:night-sky.png,0,Next,,,100,,,
+94,4,56,"Edward Wren Hai Papelu Tivrushka IV, also known as Ed. This woman's genius is matched only by her incredible capacity to be insufferable. You may remember needing her services in the past, but what stood out for you the most was the astronomical amount of aspirin you needed to consume afterwards because your head was so sore by the end. Or maybe it was also because you went for a drink at the Glowing Garter to forget the experience. Either way, Ed left you with a painful memory.
+
+But unfortunately for you, if there is anyone capable of breaking the most stubborn of encrypted holotape protections, it is her.
+
+The good news, you tell yourself without any conviction, is that you now have a real reason to go to Junktown Prime.",4,57,,,img:night-sky.png,0,Get back on the road,,,100,,,
+95,4,57,"It is late morning when you arrive at the gates of Junktown Prime. Built on the ruins of old buildings and various other buildings that looked quite luxurious, if you can imagine it, Junktown lives up to its name. It's a cluster of shantytowns crammed together, built along the water's edge, crowded with people. It's also one of the few places where you can see the diversity of the Wasteland gathered in one place: humans, super mutants, ghouls, it's quite unusual to see them gathered in one place without killing each other. Well, not too much.
+
+As you enter the city, you smell the typical mixture of burnt rubbish, cigarettes, and alcohol fumes that are typical of this city. The streets are teeming with various people minding their own business and avoiding being noticed as much as possible. On the other hand, some local personalities and celebrities are more likely to make a spectacle of themselves. Other groups are caught up in their heated conversations, an ambient hubbub that echoes like a subwoofer in your head. The whole thing is punctuated by a few regular gunshots.
+
+No doubt, you have not missed this city in any way.
+
+You head to the East Side where you remember Ed's house is.",4,58,,,img:junktown-prime-1.png,0,Go and see Ed,,,100,,,8
+96,4,58,"You arrive in the area where you think Ed lives, but you have trouble finding the exact location. Asking around, you are sent to a house down the street that looks familiar.
+
+You approach the shanty and knock on the door.
+
+There is no answer.
+
+""Ed?"" you call through the door.
+
+Still no answer.
+
+You start to walk around the house and look out the window. What little you see inside is a mess that, so far, doesn't surprise you. It's pretty much in line with your memories from last time. As you continue to observe, you begin to notice something more disturbing, a trace of blood on a table.
+
+Worried, you decide to go inside to see if anything has happened to Ed. You push open the door and find that it is unlocked. For all her eccentricity, Ed is still a careful person as far as you know.",4,59,,,img:junktown-prime-2.png,0,Inspect Ed's workshop,,,100,,,11
+97,4,59,"You observe the scene carefully. Although Ed's workshop is usually a mess, you notice some rather peculiar things. There seems to have been some evidence of a struggle. The two turrets on the walls seem to have been triggered and bullet holes appear everywhere.
+
+The blood trail is not very large, so it must be a superficial wound. Perhaps Ed was attacked or even kidnapped and her assailants were injured by the defences of her workshop. 
+
+You notice that the blood trails go into the back of her workshop. There you observe that a door has been broken and bent. You begin to get an idea of the kind of person who might have taken Ed, but you have no idea of the motive.
+
+You go out into the street and ask Ed's neighbour if he has seen anything lately. Apart from the usual clatter that Ed makes when she's working, he doesn't seem to have seen much. However, he does tell you about two Super Mutants that have been at Ed's house recently. The neighbour isn't too sure, but he thinks they were Bruk and Kruk, two brothers with a reputation in the area for shady business. But not many people seem to know where their lair is.
+
+You thank your interlocutor and think about how to find these two mutants.
+
+Two places seem suitable to investigate in Junktown Prime: the Glowing Garter, a cabaret that is one of the few most respected, even respectable places in Junktown Prime. And Scrapyard Haven, a dump run by a collector of mechanical and robotic debris of all kinds. The rest of it seems a bit too dangerous to be a snoop.",4,60,67,,img:ed-workshop.png,0,Go to the Glowing Garter,Go to Scrapyard Haven,,100,,,
+98,4,60,"The Glowing Garter is probably the most famous place in Junktown Prime. If the city is a rubbish heap, this cabaret is the flower that has managed to grow on top of it. Set in the reconstructed ruins of a real pre-war nightclub, it has a rather mystical and sophisticated atmosphere that sets it apart from the rest of the city. It's not the first local rave where the drunkard comes to get drunk and try to satisfy other urges, but rather one of the few places in this city that knows the meaning of the word 'refined'. 
+
+This reputation does not come about by chance either. The cabaret doesn't let in the first bumpkin, but rather the elite of the region. Leaders of respected or feared factions, merchants, mercenaries, and even you have already had the opportunity to taste the pleasures of this place in the past.
+
+You pass through the doors of the establishment and a Super Mutant acting as a bouncer inspects you with his eyes. With a slight gesture of approval, he signals you to continue after watching you for several long, awkward seconds.
+
+The interior of the Glowing Garter is one of the few places in this part of the Wasteland that is refined. Subdued, muffled light, some neon lights for the glowing side, and a detail that often shocks the newcomer... It doesn't stink.
+
+You look around the room, hoping to see a face you would know, but for the moment you don't.",4,61,,,img:glowing-garter.png,0,Sit at the bar,,,100,,,10
+99,4,61,"You sit down at the bar, a counter made of quality wood that doesn't look like it was salvaged from the ruins of another building. It has been renovated with great care and this kind of detail alone gives you the feeling of discovering what civilisation is like compared to the savagery of the Wasteland you know.
+
+You order a Scotch from the barman, and drop a few caps in return. After a day of walking and the disappointment, mixed with a hint of relief, but sprinkled with a hint of worry, that Ed is missing, you need a pick-me-up. 
+
+A few minutes later, the atmosphere in the Glowing Garter calms down and the intensity of the lights, already low enough, is reduced even further to leave only the stage in view. A piano tune begins to play, on an instrument that wouldn't look like it had been rescued from a ruin, and perfectly tuned if you could tell.
+
+A seductive, sultry, suave voice with a hint of raucousness joins the soft melody emitted by the piano, making the atmosphere of Glowing Garter mysteriously enchanting. The music rises to a crescendo in intensity, while the singer's voice also makes its presence felt within this lascivious duet.",4,62,,,img:glowing-garter-interior.png,0,Turn around and listen to the song,,,100,,,
+100,4,62,"A bright spotlight shines on a woman sitting on the piano, legs crossed in a bright red evening gown with an elegance that alone restores balance to this sick world. She rose delicately and began to walk slowly but confidently across the stage as she continued her vocal performance. 
+
+It was Carmen Coda.
+
+If the Glowing Gater is the nugget of Junktown Prime, Carmen is the jewel in the crown of the entire collection. This woman with her endless legs and face half covered by her brown hair can take your eyes in an instant. She doesn't have the teasing gaze of the girls of low moral standing that one meets in the less glamorous corners of Junktown Prime, but rather the one that could assassinate you instantly if it were her will. Her gaze blows hot and cold, piercing like a rifle bullet, while giving the impression of being detached and disinterested, but diving into it captivates you with a feeling of both unease, and helplessness.
+
+You are captivated by her performance and cannot take your eyes off her. The respect shown by the cabaret's customers is shown by the fact that the room is completely silent, only punctuated by the piano and Carmen's voice.",4,63,,,img:glowing-garter-interior.png,0,Listen to Carmen's song,,,100,,,
+101,4,63,"You are entranced by Carmen's voice and listen to her performance until the last note. When the show is over, you return to the bar and take advantage of the fact that the bartender is not too busy to chat with him.
+
+You start by asking him if he has seen Ed lately. He replies in the negative. You compensate for this further disappointment with a sip of scotch.
+
+You then ask if he has heard of two Super Mutant brothers, Bruk and Kruk. 
+
+""If those two scum dared to enter this place, they would be torn to pieces immediately,"" a female voice behind your back replies. The bartender looked away quickly as you turned around and saw Carmen sitting next to you.
+
+""It's pretty unusual to talk about this rubbish here,"" she continued while ordering her usual Martini with a wave of her hand. ""But coming from you, it doesn't surprise me.""",4,64,,,img:glowing-garter-interior.png,0,... What?,,,100,,3,
+102,4,64,"Carmen's last remark froze you for an interminable second. You've been to the Glowing Garter several times before, but you don't remember ever getting to personally know Carmen. And yet it is as if she already knows you.
+
+""Long blue coat, grey fedora fixed on her head, a tendency to ask questions about unpleasant subjects. If you're trying to avoid being noticed, you'll have to change your tactics,"" Carmen threw you in the face of your confused look.
+
+""Noted, madam,"" you reply ironically.
+
+Carmen wants to know what you're doing here again, meeting up with you on another risky subject. You explain to her that you are looking for Ed, but that she has obviously been kidnapped by the Bruk and Kruk brothers.
+
+""I have no idea why those bastards would want to kidnap that blabbermouth, but I think we can do each other a favor,"" Carmen offered in an intriguing tone.",4,65,,,img:glowing-garter-interior.png,0,Ah?,,,100,,,
+103,4,65,"""For Super Mutants, Bruk and Kruk have always been petty scum against the other gangs,"" Carmen explained. 
+
+""But a few months ago, when Fernando and I were at the Bargain Bin market, they started a fight with one of the factions."" Her eyes darkened slightly. ""Since the scum were no match for their size, they ran away,"" Carmen continued. ""Then shots rang out,"" she said, looking at the piano on the stage. You begin to get an idea of what's to come. ""Fernando was caught up in the shooting and was killed"". 
+
+Fernando was Carmen's husband, but also her pianist for years. You do realise that the pianist who was playing during the performance was not the same as before, but you would ingest the connection he had with Carmen.
+
+""I can tell you where their hideout is, if you promise to get rid of these bastards once and for all,"" she finished in a dry, determined tone. You are almost shocked to hear this from such a seemingly refined woman.
+
+You simply reply ""OK"" to Carmen.
+
+""Last we heard, they're living in a ruin on Sentinel Hill,"" she tells you. ""I hope Ed's okay, even though I can't stand her,"" she concludes.",4,66,,,img:glowing-garter-interior.png,0,Leave the Glowing Garter,,,100,,,
+104,4,66,"You thank Carmen for her help and leave the place to prepare to face two Super Mutants. Even if the description of Bruk and Kruk gives the impression that they are only small scum, they are still beasts with a physical strength and resistance superior to a normal human. A little preparation will not be useless.
+
+You look on your Pip-boy where Sentinel Hill is located and then you set off.",4,71,,,img:glowing-garter-interior.png,0,Direction Sentinel Hill,,,100,,,
+105,4,67,"Scrapyard Haven is located in one of the districts of Junktown Prime. The place is run by Scrapheap, a machinery and robotics enthusiast who is a genius in the field, capable of building you an entire robot from spare parts. He's also what you might call a weirdo. 
+
+Not necessarily in the bad sense of the word, but Scrapheap has a rather special relationship with his mess of machines. He and his band of oddballs have more affinity with their machines than with other humans. Some would even say they have sexual delusions with them, but you're not particularly interested by this kind of rumour. In a city where you can be killed at any corner by the worst of the Wasteland, it wouldn't surprise you to know that a guy would fuck machines.
+
+You haven't had much to do with Scrapheap, but you remember that despite his eccentricity, he's far from being a bad person. And since he deals with just about anyone, there's a good chance he can tell you more about Ed's kidnappers.",4,68,,,img:scrapyard-haven.png,0,Push open the door to Scrapyard Haven,,,100,,,13
+106,4,68,"As you enter Scrapyard Haven, the smell of molten metal and ozone fills the air and your lungs. Everything here is the sound of machinery, metal hitting metal, steam, and sparks. You continue to walk through the dump as you come to a pile of all kinds of metal rubbish on top of which a large figure asks you: 
+
+""What are you doing here, Wastelander?""
+
+From the pile of rubble emerges Scrapheap, a man in his fifties, broad-shouldered and with a build and musculature that would not make him blush at a Super Mutant. Wearing only a pair of trousers made from metal parts, as well as shoulder protectors and reinforced gloves, the rest of his torso is bare because of the stifling heat that reigns there. Heat that is starting to get to you too. It's hard to distinguish what is genuine human skin behind the mass of dirt, sludge, sweat, scars, and chest hair that make up Scrapheap's upper body.
+
+He slowly approaches you, as you look up more and more to follow his sinister gaze at you. With a slight smile he asks you, ""You're not here to steal my little treasures, are you?""",4,69,,,img:scrapyard-haven.png,0,... Scrapheap ?,,,100,,1,
+107,4,69,"""Erm... Mmh... no,"" you grumble under your breath, slightly impressed by Scrapheap's build, which you didn't really remember.
+
+""To tell you the truth,"" you say, regaining your composure, ""I'm looking for someone and I thought I might find some help here."" You can't help but scratch your nose and run your hand over the back of your neck, slightly embarrassed, looking away, at the unease of the situation. You don't really know if what impresses you more is Scrapheap's build or the fact that he's walking around half-naked in such a dangerous place.
+
+Unexpectedly, Scrapheap's sinister and worrying face was replaced by a warm smile and a friendlier attitude.
+
+""Why didn't you say so"", he replied, laughing. ""Come on my boy, let's go talk in the office"", he continued in his big voice while giving you a friendly pat on the back. A pat on the back that made you cough again as if your lungs would eventually come out.",4,70,,,img:scrapyard-haven.png,0,Follow Scrapheap,,,100,,,
+108,4,70,"You follow Scrapheap as he takes you to the slum that serves as his home in his scrap metal kingdom. Once inside, you explain to Scrapheap that you have come, that Ed has been kidnapped, that you suspect the Brok and Kruk brothers of this action, and that you think Scrapheap would know where they are hiding.
+
+""Those sewer scum?!"" shouted Scrapheap in his filthy voice while spitting on the ground. ""Everyone here is sick of these two little shits,"" he continued. Scrapheap then told the story that last month the two Super Mutant brothers asked his gang to make them weapons. Except that the ""idiots"", which is an understatement given their reputation, didn't know how to use them and one of them got hurt using them. They killed one of the members of his scrappers gang in retaliation.
+
+""A good little guy who didn't ask for anything,"" he says in an oddly calm voice.
+
+""Last I heard, they're hiding out in Sentinel Hill,"" Scrapheap finally said. ""If you see them, shoot them, it will do everyone here a favour,"" he concluded dryly.
+
+You thank Scrapheap by offering him some of the spare parts you picked up during your exploration of Sunset Mesa raiders' hideout, then set off in the direction of Sentinel Hill. A little preparation will not go amiss.",4,71,,,img:scrapyard-haven.png,0,Direction Sentinel Hill,,,100,,,
+109,4,71,"After doing some shopping at the Junktown Prime market, you feel up to going to the Brok and Kruk brothers' lair to find out if they are the ones who kidnapped Ed.
+
+After half an hour's walk, you arrive at Sentinel Hill, an old residential area in ruins. You spot what appears to be the slum where the two mutants are believed to be living. As you quietly approach, you hear a large Super Mutant voice hooting, ""SHUT THE FUCK UP! Covered by this shout, a shrill and annoying voice is heard. No doubt about it, Ed is with them.
+
+Even if Brok and Kruk have a reputation for petty thuggery, they are still Super Mutants with superhuman strength. A frontal attack would not be appropriate. You think about your approach.",4,72,75,,img:sentinel-hills.png,0,You try to infiltrate their camp,You think of a diversion,,100,,5,
+110,4,72,"One of the two brothers is standing quite a distance from the front door of their hideout, keeping watch. As you watch the Super Mutant from afar, you begin to think that the brothers' reputation does not seem to have been usurped. Even a Radroach has a sharper, more alert look than this guy.
+
+The few low wall ruins around the building and the car wrecks that litter the path should keep you out of sight.
+
+You start your infiltration and manage to sneak up the side of the building. The other mutant's screams and Ed's incensed speech are a good distraction, covering your discreet actions. Fortunately, you come across some electrical cables torn from the ground. An idea springs to mind: use them to get rid of the guard.
+
+You continue on your way then take a deep breath.",4,73,,,img:sentinel-hills.png,0,Strangle the Mutant,,,100,,,
+111,4,73,"You slip the cable around the Super Mutant's neck and squeeze with all your might so that he cannot scream and give the alarm. After what seems like an interminable minute, your opponent's alertness gradually diminishes and he begins to offer you less resistance. This is not the time to let go, you maintain your stranglehold on the mutant.
+
+Another interminable minute later, the mutant collapses to the ground and does not move. You inspect his body and see that he no longer has any vital signs. Although this was not a requirement for the information, the person who gave you the location sincerely wanted to put an end to these two mutants' antics.
+
+As you approach the entrance to the building, you hear Ed's voice getting louder, faster, and more annoying.
+
+""...and here I had arrived at one of the RobCo Industries factories, where they were making an improved version of the Protectron before the line was interrupted by the war. Did you know that they were some of the most advanced machines of that time? And it's impressive to know that they work with a language written hundreds of years ago! And wait, I haven't told you the best part...""
+
+You sigh slightly, then continue your infiltration into the lair. You quietly open the door and see Ed at the back with the other Super Mutant brother in front, dejected.
+
+You arm yourself with your trusty crowbar to get rid of the second one.",4,74,,,img:sentinel-hills.png,0,Attack the mutant,,,100,,,
+112,4,74,"""...and did you know that the Republic of New California had a series of mainframes called the 'Archives' that stored and analyzed agricultural and geological data? It's fascinating, the network topology used is brilliant...""
+
+* TCHAC *
+
+You suddenly impale the head of the second Super Mutant with the crowbar, killing him instantly. 
+
+""...with a binary code inspired by the one the Enclave used last time when... Oh, it's you,"" Ed shouted with a broad smile. Entirely uninterested in the death of her captor, Ed living a little in her bubble, she clapped her hands together as you arrived.
+
+""What did they want from you?"" you ask Ed as you release her.
+
+""Actually, it's just technique you see. These two super mutants must have heard about my super genius skills and asked me to unlock an old locked terminal for them. Apparently they found it in an old warehouse, or a military base, or a lab, or a gas station, I don't know, it was boring anyway. I broke the code of the terminal while I was cleaning up my workshop, because I like to keep it tidy you know...""
+
+That last sentence about the workshop leaves you wondering what ""tidy"" means.
+
+""... And then while I was brushing my teeth I read what was in the terminal and it looked like access codes for military devices. But in fact it was rubbish, just an inventory, not even the keys to a series of Assaultrons, you know how great they are with their laser in the head? Anyway, I thought it sucked so I replaced the contents of the terminal with a video game.""",4,78,,,img:sentinel-hills.png,0,... ok,,,100,,4,
+113,4,75,"One of the two brothers is standing quite a distance from the front door of their hideout, keeping watch. As you watch the Super Mutant from afar, you begin to think that the brothers' reputation seems to have been well earned. Even a Radroach has a sharper, more alert look than this guy.
+
+As you look around, you notice some cars that don't seem to have been destroyed. Blowing them up would probably create a small diversion.
+
+You discreetly approach the nearest carcass and set up a few grenades by attaching them to the door. You step back to take cover and then throw a rock at the mutant guard.",4,76,,,img:sentinel-hills.png,0,"Hey moron, come closer and see!",,,100,,,
+114,4,76,"Kruk is indeed stupid, but also very quick to get angry and charge into the pile like ... A moron that he is.
+
+Running towards the car you sabotaged and behind which you were standing, you wait until he is close enough before jumping over the low wall behind you. 
+
+""BRAAAAAAAAAAAAAAAAAAAAHH,"" the mutant yells.
+
+At the last second, you jump over the low wall and pull a cable that unlocks the grenades installed in the carcass. Kruk stops dead in his tracks, blown away by the explosion, but still gets up, a little stunned. ""Come on,"" you think as your heart races. You hear your Pip-boy's Geiger-Müller counter go into overdrive and what you had hoped for is coming to pass. The car's fusion reactor suddenly explodes, blowing Kruk away in a storm of debris. The low wall you were sheltering behind hopefully held up.
+
+The mutant lies on the ground, in bad shape. You then fulfill the first part of a promise you made to the person who gave you the location of their hideout by finishing him off.",4,77,,,img:sentinel-hills.png,0,BRAAAAAAAAAAAAAAAAHHHHHHH!!!,,,100,,,
+115,4,77,"""BRAAAAAAAAAAAAAAAAHHHHHHH!!!""
+
+A second Mutant howl comes from the barracks and rushes towards you, it's Brok, alerted by the explosion, who has just discovered his dead brother.
+
+Your blood runs cold and you arm yourself with the crowbar. You manage to stop the mutant dead in its tracks by ramming it into his head.
+
+""Good riddance,"" you sigh, exhausted by the action. You then walk towards the hideout of the two mutants and open the room where you heard Ed's voice.
+
+""Oh it's you!"", Ed shouted with a wide smile. Completely disinterested in the death of her captors, Ed living a bit in her bubble, she clapped her hands together as you arrived.
+
+""What did they want from you?"" you ask Ed as you release her.
+
+""Actually, it's just technique you see. These two super mutants must have heard about my super genius skills and asked me to unlock an old locked terminal for them. Apparently they found it in an old warehouse, or a military base, or a lab, or a gas station, I don't know, it was boring anyway. I broke the code of the terminal while I was cleaning up my workshop, because I like to keep it tidy you know...""
+
+That last sentence about the workshop leaves you wondering what ""tidy"" means.
+
+""... And then while I was brushing my teeth I read what was in the terminal and it looked like access codes for military devices. But in fact it was rubbish, just an inventory, not even the keys to a series of Assaultrons, you know how great they are with their laser in the head? Anyway, I thought it sucked so I replaced the contents of the terminal with a video game.""",4,78,,,img:sentinel-hills.png,0,... ok,,,100,,4,
+116,4,78,"After a seemingly endless walk with Ed and her endless stream of words, you are finally back at her workshop.
+
+As she hops around among her ""toys"" as she calls them, you make your way through the mess, hoping not to trip over the first obstacle.
+
+""Tidying up her various machines and terminals, she suddenly stops and looks at you in an intense, even awkward manner.
+
+""By the way, why did you come here?""
+
+It is true that with all the commotion you had completely forgotten why you had come to see Ed. You then reach into your bag and pull out the holotape stamped with the logo of the United States Government.
+
+""Can you decipher this tape for me?"" you ask Ed.
+
+Like a pickpocket, she snatches the holotape from you in a matter of seconds and inserts it into an archaic player. For a moment, you fear that Ed's careless handling will damage the tape, but you reassure yourself that despite her exuberance, she is still a genius in this field.
+
+On Ed's terminal you see some kind of small robot attacking what looks like a visual representation of the holotape with a sledgehammer. The computer program appears to be working.
+
+""It's going to be hours, do you want to stay here all night?"", Ed asked.",4,79,,,img:ed-workshop.png,0,Make an excuse,,,100,,,
+117,4,79,"It's not that Ed's company is unpleasant. Actually, yes, it is, because her shrill voice and hyperactivity quickly tire you out as well as irritate you. And you don't particularly want to spend the night at her place despite the kindness of her proposal.
+
+So you make an excuse and say that you still have to check with an arms dealer and that you will spend the night out. You suggest to Ed that you come back the next day to see the results of the tape decryption.
+
+""OK,"" she laughed, and went back to tinkering with her machines in an unlikely state.
+
+You exit Ed's workshop and take the opportunity to confirm that you've kept your promise to the person who told you where the two Super Mutant brothers are hiding. Even though Junktown Prime is a hub of Wasteland vermin, these two had a lot of it.
+
+With the meeting over, you head off to Junktown Market to do some shopping and find some materials that might help you in the next stage of your quest. Exhausted, you find the closest thing to an inn to spend the night.",4,80,,,img:ed-workshop.png,0,Spend the night,,,100,,,
+118,4,80,"The next day, you return to Ed who doesn't seem to have slept all night. She was tinkering with some sort of old terminal attached to a robotic arm that you don't trust.
+
+""Doooone,"" she shouts, handing you a holotape.
+
+""First I had to run a brute force attack on the hash function of the encryption algorithm, which was layered with a multivariate polynomial reduction technique. Once I succeeded, I had to apply a modified version of the Diffie-Hellman elliptic curve key exchange protocol, but with a quantum-secure elliptic curve lattice-based cryptography scheme. After that, all that was needed was to run a self-learning recursive neural network on the ciphertext to get the plaintext. Easy as pie!""
+
+At the moment, you can't tell if you've received a psychic attack or been exposed to a high dose of a psychotropic drug. All you can remember is that you were motionless and frozen for a minute or so trying to take in the tirade of words, some in an order you never thought possible, delivered with the same velocity as a Sentry's machine gun.
+
+Coming to your senses, you insert the copy of the deciphered holotape into the second drive of your Pip-boy.",4,81,,,img:ed-workshop.png,0,Read the holotape,,,100,,,
+119,4,81,"The holotape starts and displays its contents.
+
+---
+
+File Name : Project 127 meeting
+
+Date : 2075-06-18
+
+Classification : Top Secret
+
+Meeting transcription
+
+Reminder : Vault 127 is a large-sca�n�^XJ*rground facility designed to support the Sa/7Xury Project approved by the US Governement withÕ3{N�\ort of Vault-Tech and Poseidon Energy Corporation.
+
+Disclaimer: Due to the vital national interests at stakzUB�SrE�nnctuary Project, the precise locatio�2`qVb��Slt 127 is being kept secret and is not includן?�h��ŨnDͅ�?Nrking meetings involving all stakeholders. 
+
+Remind""mo�ult 127 is not intend�I�<;+l���8K�PZ}j�L�rvivors.
+
+Information: The imple�~�z�+y��I�<;+l���8K�PZ}jn for Vault 127 is the sprawling star model. 
+
+Information: Vaul�""mo���have multiple entrances located in th'4��O`P�us medium-sized cities in the region.
+
+Information: The mulc�{�WK�tes of Vault 127 will be the entr��jpG""n_��:��$for the Sanctuary Prg�����y����p���W�\9�v the imposed containment phase to prevent contamination of the m+l���8K�PZ}j�L�Rl��ault 127.
+
+Organisa��'[�߫�e|ǧ��Fpr�()�f�m7 project will be run from temporary offices in the Woolworth Towe���mívr|ding in Midwich Valley.
+
+Action: Inform Poseid�WpTƤOtv��d�zUy Facility NR-03 of the address of the temporary pilot office.
+
+Action: Inform Radiant Terrace Military Base of the addr��d�zUB�SrE�n�P�pilot office.
+
+Next meeting d:'4��O75-06-21
+
+---
+",4,82,,,img:ed-workshop.png,0,Errr..,,,100,,,
+120,4,82,"""This looks corrupted,"" you say, showing it to Ed.
+
+""Can't beat that, the original data has been damaged over time,"" she replies without even looking at what you're handing her.
+
+Despite the partial corruption of the data, you were able to extract quite a bit of interesting information. If you believe what you've read, the project managing the Vault 127 would have been run from Midwich Valley. Some of the other information is hard to understand and talks about a ""Sanctuary Project"" and the star layout of the Vault. You don't really understand the purpose behind this information.
+
+""Thanks, Ed,"" you say to the tinkerer before leaving her workshop.
+
+""My pleasure,"" she yells as you leave.",4,83,,,img:ed-workshop.png,0,Leave Junktown Prime,,,100,,,
+121,4,83,"As you wander through the maze of slums that make up the streets of Junktown Prime, you reread in your head the message you were able to obtain with Ed's help.
+
+The next part of your investigation will take you to Midwich Valley, which is said to have been destroyed without really knowing the reason or the origin. After a final diversions to the market in Junktown Prime to stock up on various supplies, you pack up your things and take the long road to Midwich Valley.",4,84,,,img:junktown-prime-1.png,0,Direction Midwich Valley,,,100,,,
+122,4,84,"After a few hours of walking, you feel the fatigue coming on. And the daemon in your Pip-boy must have felt it too, because the notification light starts flashing once more.
+
+You stop in a clearing that is rather protected from prying eyes and start the holotape. This tape is very annoying because after several tries, you cannot remove it. It's as if the Brotherhood of Steel have managed to lock your Pip-boy in place to keep you on a leash and ensure that you complete your mission.
+
+The terminal displays a text entry to fill in the progress in the log. You take the opportunity to review what you have learned.
+
+The Vault 127 does exist, that's the first thing, because the Brotherhood was not sure since the archives about it got erased. It would be located in this area because the document referred to the Poseidon Energy Plant NR-04 which is located near Radtown and the Radiant Terrace military base. The Vault 127 would be part of a project called ""Sanctuary"" which you have no idea what the purpose is. Part of the document seemed to talk about the purpose of the Vault, but you were unable to decipher this.
+
+The next clue would be in Midwich Valley, part of an old town destroyed during the war, where temporary offices had been set up to oversee the construction of the Vault 127.
+
+You record your findings in the holotape and stop for the night before heading back to Midwich Valley.",5,1,,,img:road-1.png,0,Go to Midwich Valley,,,100,,,
+123,4,85,"Of the three options you had, Radiant Terrace wasn't necessarily the best or the worst. When you look at the location on your Pip-Boy's map, you remember that it's awfully close to the raider camp that kidnapped you. And which was decimated by an attack of killer robots.
+
+Does the place still exist?
+
+Is there any chance of finding something that will help you in your search for Vault 127?
+
+Scanning the limited data your map offers, you note the location of a sizable military base. Your past experience with former Vaults survivors tells you that the military is never far from such a facility. At the very least, they would have to provide security, and probably help with logistics.
+
+Another advantage for Radiant Terrace is that it is very close to Rusty Springs, so it doesn't take you long to get there, about half a day's walk.
+
+Without further ado, you hit the road.",4,86,,,img:desolated-hills.png,0,En route to Radiant Terrace,,,100,,,
+124,4,86,"After half a day's walk without any trouble, which is rare enough to be noted, you arrive at the edge of a ruined town which stands at the place formerly known as Radiant Terrace.
+
+Radiant Terrace was a very typical small residential town of the Pre-War period, with houses that all look the same, big streets with gardens, grass, trees, people washing their cars, children playing outside. These are pretty much the only things you can imagine from a time you obviously didn't experience. These images come from the various photos, books or Holotapes you might have found on your travels and gave you a glimpse of life before.
+
+Today, Radiant Terrace is more of a battlefield where only a few ruined houses remain. The rest is desolation, burnt trees, rusted or destroyed cars, and charred corpses littering the ground. In other words, the scenery you have been used to for a long time. It's also the perfect place to meet ghouls, which you don't really want.
+
+Your Pip-Boy's mapping is reaching its limits and you'll have to find your way around by yourself. Arriving at a square that appears to have been the town centre of Radiant Terrace, you notice a directional sign that is welcome.",4,87,,,img:radiant-terrace.png,0,Radiant Terrace Military Base,,,100,,,17
+125,4,87,"Half an hour's walk later, you arrive at the walls of Radiant Terrace Military Base. You observe the military complex from a distance and the first thing that jumps out at you is that the video surveillance cameras seem to be still active. This means that the base is at least supplied with electricity, and maybe even occupied.
+
+Friends or enemies? You prefer to consider the second option as a default choice.
+
+You approach discreetly, trying to avoid the cameras' field of vision to observe the interior of the base through a hole in a wall. This one is quite narrow so you don't manage to get a full view of the place either, but several clues cross your eyes. You hear the typical muffled footsteps of the Protectrons, most certainly miliary versions. Grunts alert you to the presence of ghouls. One passes through your field of vision, dressed in the rags of a pre-war military uniform. You suspect that the survivors of this base have mutated into ghouls.
+
+You take inventory of your weapons and ammunition and realize that you may not be well prepared for such an encounter. Your gun won't do much against the armor of a military guard, and you don't have an outfit reinforced enough to take the attack of a berserk ghoul.
+
+You have two options.",4,88,94,,img:radiant-terrace-military-base.png,0,Attempt an infiltration approach,Try a frontal approach,,100,,,9
+126,4,88,"It would be risky to attack such a well guarded base head on. You decide to go around the perimeter and come across a lucky find. The wall is destroyed at the back of the base and leads to a small building that is obviously not heavily guarded. Inside, you think you see a terminal that would allow you to perhaps infiltrate the base's computer system.
+
+Multiplying your efforts of discretion, you manage to enter the building after having picked the lock.
+
+You were right, there is a terminal in this remote office and it is in working order. You connect to it.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex -
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.",4,89,90,91,img:radiant-terrace-military-base.png,0,1. Base Information,2. launch control room,3. security protocols,100,,,
+127,4,89,"---
+
+Base Informations
+
+Access Base Information :
+
+1. Personnel Files
+2. Inventory Records
+3. Operation Logs
+
+Enter com???/..:!!
+
+ERROR: Terminal malfunction detected.
+Please contact maintenance personnel.
+Error code: 003-XYZ-678
+
+Redirecting to main menu.
+
+---",4,90,91,,img:radiant-terrace-military-base.png,0,2. launch control room,3. security protocols,,100,,,
+128,4,90,"---
+
+Launch Control Room
+
+Access Launch Control Room :
+
+1. Check Launch Status
+2. Launch Status History
+3. Override Launch Status
+
+Warning: Cannot establish connection with Launch Control Room subsystems.
+
+Redirecting to main menu.
+
+---
+",4,91,,,img:radiant-terrace-military-base.png,0,3. security protocols,,,100,,,
+129,4,91,"---
+
+Security Protocols
+
+Access Security Protocols :
+
+1. Security Cameras Status
+2. Protectrons Management
+3. Access Control Management
+
+Enter command: 
+
+---",4,92,,,img:radiant-terrace-military-base.png,0,Check each entry,,,100,,,
+130,4,92,"---
+
+Security Protocols Subsystem
+
+Information: Security Protocols management requires a level 6 security clearance. 
+
+Please provide your credentials to continue.
+
+---
+
+""Obviously,"" you sigh. You pull out the connector on your Pip-boy and attempt to hack into the terminal.
+",4,93,,,img:radiant-terrace-military-base.png,0,Hack the terminal,,,100,,,
+131,4,93,"---
+
+....
+...
+
+....
+
+...
+
+Security Protocols Subsystem
+
+Access granted.
+
+Processing commands...
+
+...
+
+
+...
+
+..
+
+Deactivating security cameras.......... DONE
+
+Deploying Protectron routines.......... DONE
+
+Deactivating security locks ............... DONE
+
+--- 
+
+""There you go!"" you gloat. Outside, you hear the Protectrons alarmed. Obviously, the IFF change has paid off and the robots are attacking the Ghouls.
+
+You take advantage of the confusion to enter the main building.",4,98,,,img:radiant-terrace-military-base.png,0,Enter the base,,,100,,,
+132,4,94,"No matter how hard you look, you don't see many options other than a frontal attack. After circling the base compound, you find an opening in the wall through which you manage to slip.
+
+You hide in a container and patiently observe the rotation of the Protectrons. Where the ghouls are a bit more erratic, the Protectrons are like clockwork and stick to their routine.
+
+Once you have memorized the routine, your target will naturally present itself to you. One of the units rotates in your corner and is isolated for a moment. You pull out your weapon, activate your V.A.S.T. and focus on the protectron control unit. Despite their armor, a well placed shot should be able to immobilize it.",4,95,,,img:radiant-terrace-military-base.png,0,Fire!,,,100,,,
+133,4,95,"* BANG! *
+
+The glass protecting the Protectron's cognitive circuits shatters and its control unit disintegrates in a spray of sparks and smoke. The unit stops and does not react anymore. No activity around you, it does not seem to have had time to transmit a distress signal.
+
+Looking at the carcass, you notice that these models seem heavily armed. Their left arm is equipped with a high-powered laser cannon. You then use your skills and ingenuity to demonstrate the arm and retrieve the machine's fusion reactor. This makeshift weapon shouldn't last very long, but you hope it helps you fight your way through your attack.
+
+What happens next is not long in coming, a Ghoul obviously attracted by the sound of your weapon has noticed you and rushes towards you.",4,96,,,img:radiant-terrace-military-base.png,0,Zap!,,,100,,,
+134,4,96,"* ZAP! *
+
+The impromptu test shot is successful, the Ghoul is vaporized by the powerful beam.
+
+""Aaaahh!!!"" you suddenly scream. The heat from the weapon shows that it was clearly not designed to be handled by a human. You drop it and calm the pain. After a few minutes, you wrap the makeshift weapon in a cloth tarp that was lying around and decide to resume your assault.
+
+You concentrate your V.A.T.S. again and manage to vaporize another Ghoul. A Protectron then passes in your field of vision, a huge hole is dug in its body and immobilizes it.
+
+Another Ghoul then stands in front of you and you manage to vaporize it too.
+
+The heat released by the weapon starts to become unbearable. Even more disturbing, a very disturbing hissing sound is becoming more and more shrill from your weapon. The hissing gradually turns into a sizzling sound.",4,97,,,img:radiant-terrace-military-base.png,0,Throw the weapon at the remaining Protectrons,,,100,,,
+135,4,97,"There are only two Protectrons left in front of you but your weapon seems to have become unstable and the worst is to be feared. Without hesitation, you throw it at the two units who stop and watch the severed arm turn red.
+
+The hissing and crackling are more and more violent, they break your ears. You flee to safety and then hear a huge explosion.
+
+Slightly stunned by the explosion and a little panicked, you catch your breath sitting along the wall which protected you and begin to find your calm. You furtively observe the place of the explosion and see only a smoking crater and the carcass of two Protectrons, also smoking.
+
+You laugh nervously with relief and shed a few tears of joy, happy to have survived what seemed like a bad start.
+
+After recovering your senses, you head for the front door of the base. ",4,98,,,img:radiant-terrace-military-base.png,0,Enter the base,,,100,,,
+136,4,98,"A terminal located next to the door seems to always control the door lock. You then try to hack it by connecting your Pip-boy to it.
+
+---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex  -
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.
+
+Enter password: 
+
+---",4,99,,,img:terminal.png,0,Crack the password,,,100,,,
+137,4,99,"---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex  -
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.
+
+Enter password: *********
+Access Denied. Incorrect Password.
+
+---",4,100,,,img:terminal.png,0,Try again,,,100,,,
+138,4,100,"---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex  -
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.
+
+Enter password: *********
+Access Denied. Incorrect Password.
+
+WARNING : Intrusion attempt detected.
+Security measures have been activated.
+
+---",4,101,,,img:terminal.png,0,A last try,,,100,,,
+139,4,101,"---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex  -
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.
+
+Enter password: *********
+Access Denied. Incorrect Password.
+
+ERROR: Security measures management subsystem offline.
+Cannot proceed security measures.
+ERROR
+ERROR
+
+---
+
+The terminal starts repeating ""ERROR"" until its own internal memory is full. The screen freezes and then turns off.
+
+---",4,102,,,img:terminal.png,0,Uh...,,,100,,,
+140,4,102,"The terminal finally reboots and its display differs. Your Pip-boy was still connected to it and obviously the interface and the hacking programs you have on it managed to unlock its bootloader.
+
+You search through the rudimentary commands that the basic terminal interface has and manage to find the program that handles the door lock. Launching it with the proper settings, you hear a muffled slamming sound coming from it. 
+
+""Bingo!"" you exclaim.
+
+The door opens, you enter the base.
+",4,103,,,img:terminal.png,0,Explore Radiant Terrace Base,,,100,,,
+141,4,103,"You enter the Radiant Terrace military base. Despite the general dilapidation of the city and its surroundings, the place is surprisingly well preserved, as if it were still maintained. Various empty offices with terminals are offered to you.
+
+You start browsing through the terminals, the paper documents not having survived with time, but these are of no help to you. Personnel management, guard rotation management, inventory management, Protectron management, nothing that can put you on the road to Vault 127.
+
+As you go deeper into the building, you feel a heavy and oppressive atmosphere. Outside, it was infested with ghouls and robots. Inside, it's empty and deadly silent. The third office you explore confirms this impression... You find there the decomposed corpse for decades of what seems to have been an officer who committed suicide with his service weapon as shown by the huge dried blood stain on the wall behind.",4,104,,,img:radiant-terrace-base-interior.png,0,Continue exploring,,,100,,,
+142,4,104,"You arrive in what appears to be an archive room. Hundreds of holotapes are stored in the cabinets and shelves that fill the room. The care taken with the storage and the cleanliness of it leaves you increasingly puzzled. This place is not abandoned, it can't be. And they are not berserk ghouls who have cleaned up here.
+
+Besides the hygienic considerations, what also concerns you is how you are going to sort through this mountain of data. You're certainly not going to spend your day, or even your week given the quantity, listening to Holotapes. That would take days.
+
+You see a terminal at the back of the room, perhaps the index to this library, you hope.",4,105,,,img:radiant-terrace-base-archive-room.png,0,Turn on the terminal,,,100,,,
+143,4,105,"---
+
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+- Radiant Terrace Military Complex  -
+
+Archive library database system
+
+Access Warning : This terminal is the property of the US Military and is to be used only for official purposes. Unauthorized access is strictly prohibited and may result in legal action. By accessing this terminal, you agree to comply with all security protocols and keep all information confidential. Any attempt to modify or extract information without proper authorization is a violation of military law and will be prosecuted to the fullest extent possible.
+
+Search for a topic or keyword: [______________________]
+
+---
+
+You naively try to search for ""Vault 127"", but as you might expect, the terminal is in no mood to comply.
+
+---
+
+ACCESS DENIED
+
+You do not have the necessary clearance to access these files.
+
+Level 7 or above is required to proceed.
+
+---
+
+To your sudden and predictable disappointment is added the typical click of a gun that has just been cocked that you hear behind you.",4,106,,,img:terminal.png,0,"""Freeze!""",,,100,,,
+144,4,106,"A huge shiver runs down your entire spine and you feel your hair stand up under your hat. You raise your arms slowly and then turn around just as slowly to face the person holding you at gunpoint.
+
+You flinch slightly and then feel embarrassed by your reaction. The person pointing his weapon at you is a Ghoul, but one of the few who has presumably retained his lucidity.
+
+""May I ask what you're here to snoop around after making a mess of things outside?"" the Ghoul asked you in his hoarse, broken voice.
+
+""I'm just looking for information,"" you reply with your voice shaking. You have met other still lucid Ghouls in the past. But their ugliness and the fear of them losing all sense of morality and suddenly starting to attack you have always made you prefer to avoid their company. 
+
+""And what kind of information?"" the Ghoul asked you with a glutural tone in his voice.
+",4,107,,,img:radiant-terrace-base-interior.png,0,Explain the reason for your presence to the Ghoul.,,,100,,,
+145,4,107,"You explain your quest to the Ghoul, the search for Vault 127, your more or less coerced affiliation with Brotherhood of Steel, your encounter with unknown destructive robots. 
+
+""Bah,"" the Ghoul said, lowering his weapon. 
+
+He introduces himself to you as Commander Rios, in charge of the Radiant Terrace military base. He invites you to follow him. You walk down a hallway together and arrive at what appears to be his office.
+
+He settles into his chair and looks at you with his disturbing bulging, almost translucent eyes.
+
+""What do you want to know about Vault 127?"" he asks you in a serious tone.",4,108,,,img:radiant-terrace-base-interior.png,0,Where is it?,,,100,,7,
+146,4,108,"""Vault 127"" is located in this area, confirmed Commander Rios. ""I don't know exactly where,"" he continued, ""but I supervised part of the operations for its construction.""
+
+This last statement leaves you speechless. You know that the ghouls acquire an extraordinary longevity with their mutation, but in this case the Commander would be bi-centennial.
+
+This last statement gives you a piece of information: Vault 127 exists, and it is in this region. The Brotherhood didn't know that for sure.
+
+""I can give you access to the terminal to find the records relating to Vault 127,"" the Commander continued. You experience an all too usual sense of joy that will turn to disillusionment. ""The access card is available in my desk drawer,"" he continued.
+
+""But first I have a request to make to you,"" he said in an even gruffer tone of voice, aggravated by his hoarseness.",4,109,,,img:radiant-terrace-base-interior.png,0,Kill me,,,100,,,
+147,4,109,"""Excuse me?!"" you exclaim. 
+
+""The reason I know about Vault 127 and the role this base played in its construction is because I lived through it."" The Commander then confirms your suspicion that it is truly bi-centennial.
+
+""So I also lived through the bombing, the end of the world, the destruction of our country, everything,"" he continues. ""Over the years, I've seen the soldiers under my command die from radiation or turn into disgusting Ghouls like me. Some became ferocious soon enough and we had to resign ourselves to killing them. Others lived longer and eventually lost their minds and became ferocious beasts.""
+
+He pauses slightly and continues his blood-curdling speech. Never before have you heard testimony from a pre-war survivor, let alone someone who lived through the war.
+
+""The traces of blood that you must have seen while searching the offices are not remnants of combat. At least, not all of them. Some of my soldiers chose to end their own lives rather than end up like the others. And now I'm the last one left with my sanity. For how long? I don't know.""",4,110,,,img:radiant-terrace-base-interior.png,0,Continue to listen,,,100,,,
+148,4,110,"The Commander continues his request.
+
+""I think the only thing that has kept me going, despite this rotting body, is military routine. For the past two centuries, I have been trying to maintain the rigor and discipline of our army. Every day, I carry out the tasks that have been entrusted to me, without ever wanting to stop. It's pointless, the army no longer exists, the country no longer exists, there's nothing left to defend or protect, but it's kept me focused.""
+
+He pauses again and continues.
+
+""But the more the days go by, the harder it gets. The loneliness is eating away at me, I don't feel like going out to explore the Wasteland like the rest of you. But I don't have the courage that my soldiers had to end it all myself.""
+
+He straightens his head and looks you straight in the eye.
+
+""I humbly ask you to end a meaningless existence. If you do, I will be grateful. If you don't want to do it, I can understand and won't hold it against you.""
+
+You feel your legs weaken and your breathing difficult, the Commander's poignant speech and request have particularly troubled you.",4,111,112,,img:radiant-terrace-base-interior.png,0,Kill the Commander,Refuse to kill the Commander,,100,,,
+149,4,111,"You may not know Commander Rios, but the few minutes you spent with him made you feel as if you had lived through his ordeal. You feel a lump in your throat and your voice is pinched by the melancholy that came over you after his testimony.
+
+"".... Okay,"" you reply to the Commander with your voice shaking and emotion overwhelming you.
+
+""Take your time,"" he says in a soothing tone despite his husky voice.
+
+You cock your pistol and point it at the Commander's head, slightly shaking. You take a deep breath and try to calm your hesitation.
+
+""Commander, thank you for your service,"" you improvise, hoping to ease his conscience.
+
+Curiously, the Ghoul's face seems as if it has calmed down despite its deformity and the usual impossibility of reading emotions in victims of this affliction. He lowers his head slightly and it is at this moment that you finally pull the trigger.
+
+*BANG!*
+
+The Commander slumps in his chair and does not move. You feel a tear roll down your cheek, a form of sadness and empathy that reminds you that you are still one of the few humans in this place to feel it at times.
+
+You pause for a few minutes to regain your composure and calm your emotions. Once you have calmed down, you search the drawer and find the terminal access card, as well as a picture of a military man with what seems to be his wife and two children. Could this be Commander Rios when he was human? You decide to take the picture to remember the character.",4,113,,,img:radiant-terrace-base-interior.png,0,Return to the archive room,,,100,,,
+150,4,112,"You may not know Commander Rios, but the few minutes you spent with him made you feel as if you had lived through his ordeal. You feel a lump in your throat and your voice is pinched by the melancholy that came over you after his testimony.
+
+But despite this, you cannot resign yourself to fulfilling his request. Although you have killed a number of Ghouls or Raiders in the past that you would be unable to remember, it has mostly been in your own defense.
+
+ ""... Sorry,"" you say, your voice pinched by the sadness and empathy you feel for the character and your inability to put him out of his misery.
+
+""That's okay,"" the Commander replies in a curiously soothing tone. ""Deep down, it's a relief to see that there are still people with humanity in this crazy world.""
+
+He then gets up from his desk chair and opens his drawer to pull out an access card.
+
+""I respect your choice and honor my promise. Here is the access card that will allow you to unlock the archive terminal,"" he says, handing it to you.
+
+""... Thank you,"" you reply with a shaky voice and hand while you are still in shock at the Commander's request.
+
+""I hope you find the answers to your questions,"" he says as he walks you to the door of his office. He lets you out and closes the door.",4,113,,,img:radiant-terrace-base-interior.png,0,Return to the archive room,,,100,,,
+151,4,113,"After an emotionally taxing time, you return to the archive room and immerse yourself in the terminal indexing the stored Holotapes. This will take your mind off things.
+
+With the access card inserted, you repeat the same request as before: ""VAULT 127"".
+
+A few seconds later, the terminal returns a series of results.
+
+---
+
+Radiant Terrace Military Base
+Archives
+
+Query: VAULT 127
+
+4 results found.
+
+1. Holotape A-32: Security Report Vault 127
+2. Holotape C-65: Vault access topology 127
+3. Holotape F-16: Vault 127 Supply Report
+4. Holotape Y-03: Preliminary Report Sanctuary Project
+
+---
+
+You memorize the location of the three Holotapes and scour the archive room for them. With the exception of the fourth tape, you have found the ones indicated by the terminal. One by one, you insert them into the second Holotape drive of your Pip-boy and consult the contents.",4,114,,,img:radiant-terrace-base-interior.png,0,Read Vault 127 Security Report,,,100,,,
+152,4,114,"You start with Holotape A-32 ""Vault 127 Security Report.""
+
+---
+
+CONFIDENTIAL
+
+Subject: Vault 127 Security Report
+
+Date: 2075-05-23
+
+[Audio Begins]
+
+- Voice 1: Vault 127 Security Report. Security measures have been implemented according to current protocols. The security and integrity of the Vault has been verified.
+- Voice 2: Access control restricts certain areas to authorized personnel only. Multi-level authentication implemented. Anti-intrusion system is operational.
+- Voice 1: Vault 127 surveillance systems are operational. Zones 8 and 16 are yet to be covered.
+- Voice 2: Implementation of biometric and strong authentication protocols will be finalized according to schedule.
+- Voice 1: The mainframe security system is scheduled to be activated on the 26th.
+- Voice 2: Agreed, the team will be informed of this deadline
+
+[Audio Ends]
+
+---
+
+The only thing you can remember from this recording, which is not very comprehensible apart from the fact that Vault 127 is very secure, is that it does exist. Well, you had the confirmation before from the Commander, but two sources validate it.",4,115,,,img:terminal.png,0,Read Vault 127 Access Topology,,,100,,,
+153,4,115,"You follow up with the second Holotape on the access topology of Vault 127.
+
+---
+
+CONFIDENTIAL
+
+Vault 127 Access Topology
+
+[Audio Begins]
+
+- Voice 1: Report on the final choice of access topology for Vault 127. Project owner George Erensmith.
+- Voice 2: Go ahead.
+- Voice 1: Due to the strategic nature of Vault 127, we opted for a hub-and-spoke topology rather than the traditional vault topology. Mapping the terrain and studying the soils resulted in the locations you see on the screen.
+- Voice 3: This map is a maze, are you sure that the occupants of the Vault will be able to exploit it?
+- Voice 1: This specific choice was also made because of the nature of the Sanctuary Project
+- Voice 4: What does this mean in terms of size?
+- Voice 1: The Vault itself is 10 square kilometers, but the entire layout is 50 square kilometers for better coverage.
+- Voice 2: How many accesses are planned in total?
+- Voice 1: The project has a total of 8 access points in addition to the main one located here.
+[Silence for several seconds]
+- Voice 1: Are there any other questions?
+- Voice 3: No, everything is in order, this stage of the project is validated.
+- Voice 2: Next meeting scheduled for the 14th at the temporary Midwich Valley offices.
+
+[Audio Ends]
+
+---
+
+Too bad you only got the audio, this report seemed to outline the plan for Vault 127. You continue with the last tape.
+",4,116,,,img:terminal.png,0,Read Vault 127 Supply Report,,,100,,,
+154,4,116,"You insert the last Holotape and start reading.
+
+---
+
+Vault 127 Supply Report
+
+Date: 2075-06-10
+
+Warning: This document is classified. Any exfiltration of its contents to unauthorized persons will result in legal action.
+
+Automated Systems Overview
+
+Maintenance robots (general repairs)
+Distribution robots (resource allocation)
+
+Sanctum mainframe (classified)
+Resource management software (advanced algorithms)
+Data encryption and security protocols (high-level)
+
+Contact information
+
+Echo Ventures Development
+Eaglecrest Tower - Level 6
+1571 Prospect Avenue
+Midwich Valley, Cascade
+Zip Code: 98765
+
+---
+
+""Oh,"" you let loose without realizing it. The last tape gave you the address of the Vault 127 construction supervision offices in ... Midwich Valley. This worries you in light of the news you got about it, but you'll have to get back on the road.",4,117,,,img:terminal.png,0,Leave Radiant Terrace Base,,,100,,,
+155,4,117,"Despite the absence of the last Holotape, you have obtained quite a bit of information that confirms the existence of Vault 127. It is still shrouded in mystery, but you now know that your next stop is in Midwich Valley, which doesn't exactly reassure you.
+
+You decide it's time to leave the base. As you walk down the hallway, you see Commander Rios' office at the end. You feel a lump in your throat just at the sight of it and don't dare approach it again. You look at the door from a distance and then turn around to leave the place.
+
+Out of the base, you look at your Pip-boy's map for the best route to Midwich Valley, which is to the north.",4,118,,,img:radiant-terrace-base-archive-room.png,0,Take the road to Midwich Valley,,,100,,,
+156,4,118,"After a couple of hours of walking, and it's getting dark, you think it's time to make a stop. You find a rather isolated spot that should allow you to set up a makeshift camp for the night.
+
+Like clockwork, your Pip-boy's indicator light goes off. It then activates the program installed by the Brotherhood which asks you to record your discoveries of the day. An opportunity to review your new information.
+
+Vault 127 does exist, and you were even able to have a brief conversation with someone who witnessed its construction. This interview, although short, was quite upsetting and you are still struggling to process this footage.
+
+The search of the Radiant Terrace archives was profitable because you obtained information about the access topology of the Vault and the fact that it would extend over ... 50km² ?! ""Huge,"" you say with a surprised look. Unfortunately the audio recording was missing some visuals that would have helped you. The logistics manifest was quite cryptic, but it did give you the address of the Midwich Valley office, which will save you a lot of searching through the ruins of the town. You also expect strong security if you can find access to the Vault.
+
+You finish recording your report in the Brotherhood's Holotape and then lie down to spend the night under the stars before heading back to Midwich Valley.",5,1,,,img:road-2.png,0,On the way to Midwich Valley,,,100,,,
+161,5,1,To be continued...,,,,,img:tbc.jpg,0,,,,100,,,
