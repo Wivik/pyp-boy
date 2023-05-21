@@ -1,3 +1,12 @@
+## [0.10.1](https://github.com/Wivik/pyp-boy/compare/v0.10.0...v0.10.1) (2023-05-21)
+
+
+### Bug Fixes
+
+* missing characters table in savefile ([7be0217](https://github.com/Wivik/pyp-boy/commit/7be02172a657b1e01158b61549fe5c6d35f59288))
+
+
+
 # [0.10.0](https://github.com/Wivik/pyp-boy/compare/v0.9.0...v0.10.0) (2023-05-21)
 
 
@@ -48,20 +57,6 @@
 ### Bug Fixes
 
 * :ambulance: duplicate entries in story path ([1c0eeb7](https://github.com/Wivik/pyp-boy/commit/1c0eeb73ebe0179b3d8b2b2471014dd09eea51c8))
-
-
-
-# [0.7.0](https://github.com/Wivik/pyp-boy/compare/v0.6.0...v0.7.0) (2023-03-21)
-
-
-### Bug Fixes
-
-* :memo: fixed some typos ([039a452](https://github.com/Wivik/pyp-boy/commit/039a45290853efef604716b2bd446e1b46365188))
-
-
-### Features
-
-* :sparkles: updated various illustrations ([3e121c5](https://github.com/Wivik/pyp-boy/commit/3e121c51cbe694ec50ecd23735071f9706d43266))
 
 
 
