@@ -14,5 +14,7 @@ CREATE TABLE "story" (
 	"choice_3_desc"	TEXT,
 	"exp"	INTEGER DEFAULT 100,
 	"loot"	TEXT,
+	"meet"	TEXT,
+	"discover"	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT)
 )

@@ -275,6 +275,16 @@ def data_choice(chapter_id, step_id, next_chapter, choice_id, exp):
     if loot != 'None':
         db.loot(save_file, session['save_id'], loot, logger=logger)
 
+    logger.debug(url_params['meet'])
+    meet = url_params['meet']
+    if meet != 'None':
+        db.meet_character(save_file, session['save_id'], meet, logger=logger)
+
+    logger.debug(url_params['discover'])
+    discover = url_params['discover']
+    if discover != 'None':
+        db.discover_location(save_file, session['save_id'], discover, logger=logger)
+
     if chapter_id != next_chapter:
         chapter = next_chapter
         step = choice_id
