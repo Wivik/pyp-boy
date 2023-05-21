@@ -40,7 +40,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: "${{ env.REGISTRY }}/wivik/pyp-boy:${{ steps.changelog.outputs.tag }}"
+          tags: "${{ env.REGISTRY }}/wivik/pyp-boy:${{ steps.changelog.outputs.tag }},${{ env.REGISTRY }}/wivik/pyp-boy:latest"
           file: Containerfile
           context: .
 
