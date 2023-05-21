@@ -41,11 +41,10 @@ with open('../sql/story.csv', 'r') as story_file:
         # print(row)
         row = [None if value.strip() == '' else value.strip() for value in row]
 
-        c.execute('INSERT INTO story VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', row)
+        c.execute('INSERT INTO story VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', row)
 
     conn.commit()
 
-    conn.close()
 
 inventory_files = [
     {'name': 'apparel', 'file': '../sql/apparel.csv'},
@@ -70,8 +69,6 @@ for inv_file in inventory_files:
 
 conn.commit()
 
-conn.close()
-
 c.execute('INSERT INTO db_version values(?)', (version,))
 conn.commit()
 
@@ -86,7 +83,6 @@ with open('../sql/map.csv', 'r') as map_file:
 
     conn.commit()
 
-    conn.close()
 
 with open('../sql/character.csv', 'r') as character_file:
     character = csv.reader(character_file)
@@ -99,5 +95,6 @@ with open('../sql/character.csv', 'r') as character_file:
 
     conn.commit()
 
-    conn.close()
+
+conn.close()
 
