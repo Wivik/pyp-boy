@@ -90,6 +90,15 @@ def create_save_database(save_file, logger):
                 UNIQUE("save_id","location")
             )
         ''')
+        c.execute('''
+            CREATE TABLE "characters" (
+                "id"	INTEGER,
+                "save_id"	INTEGER,
+                "character_id"	INTEGER,
+                PRIMARY KEY("id" AUTOINCREMENT),
+                UNIQUE("save_id","character_id")
+            )
+        ''')
         conn.commit()
     except Error as e:
         logger.error(e)
