@@ -37,7 +37,7 @@ jobs:
         working-directory: ./scripts
 
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: "${{ env.REGISTRY }}/wivik/pyp-boy:${{ steps.changelog.outputs.tag }},${{ env.REGISTRY }}/wivik/pyp-boy:latest"
