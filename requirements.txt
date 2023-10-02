@@ -1,5 +1,5 @@
 Flask==2.3.3
-Flask-WTF==1.1.1
+Flask-WTF==1.2.1
 psutil==5.9.5
 geopy==2.4.0
 requests==2.31.0
