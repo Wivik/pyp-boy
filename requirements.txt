@@ -1,6 +1,6 @@
 Flask==3.0.0
 Flask-WTF==1.2.1
 psutil==5.9.7
-geopy==2.4.0
+geopy==2.4.1
 requests==2.31.0
 Jinja2==3.1.2
